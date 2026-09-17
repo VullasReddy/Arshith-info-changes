@@ -15,11 +15,13 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css?v=20260917_v8_industries_perfect">
-  <link rel="stylesheet" href="footer-premium.css?v=20260917_v8_industries_perfect">
+  <link rel="stylesheet" href="css/style.css?v=20260917_v9_internships_white">
+  <link rel="stylesheet" href="footer-premium.css?v=20260917_v9_internships_white">
   <style>
     /* ═══════════════════════════════════════════════════
-       CYBER BLUE INTERNSHIPS & EARLY CAREERS STYLING
+       INTERNSHIPS & EARLY CAREERS PAGE STYLING:
+       - Hero Section: Cyber Blue Dark Theme with Aurora
+       - Everything Below Hero: Clean White Theme with Pure White Cards
        ═══════════════════════════════════════════════════ */
     :root {
       --primary-cyan: #00d2ff;
@@ -31,330 +33,100 @@
 
     body.page-internships {
       background-color: #080d1a !important;
-      color: #ffffff !important;
+      color: #0f172a;
     }
 
-    /* Section Headings */
-    .section-header-centered .section-heading,
-    body.page-internships .section-heading {
-      color: #ffffff !important;
-      font-weight: 800 !important;
-      letter-spacing: -0.02em !important;
-    }
-
-    .section-header-centered .section-subtitle,
-    body.page-internships .section-subtitle {
-      color: #cbd5e1 !important;
-    }
-
-    .section-header-centered .section-eyebrow,
-    body.page-internships .section-eyebrow {
-      color: #70e2ff !important;
-      font-weight: 700 !important;
-      letter-spacing: 0.1em !important;
-    }
-
-    /* Section Backgrounds - Transparent on Cyber Dark */
-    .careers-why-section,
-    .careers-openings-section,
-    .roadmap-section,
-    .testimonials-section,
-    .faq-section {
+    /* ═══════════════════════════════════════════════════
+       1. HERO SECTION (Cyber Blue Dark Theme)
+       ═══════════════════════════════════════════════════ */
+    .careers-hero-section,
+    body.page-internships .careers-hero-section {
+      position: relative !important;
+      z-index: 2 !important;
       background: transparent !important;
-      position: relative;
-      z-index: 2;
-    }
-
-    /* Why Intern Cards */
-    .why-interactive-grid > .why-feature-card,
-    body.page-internships .why-feature-card {
-      background: rgba(8, 17, 38, 0.88) !important;
-      border: 1px solid rgba(0, 210, 255, 0.25) !important;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-radius: 20px !important;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    }
-
-    .why-interactive-grid > .why-feature-card:hover,
-    body.page-internships .why-feature-card:hover {
-      transform: translateY(-6px) !important;
-      border-color: #00d2ff !important;
-      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 210, 255, 0.35) !important;
-    }
-
-    .why-feature-card .why-card-number {
-      color: rgba(0, 210, 255, 0.3) !important;
-      font-weight: 900 !important;
-    }
-
-    .why-feature-card:hover .why-card-number {
-      color: #00d2ff !important;
-      text-shadow: 0 0 12px rgba(0, 210, 255, 0.5) !important;
-    }
-
-    .why-feature-card .why-card-title {
       color: #ffffff !important;
+      padding: 9.5rem 0 5rem 0 !important;
     }
 
-    .why-feature-card .why-card-desc {
-      color: #cbd5e1 !important;
-    }
-
-    .why-feature-card .why-card-points li {
-      color: #94a3b8 !important;
-    }
-
-    .why-feature-card .why-card-points li i {
-      color: #00d2ff !important;
-    }
-
-    .why-interactive-grid > .why-feature-card:nth-child(1) .why-icon-circle {
-      background: rgba(0, 210, 255, 0.1) !important;
-      border: 1px solid rgba(0, 210, 255, 0.3) !important;
-      color: #00d2ff !important;
-      box-shadow: 0 0 18px rgba(0, 210, 255, 0.25) !important;
-    }
-    .why-interactive-grid > .why-feature-card:nth-child(1) .why-card-title {
-      color: #00d2ff !important;
-    }
-
-    .why-interactive-grid > .why-feature-card:nth-child(2) .why-icon-circle {
-      background: rgba(0, 112, 243, 0.12) !important;
-      border: 1px solid rgba(0, 112, 243, 0.35) !important;
-      color: #70e2ff !important;
-      box-shadow: 0 0 18px rgba(0, 112, 243, 0.3) !important;
-    }
-    .why-interactive-grid > .why-feature-card:nth-child(2) .why-card-title {
-      color: #70e2ff !important;
-    }
-
-    .why-interactive-grid > .why-feature-card:nth-child(3) .why-icon-circle {
-      background: rgba(16, 185, 129, 0.1) !important;
-      border: 1px solid rgba(16, 185, 129, 0.3) !important;
-      color: #10b981 !important;
-    }
-    .why-interactive-grid > .why-feature-card:nth-child(3) .why-card-title {
-      color: #10b981 !important;
-    }
-
-    .why-interactive-grid > .why-feature-card:nth-child(4) .why-icon-circle {
-      background: rgba(234, 88, 12, 0.1) !important;
-      border: 1px solid rgba(234, 88, 12, 0.3) !important;
-      color: #fb923c !important;
-    }
-    .why-interactive-grid > .why-feature-card:nth-child(4) .why-card-title {
-      color: #fb923c !important;
-    }
-
-    /* Program Roadmap Step Cards */
-    .roadmap-step-card,
-    body.page-internships .roadmap-step-card {
-      background: rgba(8, 17, 38, 0.88) !important;
-      border: 1px solid rgba(0, 210, 255, 0.25) !important;
-      border-radius: 20px !important;
-      backdrop-filter: blur(16px) !important;
-      -webkit-backdrop-filter: blur(16px) !important;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
-      transition: all 0.35s ease !important;
-    }
-
-    .roadmap-step-card:hover,
-    body.page-internships .roadmap-step-card:hover {
-      transform: translateY(-4px) !important;
-      border-color: #00d2ff !important;
-      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 210, 255, 0.3) !important;
-    }
-
-    .roadmap-step-card h3 {
-      color: #ffffff !important;
-    }
-
-    .roadmap-step-card p {
-      color: #cbd5e1 !important;
-    }
-
-    .roadmap-step-card .step-number-tag {
-      background: linear-gradient(135deg, #00d2ff 0%, #0070f3 100%) !important;
-      color: #ffffff !important;
-      box-shadow: 0 2px 10px rgba(0, 210, 255, 0.4) !important;
-    }
-
-    /* Internship Track Cards */
-    .internship-card-item,
-    body.page-internships .internship-card-item {
-      background: rgba(8, 17, 38, 0.88) !important;
-      border: 1px solid rgba(0, 210, 255, 0.25) !important;
-      border-radius: 20px !important;
-      padding: 2.2rem 2.5rem !important;
-      backdrop-filter: blur(16px) !important;
-      -webkit-backdrop-filter: blur(16px) !important;
-      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(0, 210, 255, 0.03) !important;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      gap: 2rem !important;
-    }
-
-    .internship-card-item:hover,
-    body.page-internships .internship-card-item:hover {
-      transform: translateY(-4px) !important;
-      border-color: #00d2ff !important;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 40px rgba(0, 210, 255, 0.35) !important;
-    }
-
-    .internship-card-item .job-title,
-    body.page-internships .job-title {
-      color: #ffffff !important;
-      font-size: 1.35rem !important;
-      font-weight: 800 !important;
-      margin-bottom: 0.5rem !important;
-      transition: color 0.2s ease !important;
-    }
-
-    .internship-card-item:hover .job-title,
-    body.page-internships .internship-card-item:hover .job-title {
-      color: #00d2ff !important;
-      text-shadow: 0 0 15px rgba(0, 210, 255, 0.4) !important;
-    }
-
-    .internship-card-item .job-snippet,
-    body.page-internships .job-snippet {
-      color: #cbd5e1 !important;
-      font-size: 0.95rem !important;
-      line-height: 1.65 !important;
-      margin-bottom: 1rem !important;
-    }
-
-    .internship-card-item .job-meta-row .meta-tag,
-    body.page-internships .meta-tag {
-      background: rgba(0, 210, 255, 0.08) !important;
-      border: 1px solid rgba(0, 210, 255, 0.25) !important;
-      color: #e2e8f0 !important;
-      font-size: 0.82rem !important;
-      font-weight: 600 !important;
-      padding: 0.35rem 0.85rem !important;
-      border-radius: 50px !important;
+    .careers-pill-badge,
+    body.page-internships .careers-pill-badge {
       display: inline-flex !important;
       align-items: center !important;
-      gap: 0.4rem !important;
-    }
-
-    .internship-card-item .job-meta-row .meta-tag i,
-    body.page-internships .meta-tag i {
-      color: #00d2ff !important;
-    }
-
-    /* Department Tags in Internship Cards */
-    .job-dept-tag.tag-engineering {
-      color: #0070f3 !important;
-      background: rgba(0, 112, 243, 0.12) !important;
-      border: 1px solid rgba(0, 112, 243, 0.3) !important;
-    }
-
-    .job-dept-tag.tag-ai {
-      color: #00d2ff !important;
+      gap: 0.65rem !important;
+      padding: 0.45rem 1.25rem !important;
+      border-radius: 50px !important;
       background: rgba(0, 210, 255, 0.12) !important;
-      border: 1px solid rgba(0, 210, 255, 0.3) !important;
-    }
-
-    .job-dept-tag.tag-cloud {
-      color: #0070f3 !important;
-      background: rgba(0, 112, 243, 0.12) !important;
-      border: 1px solid rgba(0, 112, 243, 0.3) !important;
-    }
-
-    .job-dept-tag.tag-cyber {
+      border: 1px solid rgba(0, 210, 255, 0.45) !important;
       color: #00d2ff !important;
-      background: rgba(0, 210, 255, 0.12) !important;
-      border: 1px solid rgba(0, 210, 255, 0.3) !important;
+      font-size: 0.82rem !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.12em !important;
+      margin-bottom: 1.35rem !important;
+      box-shadow: 0 0 20px rgba(0, 210, 255, 0.3) !important;
     }
 
-    .job-dept-tag.tag-design {
-      color: #8b5cf6 !important;
-      background: rgba(139, 92, 246, 0.12) !important;
-      border: 1px solid rgba(139, 92, 246, 0.3) !important;
+    .careers-pulse-dot,
+    body.page-internships .careers-pulse-dot {
+      width: 8px !important;
+      height: 8px !important;
+      border-radius: 50% !important;
+      background: #00d2ff !important;
+      box-shadow: 0 0 12px #00d2ff, 0 0 20px #00d2ff !important;
+      animation: pulseCyberCyan 2s infinite !important;
     }
 
-    /* Testimonial Cards */
-    .intern-testimonial-card,
-    body.page-internships .intern-testimonial-card {
-      background: rgba(8, 17, 38, 0.88) !important;
-      border: 1px solid rgba(0, 210, 255, 0.25) !important;
-      border-radius: 20px !important;
-      backdrop-filter: blur(16px) !important;
-      -webkit-backdrop-filter: blur(16px) !important;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6) !important;
+    @keyframes pulseCyberCyan {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.7; box-shadow: 0 0 16px #00d2ff; }
+      100% { transform: scale(1); opacity: 1; }
     }
 
-    .intern-testimonial-card:hover {
-      border-color: #00d2ff !important;
-      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 210, 255, 0.3) !important;
-    }
-
-    .intern-quote-text {
-      color: #cbd5e1 !important;
-    }
-
-    .intern-info h4 {
+    .careers-hero-section .careers-hero-title,
+    body.page-internships .careers-hero-title {
+      font-size: 3.4rem !important;
+      font-weight: 900 !important;
+      line-height: 1.15 !important;
+      letter-spacing: -0.03em !important;
       color: #ffffff !important;
+      margin-bottom: 1.35rem !important;
     }
 
-    .intern-info p {
-      color: #00d2ff !important;
+    .careers-hero-section .careers-hero-title .gradient-text,
+    body.page-internships .gradient-text {
+      background: linear-gradient(135deg, #00d2ff 0%, #70e2ff 50%, #0070f3 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+      text-fill-color: transparent !important;
+      display: inline-block !important;
+      filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.4));
     }
 
-    .intern-info span {
-      color: #94a3b8 !important;
-    }
-
-    /* FAQ Accordion */
-    .faq-item,
-    body.page-internships .faq-item {
-      background: rgba(8, 17, 38, 0.88) !important;
-      border: 1px solid rgba(0, 210, 255, 0.25) !important;
-      border-radius: 14px !important;
-      backdrop-filter: blur(16px) !important;
-      -webkit-backdrop-filter: blur(16px) !important;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
-      margin-bottom: 1rem !important;
-    }
-
-    .faq-item:hover,
-    .faq-item.active {
-      border-color: #00d2ff !important;
-      box-shadow: 0 0 25px rgba(0, 210, 255, 0.25) !important;
-    }
-
-    .faq-question {
-      color: #ffffff !important;
-    }
-
-    .faq-question:hover {
-      color: #00d2ff !important;
-    }
-
-    .faq-answer p {
+    .careers-hero-section .careers-hero-lead,
+    body.page-internships .careers-hero-lead {
+      font-size: 1.12rem !important;
       color: #cbd5e1 !important;
+      line-height: 1.7 !important;
+      max-width: 580px !important;
+      margin-bottom: 1.8rem !important;
     }
 
     /* Fast Switcher between Full-Time and Internships */
     .careers-switch-container {
       display: flex !important;
       align-items: center !important;
-      margin: 1.5rem 0 2rem 0 !important;
+      margin: 1.2rem 0 1.8rem 0 !important;
     }
 
     .careers-switch-pill-wrapper {
       display: inline-flex !important;
       align-items: center !important;
-      background: rgba(8, 17, 38, 0.85) !important;
-      border: 1.5px solid rgba(0, 210, 255, 0.3) !important;
+      background: rgba(8, 17, 38, 0.9) !important;
+      border: 1.5px solid rgba(0, 210, 255, 0.35) !important;
       border-radius: 50px !important;
       padding: 5px !important;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35), inset 0 2px 6px rgba(0, 0, 0, 0.25) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 2px 6px rgba(0, 0, 0, 0.3) !important;
       gap: 6px !important;
     }
 
@@ -378,11 +150,841 @@
     .careers-switch-tab.active {
       background: linear-gradient(135deg, #00d2ff 0%, #0070f3 100%) !important;
       color: #ffffff !important;
-      box-shadow: 0 4px 18px rgba(0, 210, 255, 0.45);
+      box-shadow: 0 4px 18px rgba(0, 210, 255, 0.5) !important;
     }
 
     .careers-switch-tab.active i {
       color: #ffffff !important;
+    }
+
+    .careers-hero-cta-group {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1.25rem !important;
+      margin-bottom: 2.2rem !important;
+      flex-wrap: wrap !important;
+    }
+
+    .careers-primary-btn,
+    body.page-internships .careers-primary-btn,
+    body.page-internships .btn.btn-primary.careers-primary-btn {
+      background: linear-gradient(135deg, #00d2ff 0%, #0070f3 100%) !important;
+      color: #ffffff !important;
+      border: 1px solid #00d2ff !important;
+      padding: 0.9rem 2rem !important;
+      font-weight: 700 !important;
+      border-radius: 50px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.6rem !important;
+      box-shadow: 0 4px 20px rgba(0, 210, 255, 0.45) !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      text-decoration: none !important;
+    }
+
+    .careers-primary-btn:hover,
+    body.page-internships .careers-primary-btn:hover,
+    body.page-internships .btn.btn-primary.careers-primary-btn:hover {
+      background: linear-gradient(135deg, #0070f3 0%, #005bb5 100%) !important;
+      box-shadow: 0 8px 30px rgba(0, 210, 255, 0.65) !important;
+      transform: translateY(-2px) !important;
+      color: #ffffff !important;
+    }
+
+    .careers-secondary-btn,
+    body.page-internships .careers-secondary-btn,
+    body.page-internships .btn.btn-outline.careers-secondary-btn {
+      background: rgba(0, 210, 255, 0.08) !important;
+      border: 1.5px solid rgba(0, 210, 255, 0.45) !important;
+      color: #00d2ff !important;
+      padding: 0.9rem 1.8rem !important;
+      font-weight: 700 !important;
+      border-radius: 50px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.6rem !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      text-decoration: none !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .careers-secondary-btn:hover,
+    body.page-internships .careers-secondary-btn:hover,
+    body.page-internships .btn.btn-outline.careers-secondary-btn:hover {
+      background: rgba(0, 210, 255, 0.22) !important;
+      border-color: #00d2ff !important;
+      color: #ffffff !important;
+      box-shadow: 0 6px 24px rgba(0, 210, 255, 0.4) !important;
+      transform: translateY(-2px) !important;
+    }
+
+    .careers-hero-metrics,
+    body.page-internships .careers-hero-metrics {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1.8rem !important;
+      padding-top: 1.6rem !important;
+      border-top: 1px solid rgba(0, 210, 255, 0.25) !important;
+      flex-wrap: wrap !important;
+    }
+
+    .hero-metric-item,
+    body.page-internships .hero-metric-item {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 0.2rem !important;
+    }
+
+    .hero-metric-item .metric-value,
+    body.page-internships .hero-metric-item .metric-value {
+      font-size: 1.45rem !important;
+      font-weight: 900 !important;
+      color: #00d2ff !important;
+      font-family: var(--font-brand, 'Outfit', 'Inter', sans-serif) !important;
+      text-shadow: 0 0 15px rgba(0, 210, 255, 0.6) !important;
+      letter-spacing: -0.01em !important;
+    }
+
+    .hero-metric-item .metric-label,
+    body.page-internships .hero-metric-item .metric-label {
+      font-size: 0.78rem !important;
+      font-weight: 700 !important;
+      color: #cbd5e1 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.06em !important;
+    }
+
+    .metric-divider,
+    body.page-internships .metric-divider {
+      width: 1px !important;
+      height: 35px !important;
+      background: rgba(0, 210, 255, 0.25) !important;
+    }
+
+    .composition-main-img-wrapper,
+    body.page-internships .composition-main-img-wrapper {
+      border-radius: 24px !important;
+      overflow: hidden !important;
+      position: relative !important;
+      border: 1.5px solid rgba(0, 210, 255, 0.4) !important;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 40px rgba(0, 210, 255, 0.25) !important;
+    }
+
+    .careers-floating-badge,
+    body.page-internships .careers-floating-badge {
+      position: absolute !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.85rem !important;
+      padding: 0.85rem 1.25rem !important;
+      background: rgba(8, 17, 38, 0.94) !important;
+      backdrop-filter: blur(16px) !important;
+      -webkit-backdrop-filter: blur(16px) !important;
+      border: 1.5px solid rgba(0, 210, 255, 0.4) !important;
+      border-radius: 16px !important;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 210, 255, 0.2) !important;
+      z-index: 3 !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    .careers-floating-badge:hover,
+    body.page-internships .careers-floating-badge:hover {
+      transform: translateY(-4px) !important;
+      border-color: #00d2ff !important;
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 210, 255, 0.45) !important;
+    }
+
+    .careers-floating-badge .badge-icon,
+    body.page-internships .careers-floating-badge .badge-icon {
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 12px !important;
+      background: rgba(0, 210, 255, 0.15) !important;
+      border: 1px solid rgba(0, 210, 255, 0.45) !important;
+      color: #00d2ff !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      font-size: 1.15rem !important;
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.3) !important;
+    }
+
+    .careers-floating-badge .badge-text strong {
+      font-size: 0.88rem !important;
+      color: #ffffff !important;
+      font-weight: 700 !important;
+    }
+
+    .careers-floating-badge .badge-text span {
+      font-size: 0.75rem !important;
+      color: #70e2ff !important;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       2-6. ALL SECTIONS BELOW HERO (Clean White Theme & White Cards)
+       ═══════════════════════════════════════════════════ */
+    .careers-light-wrapper {
+      background-color: #ffffff !important;
+      color: #0f172a !important;
+      position: relative !important;
+      z-index: 10 !important;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+    }
+
+    .careers-light-wrapper .careers-why-section,
+    .careers-light-wrapper .roadmap-section,
+    .careers-light-wrapper .careers-openings-section,
+    .careers-light-wrapper .testimonials-section,
+    .careers-light-wrapper .faq-section {
+      position: relative !important;
+      z-index: 2 !important;
+    }
+
+    /* Section Headings in Light Wrapper */
+    .careers-light-wrapper .section-header-centered .section-heading,
+    .careers-light-wrapper .section-heading,
+    body.page-internships .careers-light-wrapper .section-heading {
+      color: #0f172a !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.02em !important;
+    }
+
+    .careers-light-wrapper .section-header-centered .section-subtitle,
+    .careers-light-wrapper .section-subtitle,
+    body.page-internships .careers-light-wrapper .section-subtitle {
+      color: #475569 !important;
+      font-size: 1.05rem !important;
+      line-height: 1.7 !important;
+    }
+
+    .careers-light-wrapper .section-header-centered .section-eyebrow,
+    .careers-light-wrapper .section-eyebrow,
+    body.page-internships .careers-light-wrapper .section-eyebrow {
+      color: #0070f3 !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+    }
+
+    /* 2. WHY INTERN FEATURE CARDS (Pure White Cards) */
+    .why-interactive-grid > .why-feature-card,
+    body.page-internships .why-feature-card,
+    .careers-light-wrapper .why-feature-card {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 20px !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:hover,
+    body.page-internships .why-feature-card:hover,
+    .careers-light-wrapper .why-feature-card:hover {
+      transform: translateY(-6px) !important;
+      border-color: #00d2ff !important;
+      box-shadow: 0 16px 36px rgba(0, 112, 243, 0.12), 0 0 25px rgba(0, 210, 255, 0.2) !important;
+    }
+
+    .why-feature-card .why-card-number {
+      color: #cbd5e1 !important;
+      font-weight: 900 !important;
+      transition: color 0.3s ease !important;
+    }
+
+    .why-feature-card:hover .why-card-number {
+      color: #0070f3 !important;
+      text-shadow: none !important;
+    }
+
+    .why-feature-card .why-card-title,
+    body.page-internships .why-feature-card .why-card-title {
+      color: #0f172a !important;
+      font-weight: 800 !important;
+    }
+
+    .why-feature-card .why-card-desc,
+    body.page-internships .why-feature-card .why-card-desc {
+      color: #475569 !important;
+      line-height: 1.65 !important;
+    }
+
+    .why-feature-card .why-card-points li,
+    body.page-internships .why-feature-card .why-card-points li {
+      color: #334155 !important;
+    }
+
+    .why-feature-card .why-card-points li i,
+    body.page-internships .why-feature-card .why-card-points li i {
+      color: #0070f3 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(1) .why-icon-circle {
+      background: rgba(0, 210, 255, 0.1) !important;
+      border: 1px solid rgba(0, 210, 255, 0.3) !important;
+      color: #0070f3 !important;
+      box-shadow: none !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(1) .why-card-title {
+      color: #0f172a !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(2) .why-icon-circle {
+      background: rgba(0, 112, 243, 0.1) !important;
+      border: 1px solid rgba(0, 112, 243, 0.3) !important;
+      color: #0070f3 !important;
+      box-shadow: none !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(2) .why-card-title {
+      color: #0f172a !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(3) .why-icon-circle {
+      background: rgba(16, 185, 129, 0.1) !important;
+      border: 1px solid rgba(16, 185, 129, 0.3) !important;
+      color: #059669 !important;
+      box-shadow: none !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(3) .why-card-title {
+      color: #0f172a !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(4) .why-icon-circle {
+      background: rgba(234, 88, 12, 0.1) !important;
+      border: 1px solid rgba(234, 88, 12, 0.3) !important;
+      color: #ea580c !important;
+      box-shadow: none !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(4) .why-card-title {
+      color: #0f172a !important;
+    }
+
+    /* 3. PROGRAM ROADMAP STEP CARDS (Pure White Cards) */
+    .intern-step-card,
+    .roadmap-step-card,
+    body.page-internships .intern-step-card,
+    body.page-internships .roadmap-step-card,
+    .careers-light-wrapper .intern-step-card {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 20px !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+      transition: all 0.35s ease !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+
+    .intern-step-card:hover,
+    .roadmap-step-card:hover,
+    body.page-internships .intern-step-card:hover,
+    body.page-internships .roadmap-step-card:hover {
+      transform: translateY(-5px) !important;
+      border-color: #00d2ff !important;
+      box-shadow: 0 16px 36px rgba(0, 112, 243, 0.12), 0 0 25px rgba(0, 210, 255, 0.2) !important;
+    }
+
+    .intern-step-header {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      margin-bottom: 1.25rem !important;
+    }
+
+    .intern-step-number,
+    .roadmap-step-card .step-number-tag {
+      background: rgba(0, 112, 243, 0.1) !important;
+      border: 1px solid rgba(0, 112, 243, 0.25) !important;
+      color: #0070f3 !important;
+      font-weight: 700 !important;
+      font-size: 0.82rem !important;
+      padding: 0.35rem 0.85rem !important;
+      border-radius: 50px !important;
+      box-shadow: none !important;
+    }
+
+    .intern-step-icon {
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 12px !important;
+      background: rgba(0, 210, 255, 0.1) !important;
+      border: 1px solid rgba(0, 210, 255, 0.3) !important;
+      color: #0070f3 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      font-size: 1.15rem !important;
+    }
+
+    .intern-step-title,
+    .roadmap-step-card h3,
+    body.page-internships .intern-step-title {
+      color: #0f172a !important;
+      font-weight: 800 !important;
+      font-size: 1.25rem !important;
+      margin-bottom: 0.85rem !important;
+    }
+
+    .intern-step-desc,
+    .roadmap-step-card p,
+    body.page-internships .intern-step-desc {
+      color: #475569 !important;
+      font-size: 0.95rem !important;
+      line-height: 1.65 !important;
+      margin-bottom: 1.25rem !important;
+    }
+
+    .intern-step-highlights {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 0.6rem !important;
+    }
+
+    .intern-step-highlights li,
+    body.page-internships .intern-step-highlights li {
+      color: #334155 !important;
+      font-size: 0.88rem !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.55rem !important;
+    }
+
+    .intern-step-highlights li i,
+    body.page-internships .intern-step-highlights li i {
+      color: #0070f3 !important;
+      font-size: 0.95rem !important;
+    }
+
+    /* 4. INTERNSHIP FILTER BAR & TRACK CARDS (Pure White Cards) */
+    .careers-light-wrapper .careers-filter-bar,
+    .careers-filter-bar {
+      background: #f8fafc !important;
+      border: 1.5px solid #e2e8f0 !important;
+      border-radius: 50px !important;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+      padding: 0.9rem 1.4rem !important;
+      margin-bottom: 2.5rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 1.25rem !important;
+    }
+
+    .careers-filter-bar .career-filter-label {
+      color: #0f172a !important;
+      font-weight: 800 !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      font-size: 0.85rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.06em !important;
+    }
+
+    .careers-filter-bar .career-filter-label i {
+      color: #0070f3 !important;
+    }
+
+    .careers-filter-bar .career-pill {
+      color: #475569 !important;
+      background: #ffffff !important;
+      border: 1px solid #cbd5e1 !important;
+      font-weight: 600 !important;
+      padding: 0.5rem 1.2rem !important;
+      border-radius: 50px !important;
+      font-size: 0.85rem !important;
+      cursor: pointer !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .careers-filter-bar .career-pill:hover {
+      color: #0070f3 !important;
+      background: rgba(0, 112, 243, 0.05) !important;
+      border-color: #0070f3 !important;
+    }
+
+    .careers-filter-bar .career-pill.active {
+      color: #ffffff !important;
+      background: linear-gradient(135deg, #00d2ff 0%, #0070f3 100%) !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 14px rgba(0, 112, 243, 0.3) !important;
+    }
+
+    .internship-card-item,
+    body.page-internships .internship-card-item,
+    .careers-light-wrapper .internship-card-item {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 20px !important;
+      padding: 2.2rem 2.5rem !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 2rem !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+
+    .internship-card-item:hover,
+    body.page-internships .internship-card-item:hover {
+      transform: translateY(-4px) !important;
+      border-color: #00d2ff !important;
+      box-shadow: 0 16px 36px rgba(0, 112, 243, 0.12), 0 0 25px rgba(0, 210, 255, 0.2) !important;
+    }
+
+    .internship-card-item .job-title,
+    body.page-internships .job-title {
+      color: #0f172a !important;
+      font-size: 1.35rem !important;
+      font-weight: 800 !important;
+      margin-bottom: 0.5rem !important;
+      transition: color 0.2s ease !important;
+    }
+
+    .internship-card-item:hover .job-title,
+    body.page-internships .internship-card-item:hover .job-title {
+      color: #0070f3 !important;
+      text-shadow: none !important;
+    }
+
+    .internship-card-item .job-snippet,
+    body.page-internships .job-snippet {
+      color: #475569 !important;
+      font-size: 0.95rem !important;
+      line-height: 1.65 !important;
+      margin-bottom: 1rem !important;
+    }
+
+    .internship-card-item .job-meta-row .meta-tag,
+    body.page-internships .meta-tag {
+      background: #f1f5f9 !important;
+      border: 1px solid #e2e8f0 !important;
+      color: #334155 !important;
+      font-size: 0.82rem !important;
+      font-weight: 600 !important;
+      padding: 0.35rem 0.85rem !important;
+      border-radius: 50px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.4rem !important;
+    }
+
+    .internship-card-item .job-meta-row .meta-tag i,
+    body.page-internships .meta-tag i {
+      color: #0070f3 !important;
+    }
+
+    .intern-meta-tag-highlight {
+      background: rgba(16, 185, 129, 0.1) !important;
+      border-color: rgba(16, 185, 129, 0.3) !important;
+      color: #059669 !important;
+    }
+    .intern-meta-tag-highlight i {
+      color: #059669 !important;
+    }
+
+    .intern-meta-tag-ppo {
+      background: rgba(245, 158, 11, 0.1) !important;
+      border-color: rgba(245, 158, 11, 0.3) !important;
+      color: #d97706 !important;
+    }
+    .intern-meta-tag-ppo i {
+      color: #d97706 !important;
+    }
+
+    /* Department Tags in Internship Cards */
+    .job-dept-tag {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.45rem !important;
+      font-size: 0.78rem !important;
+      font-weight: 700 !important;
+      padding: 0.35rem 0.9rem !important;
+      border-radius: 50px !important;
+      letter-spacing: 0.04em !important;
+      margin-bottom: 0.75rem !important;
+    }
+
+    .job-dept-tag.tag-engineering {
+      color: #0070f3 !important;
+      background: rgba(0, 112, 243, 0.1) !important;
+      border: 1px solid rgba(0, 112, 243, 0.25) !important;
+    }
+
+    .job-dept-tag.tag-ai {
+      color: #0284c7 !important;
+      background: rgba(2, 132, 199, 0.1) !important;
+      border: 1px solid rgba(2, 132, 199, 0.25) !important;
+    }
+
+    .job-dept-tag.tag-cloud {
+      color: #0070f3 !important;
+      background: rgba(0, 112, 243, 0.1) !important;
+      border: 1px solid rgba(0, 112, 243, 0.25) !important;
+    }
+
+    .job-dept-tag.tag-cyber {
+      color: #0099cc !important;
+      background: rgba(0, 210, 255, 0.12) !important;
+      border: 1px solid rgba(0, 210, 255, 0.3) !important;
+    }
+
+    .job-dept-tag.tag-design {
+      color: #8b5cf6 !important;
+      background: rgba(139, 92, 246, 0.1) !important;
+      border: 1px solid rgba(139, 92, 246, 0.25) !important;
+    }
+
+    .job-dept-tag.tag-business {
+      color: #059669 !important;
+      background: rgba(5, 150, 105, 0.1) !important;
+      border: 1px solid rgba(5, 150, 105, 0.25) !important;
+    }
+
+    /* 5. TESTIMONIAL CARDS (Pure White Cards) */
+    .intern-testimonial-card,
+    body.page-internships .intern-testimonial-card,
+    .careers-light-wrapper .intern-testimonial-card {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 20px !important;
+      padding: 2.2rem !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+      transition: all 0.35s ease !important;
+      display: flex !important;
+      flex-direction: column !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+
+    .intern-testimonial-card:hover,
+    body.page-internships .intern-testimonial-card:hover {
+      transform: translateY(-5px) !important;
+      border-color: #00d2ff !important;
+      box-shadow: 0 16px 36px rgba(0, 112, 243, 0.12), 0 0 25px rgba(0, 210, 255, 0.2) !important;
+    }
+
+    .intern-quote-icon {
+      width: 38px !important;
+      height: 38px !important;
+      border-radius: 10px !important;
+      background: rgba(0, 112, 243, 0.08) !important;
+      border: 1px solid rgba(0, 112, 243, 0.2) !important;
+      color: #0070f3 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      font-size: 1rem !important;
+      margin-bottom: 1.2rem !important;
+    }
+
+    .intern-quote-text,
+    body.page-internships .intern-quote-text {
+      color: #475569 !important;
+      font-size: 0.98rem !important;
+      line-height: 1.7 !important;
+      font-style: italic !important;
+      margin-bottom: 1.5rem !important;
+    }
+
+    .intern-profile-footer {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1rem !important;
+      border-top: 1px solid #f1f5f9 !important;
+      padding-top: 1.2rem !important;
+      margin-top: auto !important;
+    }
+
+    .intern-avatar {
+      width: 46px !important;
+      height: 46px !important;
+      border-radius: 50% !important;
+      background: linear-gradient(135deg, #00d2ff 0%, #0070f3 100%) !important;
+      color: #ffffff !important;
+      font-weight: 800 !important;
+      font-size: 0.95rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      box-shadow: 0 4px 12px rgba(0, 112, 243, 0.25) !important;
+      flex-shrink: 0 !important;
+    }
+
+    .intern-info h4,
+    body.page-internships .intern-info h4 {
+      color: #0f172a !important;
+      font-size: 1.05rem !important;
+      font-weight: 800 !important;
+      margin: 0 0 0.15rem 0 !important;
+    }
+
+    .intern-info p,
+    body.page-internships .intern-info p {
+      color: #0070f3 !important;
+      font-size: 0.84rem !important;
+      font-weight: 600 !important;
+      margin: 0 0 0.15rem 0 !important;
+    }
+
+    .intern-info span,
+    body.page-internships .intern-info span {
+      color: #64748b !important;
+      font-size: 0.78rem !important;
+      display: block !important;
+    }
+
+    /* 6. FAQ ACCORDION (Pure White Cards) */
+    .faq-item,
+    body.page-internships .faq-item,
+    .careers-light-wrapper .faq-item {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 16px !important;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03) !important;
+      margin-bottom: 1rem !important;
+      overflow: hidden !important;
+      transition: all 0.3s ease !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+
+    .faq-item:hover,
+    .faq-item.active,
+    body.page-internships .faq-item.active {
+      border-color: #0070f3 !important;
+      box-shadow: 0 4px 18px rgba(0, 112, 243, 0.1) !important;
+    }
+
+    .faq-question,
+    body.page-internships .faq-question {
+      color: #0f172a !important;
+      font-size: 1.05rem !important;
+      font-weight: 700 !important;
+      padding: 1.25rem 1.5rem !important;
+      width: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      background: transparent !important;
+      border: none !important;
+      cursor: pointer !important;
+      text-align: left !important;
+      transition: color 0.2s ease !important;
+    }
+
+    .faq-question:hover {
+      color: #0070f3 !important;
+    }
+
+    .faq-chevron {
+      color: #0070f3 !important;
+      font-size: 0.95rem !important;
+      transition: transform 0.3s ease !important;
+    }
+
+    .faq-item.active .faq-chevron {
+      transform: rotate(180deg) !important;
+    }
+
+    .faq-answer,
+    body.page-internships .faq-answer {
+      padding: 0 1.5rem 1.25rem 1.5rem !important;
+      color: #475569 !important;
+      font-size: 0.95rem !important;
+      line-height: 1.7 !important;
+    }
+
+    .faq-answer p,
+    body.page-internships .faq-answer p {
+      color: #475569 !important;
+    }
+
+    /* 7. APPLICATION POPUP MODAL (Clean Light Theme) */
+    .job-modal-box,
+    .apply-modal-box,
+    body.page-internships .apply-modal-box {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 22px !important;
+      color: #0f172a !important;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 112, 243, 0.08) !important;
+    }
+
+    .apply-dept-badge {
+      display: inline-flex !important;
+      align-items: center !important;
+      padding: 0.35rem 0.9rem !important;
+      background: rgba(0, 112, 243, 0.1) !important;
+      border: 1px solid rgba(0, 112, 243, 0.25) !important;
+      color: #0070f3 !important;
+      font-size: 0.78rem !important;
+      font-weight: 700 !important;
+      border-radius: 50px !important;
+      margin-bottom: 0.65rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.04em !important;
+    }
+
+    .apply-modal-title {
+      font-size: 1.75rem !important;
+      font-weight: 800 !important;
+      color: #0f172a !important;
+      margin-bottom: 0.4rem !important;
+    }
+
+    .apply-modal-subtitle {
+      color: #475569 !important;
+      font-size: 0.92rem !important;
+      line-height: 1.5 !important;
+    }
+
+    .apply-modal-close {
+      color: #64748b !important;
+      background: rgba(0, 0, 0, 0.05) !important;
+    }
+
+    .apply-modal-close:hover {
+      color: #0f172a !important;
+      background: rgba(0, 0, 0, 0.1) !important;
+    }
+
+    .career-apply-form label {
+      color: #334155 !important;
+      font-weight: 600 !important;
+      font-size: 0.88rem !important;
+    }
+
+    .career-apply-form input[type="text"],
+    .career-apply-form input[type="email"],
+    .career-apply-form input[type="tel"],
+    .career-apply-form input[type="file"],
+    .career-apply-form textarea {
+      background: #f8fafc !important;
+      border: 1.5px solid #cbd5e1 !important;
+      color: #0f172a !important;
+      border-radius: 12px !important;
+      padding: 0.75rem 1rem !important;
+      font-size: 0.92rem !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .career-apply-form input:focus,
+    .career-apply-form textarea:focus {
+      background: #ffffff !important;
+      border-color: #0070f3 !important;
+      box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.12) !important;
+      outline: none !important;
+    }
+
+    .form-privacy-note {
+      color: #64748b !important;
+      font-size: 0.78rem !important;
     }
 
     /* ═══════════════════════════════════════════════════
@@ -492,6 +1094,7 @@
         margin: 0 !important;
       }
 
+      .careers-light-wrapper .careers-filter-bar,
       .careers-filter-bar {
         border-radius: 16px !important;
         flex-direction: column !important;
@@ -567,20 +1170,6 @@
         max-width: 100% !important;
       }
 
-      .careers-cta-section .careers-cta-box {
-        padding: 2.5rem 1.3rem !important;
-        border-radius: 20px !important;
-      }
-
-      .careers-cta-section .careers-cta-heading {
-        font-size: 1.75rem !important;
-      }
-
-      .careers-cta-section .btn-cta-careers {
-        width: 100% !important;
-        justify-content: center !important;
-      }
-
       .job-modal-box,
       .apply-modal-box {
         width: 94vw !important;
@@ -592,16 +1181,6 @@
       .form-row-2 {
         grid-template-columns: 1fr !important;
         gap: 1rem !important;
-      }
-
-      .job-modal-footer {
-        flex-direction: column !important;
-        gap: 0.75rem !important;
-      }
-
-      .job-modal-footer button {
-        width: 100% !important;
-        justify-content: center !important;
       }
     }
 
