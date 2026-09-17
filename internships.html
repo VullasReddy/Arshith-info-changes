@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internships & Early Careers | Arshith Info-Tech - Launch Your Tech Career</title>
+  <meta name="description"
+    content="Join Arshith Info-Tech's Internship Program 2026. Gain hands-on experience across AI, Cloud, Full Stack Development, Cybersecurity, and UI/UX with 1-on-1 mentorship, paid stipend, and Pre-Placement Offer (PPO) opportunities." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=1.3">
+  <link rel="stylesheet" href="footer-premium.css?v=1.1">
+  <style>
+    /* Direct overrides for Why Intern cards */
+    .why-interactive-grid > .why-feature-card:nth-child(1) .why-icon-circle {
+      background: rgba(245, 166, 35, 0.08) !important;
+      border: 1px solid rgba(245, 166, 35, 0.25) !important;
+      color: #F5A623 !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(1) .why-card-title {
+      color: #F5A623 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(2) .why-icon-circle {
+      background: rgba(124, 58, 237, 0.08) !important;
+      border: 1px solid rgba(124, 58, 237, 0.25) !important;
+      color: #D97706 !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(2) .why-card-title {
+      color: #D97706 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(3) .why-icon-circle {
+      background: rgba(16, 185, 129, 0.08) !important;
+      border: 1px solid rgba(16, 185, 129, 0.25) !important;
+      color: #10b981 !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(3) .why-card-title {
+      color: #10b981 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(4) .why-icon-circle {
+      background: rgba(234, 88, 12, 0.08) !important;
+      border: 1px solid rgba(234, 88, 12, 0.25) !important;
+      color: #ea580c !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(4) .why-card-title {
+      color: #ea580c !important;
+    }
+  </style>
+</head>
+
+<body class="page-careers page-internships">
+
+  <!-- Global Animated Background -->
+  <div class="global-aurora-bg">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+    <div class="aurora-orb aurora-orb-4"></div>
+  </div>
+  <canvas id="globalParticlesCanvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <div class="drawer-brand">
+          <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+        </div>
+        <button class="drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-laptop-code"></i> Services</a></li>
+        <li><a href="industries.html"><i class="fas fa-layer-group"></i> Industries</a></li>
+        <li><a href="insights.html"><i class="fas fa-newspaper"></i> Insights</a></li>
+        
+        <!-- Careers Dropdown Navigation Item -->
+        <li class="nav-item-dropdown active">
+          <a href="javascript:void(0)" class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-briefcase"></i> Careers <i class="fas fa-chevron-down nav-dropdown-arrow"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="careers.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-user-tie"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Full-Time Careers</strong>
+                  <small>Experienced &amp; Early Career Openings</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" class="nav-dropdown-link active">
+                <span class="dropdown-link-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Internships 2026</strong>
+                  <small>Students &amp; Graduate Programs</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="about-infotech.html"><i class="fas fa-building"></i> About Us</a></li>
+        <li class="drawer-cta-item"><a href="javascript:void(0)" class="btn btn-primary drawer-cta-btn" aria-haspopup="dialog"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+      </ul>
+      <a href="javascript:void(0)" class="btn btn-primary nav-cta" aria-haspopup="dialog">Contact Us</a>
+      <div class="menu-toggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menuOverlay"></div>
+
+  <!-- ===================================================
+       1. INTERNSHIPS HERO SECTION
+       =================================================== -->
+  <header class="careers-hero-section">
+    <div class="container">
+      <div class="careers-hero-grid">
+        
+        <!-- Hero Left: Typography & Actions -->
+        <div class="careers-hero-content reveal-left">
+          
+          <div class="careers-pill-badge internship-hero-badge">
+            <span class="careers-pulse-dot internship-pulse-dot"></span>
+            <span>INTERNSHIP PROGRAM 2026</span>
+          </div>
+
+          <h1 class="careers-hero-title">
+            Launch Your Tech Career <br><span class="gradient-text">With Live Innovation</span>
+          </h1>
+
+          <p class="careers-hero-lead">
+            Step into real-world technology challenges across AI, Cloud, Full-Stack Engineering, and Cybersecurity. Work directly with industry architects, build production-grade solutions, and fast-track your path to full-time career opportunities.
+          </p>
+
+          <!-- Fast Switcher between Full-Time and Internships -->
+          <div class="careers-switch-container" style="justify-content: flex-start; margin: 1.2rem 0 1.8rem 0;">
+            <div class="careers-switch-pill-wrapper">
+              <a href="careers.html" class="careers-switch-tab">
+                <i class="fas fa-briefcase"></i> Full-Time Careers
+              </a>
+              <a href="internships.html" class="careers-switch-tab active">
+                <i class="fas fa-graduation-cap"></i> Student Internships
+              </a>
+            </div>
+          </div>
+
+          <div class="careers-hero-cta-group">
+            <a href="#internship-tracks" class="btn btn-primary careers-primary-btn">
+              <span>Explore Internship Roles</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="#program-roadmap" class="btn btn-outline careers-secondary-btn">
+              <i class="fas fa-route"></i>
+              <span>Program Journey</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Strip -->
+          <div class="careers-hero-metrics">
+            <div class="hero-metric-item">
+              <span class="metric-value">100+</span>
+              <span class="metric-label">Interns Mentored</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="hero-metric-item">
+              <span class="metric-value">85%</span>
+              <span class="metric-label">PPO Conversion Rate</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="hero-metric-item">
+              <span class="metric-value">1-on-1</span>
+              <span class="metric-label">Senior Mentorship</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Visual Composition -->
+        <div class="careers-hero-visual reveal-right">
+          <div class="careers-image-composition">
+            <div class="composition-main-img-wrapper">
+              <img src="assets/images/internships-hero.jpg" alt="Interns collaborating at Arshith Info-Tech" class="careers-team-img">
+              <div class="img-ambient-gradient"></div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="careers-floating-badge badge-top-right">
+              <div class="badge-icon"><i class="fas fa-certificate"></i></div>
+              <div class="badge-text">
+                <strong>Paid &amp; Certified</strong>
+                <span>Stipend + Industry Certificate</span>
+              </div>
+            </div>
+
+            <div class="careers-floating-badge badge-bottom-left">
+              <div class="badge-icon"><i class="fas fa-rocket"></i></div>
+              <div class="badge-text">
+                <strong>PPO Opportunities</strong>
+                <span>Fast-Track to Full-Time Roles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       LIGHT THEME SHOWCASE WRAPPER
+       =================================================== -->
+  <div class="careers-light-wrapper" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 10 !important;">
+
+    <!-- ===================================================
+         2. WHY INTERN WITH US (4 Feature Cards)
+         =================================================== -->
+    <section class="careers-why-section section-padding" id="why-intern" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 12 !important;">
+      <div class="container">
+        
+        <div class="section-header-centered reveal-up">
+          <span class="section-eyebrow"><i class="fas fa-sparkles"></i> EXPERIENCE THE DIFFERENCE</span>
+          <h2 class="section-heading">Why Choose Arshith Info-Tech Internship?</h2>
+          <p class="section-subtitle">
+            We don't believe in coffee-runs or mock tutorials. From day one, you are integrated into active engineering squads solving genuine technology problems for global enterprises.
+          </p>
+        </div>
+
+        <div class="why-interactive-grid">
+          
+          <!-- Feature 01: REAL PROJECTS -->
+          <div class="why-feature-card card-grow reveal-up" data-delay="100">
+            <div class="why-card-glow"></div>
+            <div class="why-card-number">01</div>
+            <div class="why-icon-circle">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="why-card-title">LIVE PRODUCTION WORK</h3>
+            <p class="why-card-desc">
+              Work on active client engagements, cloud infrastructure, AI models, and real microservices architectures with modern CI/CD pipelines.
+            </p>
+            <ul class="why-card-points">
+              <li><i class="fas fa-check"></i> Real-world codebase access</li>
+              <li><i class="fas fa-check"></i> Code reviews &amp; best practices</li>
+              <li><i class="fas fa-check"></i> Deploy software to production</li>
+            </ul>
+          </div>
+
+          <!-- Feature 02: DEDICATED MENTORSHIP -->
+          <div class="why-feature-card card-innovate reveal-up" data-delay="200">
+            <div class="why-card-glow"></div>
+            <div class="why-card-number">02</div>
+            <div class="why-icon-circle">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <h3 class="why-card-title">1-ON-1 TECH MENTORSHIP</h3>
+            <p class="why-card-desc">
+              Every intern is paired with a designated senior tech lead who provides daily guidance, architecture reviews, and personalized career advice.
+            </p>
+            <ul class="why-card-points">
+              <li><i class="fas fa-check"></i> Weekly 1-on-1 sprint reviews</li>
+              <li><i class="fas fa-check"></i> Tech stack deep-dive sessions</li>
+              <li><i class="fas fa-check"></i> Resume &amp; interview coaching</li>
+            </ul>
+          </div>
+
+          <!-- Feature 03: STIPEND & CERTIFICATION -->
+          <div class="why-feature-card card-collaborate reveal-up" data-delay="300">
+            <div class="why-card-glow"></div>
+            <div class="why-card-number">03</div>
+            <div class="why-icon-circle">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3 class="why-card-title">PAID &amp; VERIFIED CREDENTIALS</h3>
+            <p class="why-card-desc">
+              Receive a competitive monthly stipend, official project completion certificate, recommendation letters, and college credit approval.
+            </p>
+            <ul class="why-card-points">
+              <li><i class="fas fa-check"></i> Competitive monthly stipend</li>
+              <li><i class="fas fa-check"></i> Recognized experience certificate</li>
+              <li><i class="fas fa-check"></i> Academic NOC compliance support</li>
+            </ul>
+          </div>
+
+          <!-- Feature 04: PPO CONVERSION -->
+          <div class="why-feature-card card-impact reveal-up" data-delay="400">
+            <div class="why-card-glow"></div>
+            <div class="why-card-number">04</div>
+            <div class="why-icon-circle">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 class="why-card-title">PPO FAST-TRACK PATHWAY</h3>
+            <p class="why-card-desc">
+              Exceptional performers receive direct Pre-Placement Offers (PPO) for full-time associate engineer and consultant positions upon graduation.
+            </p>
+            <ul class="why-card-points">
+              <li><i class="fas fa-check"></i> 85%+ PPO conversion track record</li>
+              <li><i class="fas fa-check"></i> Direct skip of initial campus rounds</li>
+              <li><i class="fas fa-check"></i> Competitive full-time package</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         3. 3-STAGE INTERNSHIP ROADMAP TIMELINE
+         =================================================== -->
+    <section class="section-padding" id="program-roadmap" style="background-color: #f8fafc !important; background: #f8fafc !important; position: relative !important; z-index: 10 !important; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+      <div class="container">
+
+        <div class="section-header-centered reveal-up">
+          <span class="section-eyebrow"><i class="fas fa-route"></i> STRUCTURED LEARNING</span>
+          <h2 class="section-heading">The 3-Phase Internship Journey</h2>
+          <p class="section-subtitle">
+            A comprehensive, structured roadmap engineered to transform academic knowledge into enterprise-grade problem solving.
+          </p>
+        </div>
+
+        <div class="intern-roadmap-grid">
+          
+          <!-- Stage 1 -->
+          <div class="intern-step-card reveal-up" data-delay="100">
+            <div class="intern-step-header">
+              <span class="intern-step-number">Phase 01</span>
+              <div class="intern-step-icon"><i class="fas fa-compass-drafting"></i></div>
+            </div>
+            <h3 class="intern-step-title">Foundation &amp; System Onboarding</h3>
+            <p class="intern-step-desc">
+              Get familiar with Arshith Info-Tech's technology ecosystem, code repositories, development environment setup, enterprise security hygiene, and agile workflows.
+            </p>
+            <ul class="intern-step-highlights">
+              <li><i class="fas fa-check-circle"></i> Weeks 1 – 2: Tooling &amp; Architecture</li>
+              <li><i class="fas fa-check-circle"></i> Tech stack bootcamps &amp; environment setup</li>
+              <li><i class="fas fa-check-circle"></i> Dedicated mentor introduction</li>
+            </ul>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="intern-step-card reveal-up" data-delay="200">
+            <div class="intern-step-header">
+              <span class="intern-step-number">Phase 02</span>
+              <div class="intern-step-icon"><i class="fas fa-code-branch"></i></div>
+            </div>
+            <h3 class="intern-step-title">Agile Sprints &amp; Live Project Building</h3>
+            <p class="intern-step-desc">
+              Embed directly into an active project squad. Write unit-tested code, build microservices, train machine learning models, and participate in daily standups and sprint retrospectives.
+            </p>
+            <ul class="intern-step-highlights">
+              <li><i class="fas fa-check-circle"></i> Weeks 3 – 10: Production Implementation</li>
+              <li><i class="fas fa-check-circle"></i> Weekly peer code reviews &amp; feedback</li>
+              <li><i class="fas fa-check-circle"></i> Live client use-case exposure</li>
+            </ul>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="intern-step-card reveal-up" data-delay="300">
+            <div class="intern-step-header">
+              <span class="intern-step-number">Phase 03</span>
+              <div class="intern-step-icon"><i class="fas fa-trophy"></i></div>
+            </div>
+            <h3 class="intern-step-title">Capstone Demo Day &amp; PPO Evaluation</h3>
+            <p class="intern-step-desc">
+              Present your capstone project outcomes to technical leaders and directors. Receive comprehensive performance reviews, certificates, and full-time PPO decisions.
+            </p>
+            <ul class="intern-step-highlights">
+              <li><i class="fas fa-check-circle"></i> Weeks 11 – 12+: Final Presentation</li>
+              <li><i class="fas fa-check-circle"></i> Formal performance assessment</li>
+              <li><i class="fas fa-check-circle"></i> Full-Time Pre-Placement Offer (PPO)</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         4. INTERNSHIP TRACKS & OPEN ROLES 2026
+         =================================================== -->
+    <section class="careers-openings-section section-padding" id="internship-tracks" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 10 !important;">
+      <div class="container">
+        
+        <div class="section-header-centered reveal-up">
+          <span class="section-eyebrow"><i class="fas fa-graduation-cap"></i> OPEN POSITIONS 2026</span>
+          <h2 class="section-heading">Available Internship Tracks</h2>
+          <p class="section-subtitle">
+            Select your specialized track below. Applications are open for 3-month and 6-month cohorts across engineering, AI, design, and cloud.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="careers-filter-bar reveal-up" id="internshipsFilterBar">
+          <span class="career-filter-label"><i class="fas fa-filter"></i> Domain Track:</span>
+          <div class="career-pills-scroll">
+            <button type="button" class="career-pill active" data-intern-filter="all">All Tracks</button>
+            <button type="button" class="career-pill" data-intern-filter="ai-data">AI &amp; Data</button>
+            <button type="button" class="career-pill" data-intern-filter="full-stack">Full Stack &amp; Web</button>
+            <button type="button" class="career-pill" data-intern-filter="cloud">Cloud &amp; DevOps</button>
+            <button type="button" class="career-pill" data-intern-filter="cybersecurity">Cybersecurity</button>
+            <button type="button" class="career-pill" data-intern-filter="design">UI/UX Design</button>
+            <button type="button" class="career-pill" data-intern-filter="qa">QA &amp; Automation</button>
+          </div>
+        </div>
+
+        <!-- Internship Listings -->
+        <div class="jobs-list-container">
+          
+          <!-- Track 1: AI / ML Intern -->
+          <div class="internship-card-item reveal-up" data-intern-category="ai-data">
+            <div class="job-card-main">
+              <div class="job-dept-tag tag-ai">
+                <i class="fas fa-brain"></i> AI &amp; Machine Learning
+              </div>
+              <h3 class="job-title">AI &amp; Machine Learning Intern</h3>
+              <p class="job-snippet">
+                Build generative AI pipelines, train neural networks, fine-tune transformer models, and implement computer vision and NLP systems for enterprise clients.
+              </p>
+              <div class="job-meta-row">
+                <span class="meta-tag"><i class="fas fa-clock"></i> 3 – 6 Months</span>
+                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Bengaluru / Hybrid</span>
+                <span class="meta-tag intern-meta-tag-highlight"><i class="fas fa-coins"></i> Paid Stipend</span>
+                <span class="meta-tag intern-meta-tag-ppo"><i class="fas fa-star"></i> PPO Eligible</span>
+              </div>
+            </div>
+            <div class="job-card-action">
+              <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="AI &amp; Machine Learning Intern" data-apply-dept="AI &amp; Data">
+                <span>Apply Now</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Track 2: Full Stack Developer Intern -->
+          <div class="internship-card-item reveal-up" data-intern-category="full-stack">
+            <div class="job-card-main">
+              <div class="job-dept-tag tag-engineering">
+                <i class="fas fa-code"></i> Full Stack Development
+              </div>
+              <h3 class="job-title">Full Stack Web Developer Intern</h3>
+              <p class="job-snippet">
+                Develop scalable web applications with React, Next.js, Node.js, and TypeScript. Build RESTful APIs, modern reactive UIs, and robust database architectures.
+              </p>
+              <div class="job-meta-row">
+                <span class="meta-tag"><i class="fas fa-clock"></i> 3 – 6 Months</span>
+                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Bengaluru / Hybrid</span>
+                <span class="meta-tag intern-meta-tag-highlight"><i class="fas fa-coins"></i> Paid Stipend</span>
+                <span class="meta-tag intern-meta-tag-ppo"><i class="fas fa-star"></i> PPO Eligible</span>
+              </div>
+            </div>
+            <div class="job-card-action">
+              <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="Full Stack Web Developer Intern" data-apply-dept="Engineering">
+                <span>Apply Now</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Track 3: Cloud & DevOps Intern -->
+          <div class="internship-card-item reveal-up" data-intern-category="cloud">
+            <div class="job-card-main">
+              <div class="job-dept-tag tag-cloud">
+                <i class="fas fa-cloud"></i> Cloud &amp; Infrastructure
+              </div>
+              <h3 class="job-title">Cloud Infrastructure &amp; DevOps Intern</h3>
+              <p class="job-snippet">
+                Work with AWS, Azure, Docker, and Kubernetes. Assist in building automated CI/CD pipelines, Infrastructure as Code (Terraform), and cloud monitoring systems.
+              </p>
+              <div class="job-meta-row">
+                <span class="meta-tag"><i class="fas fa-clock"></i> 3 – 6 Months</span>
+                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Bengaluru / Hybrid</span>
+                <span class="meta-tag intern-meta-tag-highlight"><i class="fas fa-coins"></i> Paid Stipend</span>
+                <span class="meta-tag intern-meta-tag-ppo"><i class="fas fa-star"></i> PPO Eligible</span>
+              </div>
+            </div>
+            <div class="job-card-action">
+              <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="Cloud Infrastructure &amp; DevOps Intern" data-apply-dept="Cloud">
+                <span>Apply Now</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Track 4: Cybersecurity Intern -->
+          <div class="internship-card-item reveal-up" data-intern-category="cybersecurity">
+            <div class="job-card-main">
+              <div class="job-dept-tag tag-cyber">
+                <i class="fas fa-shield-halved"></i> Cybersecurity
+              </div>
+              <h3 class="job-title">Cybersecurity &amp; Threat Intelligence Intern</h3>
+              <p class="job-snippet">
+                Participate in vulnerability assessments, penetration testing, SIEM log analysis, and zero-trust security architecture audits under senior security architects.
+              </p>
+              <div class="job-meta-row">
+                <span class="meta-tag"><i class="fas fa-clock"></i> 3 – 6 Months</span>
+                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Bengaluru / Hybrid</span>
+                <span class="meta-tag intern-meta-tag-highlight"><i class="fas fa-coins"></i> Paid Stipend</span>
+                <span class="meta-tag intern-meta-tag-ppo"><i class="fas fa-star"></i> PPO Eligible</span>
+              </div>
+            </div>
+            <div class="job-card-action">
+              <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="Cybersecurity &amp; Threat Intelligence Intern" data-apply-dept="Cybersecurity">
+                <span>Apply Now</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Track 5: UI/UX Design Intern -->
+          <div class="internship-card-item reveal-up" data-intern-category="design">
+            <div class="job-card-main">
+              <div class="job-dept-tag tag-design">
+                <i class="fas fa-pen-ruler"></i> Product Design
+              </div>
+              <h3 class="job-title">UI / UX &amp; Product Design Intern</h3>
+              <p class="job-snippet">
+                Design wireframes, high-fidelity mockups, and interactive design systems in Figma. Conduct user research, usability testing, and interaction prototypes.
+              </p>
+              <div class="job-meta-row">
+                <span class="meta-tag"><i class="fas fa-clock"></i> 3 – 6 Months</span>
+                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Bengaluru / Hybrid</span>
+                <span class="meta-tag intern-meta-tag-highlight"><i class="fas fa-coins"></i> Paid Stipend</span>
+                <span class="meta-tag intern-meta-tag-ppo"><i class="fas fa-star"></i> PPO Eligible</span>
+              </div>
+            </div>
+            <div class="job-card-action">
+              <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="UI / UX &amp; Product Design Intern" data-apply-dept="Design">
+                <span>Apply Now</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Track 6: QA & Automation Intern -->
+          <div class="internship-card-item reveal-up" data-intern-category="qa">
+            <div class="job-card-main">
+              <div class="job-dept-tag tag-engineering">
+                <i class="fas fa-vial-circle-check"></i> QA &amp; Testing
+              </div>
+              <h3 class="job-title">QA Automation &amp; Testing Intern</h3>
+              <p class="job-snippet">
+                Write automated test suites using Cypress, Playwright, and Selenium. Perform end-to-end API testing, load testing, and continuous test automation.
+              </p>
+              <div class="job-meta-row">
+                <span class="meta-tag"><i class="fas fa-clock"></i> 3 – 6 Months</span>
+                <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> Bengaluru / Hybrid</span>
+                <span class="meta-tag intern-meta-tag-highlight"><i class="fas fa-coins"></i> Paid Stipend</span>
+                <span class="meta-tag intern-meta-tag-ppo"><i class="fas fa-star"></i> PPO Eligible</span>
+              </div>
+            </div>
+            <div class="job-card-action">
+              <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="QA Automation &amp; Testing Intern" data-apply-dept="Engineering">
+                <span>Apply Now</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         5. INTERN SPOTLIGHTS & TESTIMONIALS
+         =================================================== -->
+    <section class="section-padding" style="background-color: #f8fafc !important; background: #f8fafc !important; position: relative !important; z-index: 10 !important; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+      <div class="container">
+
+        <div class="section-header-centered reveal-up">
+          <span class="section-eyebrow"><i class="fas fa-users-rays"></i> VOICES OF EXPERIENCE</span>
+          <h2 class="section-heading">From Interns to Full-Time Leaders</h2>
+          <p class="section-subtitle">
+            Hear from previous interns who transitioned into full-time engineering and consulting careers at Arshith Info-Tech.
+          </p>
+        </div>
+
+        <div class="intern-testimonials-grid">
+          
+          <div class="intern-testimonial-card reveal-up" data-delay="100">
+            <div class="intern-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="intern-quote-text">
+              "During my 6 months as an AI intern, I contributed directly to a production document intelligence model. My mentor helped me understand enterprise architectures that you never learn in textbooks. Receiving my PPO was the easiest career decision."
+            </p>
+            <div class="intern-profile-footer">
+              <div class="intern-avatar">AS</div>
+              <div class="intern-info">
+                <h4>Ananya Sharma</h4>
+                <p>AI / ML Engineer (Former Intern '24)</p>
+                <span>B.Tech Computer Science</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="intern-testimonial-card reveal-up" data-delay="200">
+            <div class="intern-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="intern-quote-text">
+              "The hands-on cloud exposure was unbelievable. We built automated Kubernetes clusters from week three. The team treated me as a full engineer, not just a temporary helper. It set an unbeatable foundation for my software engineering journey."
+            </p>
+            <div class="intern-profile-footer">
+              <div class="intern-avatar" style="background: linear-gradient(135deg, #D97706 0%, #a855f7 100%);">VK</div>
+              <div class="intern-info">
+                <h4>Vikram Krishnan</h4>
+                <p>Cloud DevOps Specialist (Former Intern '25)</p>
+                <span>M.Tech Distributed Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="intern-testimonial-card reveal-up" data-delay="300">
+            <div class="intern-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="intern-quote-text">
+              "I loved the collaborative design sprints. Working with product managers and developers in real-time helped me elevate my UI/UX portfolio to a global standard. Today I lead design systems for two of our enterprise clients."
+            </p>
+            <div class="intern-profile-footer">
+              <div class="intern-avatar" style="background: linear-gradient(135deg, #059669 0%, #34d399 100%);">PN</div>
+              <div class="intern-info">
+                <h4>Pooja Nair</h4>
+                <p>Senior UI/UX Designer (Former Intern '24)</p>
+                <span>Bachelor of Design</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         6. INTERNSHIP PROGRAM FAQS
+         =================================================== -->
+    <section class="section-padding" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 10 !important;">
+      <div class="container">
+
+        <div class="section-header-centered reveal-up">
+          <span class="section-eyebrow"><i class="fas fa-circle-question"></i> COMMON QUESTIONS</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about eligibility, duration, stipend, college credits, and selection criteria.
+          </p>
+        </div>
+
+        <div class="faq-accordion-container reveal-up">
+          
+          <div class="faq-item active">
+            <button type="button" class="faq-question">
+              <span>Who is eligible to apply for the Internship Program?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              Students pursuing B.Tech / B.E, M.Tech, MCA, BCA, B.Sc (Computer Science / IT), or related engineering and design fields (final year or pre-final year), as well as recent graduates looking for strong industry grounding, are eligible to apply.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Is this a paid internship?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              Yes, all Arshith Info-Tech internships are paid positions. Interns receive a competitive monthly stipend based on domain specialization and performance, alongside full access to enterprise tooling, learning courses, and certifications.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Can I get university credit / NOC approval?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              Yes, we provide official internship offer letters, Non-Objection Certificate (NOC) compliance documents, and comprehensive final project evaluations required by universities for academic credits and semester projects.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>What is the duration and working mode?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              Internships are typically 3 to 6 months in duration. We offer hybrid arrangements (working from our Bengaluru development hub with flexible remote days) to ensure a healthy balance between college commitments and active project sprints.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>How does the selection process work?</span>
+              <i class="fas fa-chevron-down faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              The selection process consists of 3 stages: 1) Online Application &amp; Resume / Project Portfolio screening, 2) Technical Assessment / Coding Challenge, and 3) Technical + Cultural Discussion with an engineering lead.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===================================================
+       7. APPLICATION FORM POPUP MODAL (STUDENTS & INTERNS)
+       =================================================== -->
+  <div id="modal-career-apply" class="job-apply-modal" role="dialog" aria-modal="true" aria-labelledby="applyModalTitle">
+    <div class="modal-box apply-modal-box">
+      <button class="modal-close apply-modal-close" aria-label="Close application modal"><i class="fas fa-times"></i></button>
+      
+      <div id="applyFormContainer">
+        <div class="apply-modal-header">
+          <span class="apply-dept-badge" id="applyDeptDisplay">AI &amp; Data</span>
+          <h2 id="applyModalTitle" class="apply-modal-title">Apply for <span id="applyJobTitleDisplay">AI &amp; Machine Learning Intern</span></h2>
+          <p class="apply-modal-subtitle">Submit your details below. Our talent acquisition team will review your application within 48 hours.</p>
+        </div>
+
+        <form id="careerApplicationForm" class="career-apply-form" novalidate>
+          <input type="hidden" id="appliedJobRole" name="jobRole" value="AI &amp; Machine Learning Intern">
+          
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="applyFullName">Full Name <span class="required">*</span></label>
+              <input type="text" id="applyFullName" name="fullName" placeholder="e.g. Rahul Sharma" required>
+              <span class="field-error-msg">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="applyEmail">Email Address <span class="required">*</span></label>
+              <input type="email" id="applyEmail" name="email" placeholder="e.g. rahul.sharma@example.com" required>
+              <span class="field-error-msg">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="applyPhone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="applyPhone" name="phone" placeholder="e.g. +91 98765 43210" required>
+              <span class="field-error-msg">Please enter your contact phone number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="applyCollege">College / University <span class="required">*</span></label>
+              <input type="text" id="applyCollege" name="college" placeholder="e.g. RV College of Engineering" required>
+              <span class="field-error-msg">Please enter your college or institution name.</span>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="applyDegree">Degree &amp; Branch <span class="required">*</span></label>
+              <input type="text" id="applyDegree" name="degree" placeholder="e.g. B.Tech Computer Science" required>
+              <span class="field-error-msg">Please specify your degree and branch.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="applyResume">Resume / CV (PDF, DOCX) <span class="required">*</span></label>
+              <input type="file" id="applyResume" name="resume" accept=".pdf,.doc,.docx" required>
+              <span class="field-error-msg">Please attach your resume file.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="applyCover">GitHub / Portfolio Links or Why Arshith? <span class="optional">(Optional)</span></label>
+            <textarea id="applyCover" name="coverMessage" rows="3" placeholder="Share your GitHub repository, portfolio link, or briefly tell us why you are excited about this internship track..."></textarea>
+          </div>
+
+          <div class="form-footer-action">
+            <button type="submit" class="btn btn-primary btn-submit-app">
+              <span>Submit Internship Application</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <span class="form-privacy-note"><i class="fas fa-lock"></i> Your data is processed securely and kept strictly confidential.</span>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success Confirmation View -->
+      <div id="applySuccessContainer" class="apply-success-view" style="display: none;">
+        <div class="success-icon-badge">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3 class="success-title">Application Received!</h3>
+        <p class="success-message">
+          Thank you for applying to Arshith Info-Tech's Internship Program 2026. Our technical recruitment team will review your profile and follow up via email with the assessment details.
+        </p>
+        <div class="success-actions">
+          <button type="button" class="btn btn-primary apply-modal-close">
+            <span>Explore More Opportunities</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================================================
+       8. GLOBAL PREMIUM FOOTER
+       =================================================== -->
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h3>Stay Ahead in Tech</h3>
+            <p>Get the latest insights on AI, Cloud, and Digital Transformation delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+          </a>
+          <p class="footer-about">Pioneering the future of digital services and consulting. We empower forward-thinking enterprises across 40+ countries to reimagine their business for the digital age.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="services.html#digital-transformation"><i class="fas fa-angle-right"></i> Digital Transformation</a></li>
+            <li><a href="services.html#cloud-computing"><i class="fas fa-angle-right"></i> Cloud Computing</a></li>
+            <li><a href="services.html#engineering-rd"><i class="fas fa-angle-right"></i> Engineering &amp; R&amp;D</a></li>
+            <li><a href="services.html#ai-solutions"><i class="fas fa-angle-right"></i> AI &amp; Intelligent Solutions</a></li>
+            <li><a href="services.html#cybersecurity"><i class="fas fa-angle-right"></i> Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+            <li><a href="internships.html"><i class="fas fa-angle-right"></i> Internships</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Investor Relations</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Global Newsroom</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-minimal">
+            <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India - 560076</li>
+            <li><i class="fas fa-phone-alt"></i> +91 8618471424</li>
+            <li><i class="fas fa-envelope"></i> info@arshithinfotech.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Arshith Info-Tech. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA Button -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="javascript:void(0)" class="floating-cta-btn nav-cta" id="floatingCtaBtn" aria-haspopup="dialog">
+      <i class="fas fa-comments"></i>
+      <span>Let's Talk</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js?v=1.3"></script>
+</body>
+
+</html>

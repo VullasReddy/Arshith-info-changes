@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info-tech | Empowering Digital Transformation</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=20260916_compact_track_v14">
+  <link rel="stylesheet" href="footer-premium.css?v=20260904_cards_noblue">
+</head>
+
+<body class="theme-page-cyber-blue page-home">
+
+  <!-- Global Animated Background (Interactive Constellation Canvas + Ambient Aurora Glow) -->
+  <div class="global-aurora-bg">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+    <div class="aurora-orb aurora-orb-4"></div>
+  </div>
+  <canvas id="globalParticlesCanvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <div class="drawer-brand">
+          <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+        </div>
+        <button class="drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html" class="active"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-laptop-code"></i> Services</a></li>
+        <li><a href="industries.html"><i class="fas fa-layer-group"></i> Industries</a></li>
+        <li><a href="insights.html"><i class="fas fa-newspaper"></i> Insights</a></li>
+
+        <!-- Careers Dropdown Navigation Item -->
+        <li class="nav-item-dropdown">
+          <a href="javascript:void(0)" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-briefcase"></i> Careers <i class="fas fa-chevron-down nav-dropdown-arrow"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="careers.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-user-tie"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Full-Time Careers</strong>
+                  <small>Experienced &amp; Early Career Openings</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Internships 2026</strong>
+                  <small>Students &amp; Graduate Programs</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="about-infotech.html"><i class="fas fa-building"></i> About Us</a></li>
+        <li class="drawer-cta-item"><a href="javascript:void(0)" class="btn btn-primary drawer-cta-btn"
+            aria-haspopup="dialog"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+      </ul>
+      <a href="javascript:void(0)" class="btn btn-primary nav-cta" aria-haspopup="dialog">Contact Us</a>
+      <div class="menu-toggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menuOverlay"></div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Next-Generation Enterprise Technology
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-prefix">Empowering Your</span>
+          <div class="hologram-text-container">
+            <span class="hologram-scramble-text" id="hologramScramble">Global Innovation</span>
+            <div class="hologram-energy-bar"></div>
+          </div>
+        </h1>
+
+        <div class="hero-tech-pills">
+          <button class="tech-pill active"><i class="fas fa-globe"></i> Global Innovation</button>
+          <button class="tech-pill"><i class="fas fa-microchip"></i> Digital Transformation</button>
+          <button class="tech-pill"><i class="fas fa-cloud"></i> Cloud Architecture</button>
+          <button class="tech-pill"><i class="fas fa-shield-halved"></i> Cyber Intelligence</button>
+          <button class="tech-pill"><i class="fas fa-chart-line"></i> Enterprise Scale</button>
+        </div>
+
+        <p class="hero-subtitle">We deliver innovative IT solutions that drive growth, enhance security, and transform
+          businesses for the digital age.</p>
+
+        <div class="hero-cta">
+          <a href="#services" class="btn btn-primary">
+            <span>Discover Solutions</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="hero-text-link">
+            <span>Request a Consultation</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: AI Orbit Visualizer Hub (Restored Previous Orbit Style) -->
+      <div class="hero-ai-visualizer reveal-right">
+        <div class="ai-core-hub">
+          <!-- Concentric AI Radar Rings -->
+          <div class="ai-ring ai-ring-outer"></div>
+          <div class="ai-ring ai-ring-middle"></div>
+          <div class="ai-ring ai-ring-inner"></div>
+          <div class="ai-laser-scanner"></div>
+
+          <!-- Central Glowing AI Nexus -->
+          <div class="ai-nexus">
+            <div class="nexus-glow"></div>
+            <div class="nexus-core">
+              <i class="fas fa-brain"></i>
+              <span>AI</span>
+            </div>
+          </div>
+
+          <!-- 1. Discover Node (Top Right) -->
+          <div class="ai-orbit-node node-1">
+            <div class="orbit-icon"><i class="fas fa-search"></i></div>
+            <div class="orbit-info">
+              <strong>Discover</strong>
+              <small>AI &amp; Insights</small>
+            </div>
+          </div>
+
+          <!-- 2. Design Node (Middle Left) -->
+          <div class="ai-orbit-node node-2">
+            <div class="orbit-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="orbit-info">
+              <strong>Design</strong>
+              <small>Cloud &amp; Architecture</small>
+            </div>
+          </div>
+
+          <!-- 3. Build Node (Bottom Left) -->
+          <div class="ai-orbit-node node-3">
+            <div class="orbit-icon"><i class="fas fa-code"></i></div>
+            <div class="orbit-info">
+              <strong>Build</strong>
+              <small>Engineering &amp; Security</small>
+            </div>
+          </div>
+
+          <!-- 4. Support Live Telemetry Card (Top Left) -->
+          <div class="floating-ai-card live-status-card">
+            <div class="live-indicator">
+              <span class="live-dot"></span>
+              <span class="live-text">SUPPORT: ACTIVE</span>
+            </div>
+            <div class="live-stats">
+              <div class="stat-mini">
+                <span>UPTIME</span>
+                <strong>99.99%</strong>
+              </div>
+              <div class="stat-mini">
+                <span>RESPONSE</span>
+                <strong style="color: #FBBF24;">&lt; 8ms</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Scale & Support Card (Bottom Right) -->
+          <div class="floating-ai-card live-node-card">
+            <div class="floating-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div>
+              <h4>Scale &amp; Support</h4>
+              <p>Global Cloud Infrastructure</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Who We Are / Supercharging Progress Section - Scroll-Driven Morphing Transformation -->
+  <section id="about" class="supercharge-scroll-track">
+    <div class="supercharge-sticky-wrap">
+      <div class="container supercharge-container">
+        <div class="supercharge-stage">
+
+          <!-- Text Column (Gradually revealed on the LEFT, 100% visible & unclipped) -->
+          <div class="supercharge-text-col">
+            <div class="who-we-are-badge">WHO WE ARE</div>
+            <h2 class="about-hero-title">Supercharging Progress</h2>
+            <p class="about-hero-desc">At <strong>Arshith Info-Tech</strong>, we turn technology into meaningful
+              business outcomes. We help organizations modernize their operations, strengthen digital capabilities, and
+              build secure, scalable solutions for a rapidly changing world. Through <strong>AI</strong>,
+              <strong>cloud</strong>, <strong>cybersecurity</strong>, <strong>digital engineering</strong>, and
+              <strong>enterprise technologies</strong>, we help our clients move from ideas to impact with confidence.
+            </p>
+
+            <div class="about-features-stack">
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18h6" />
+                    <path d="M10 22h4" />
+                    <path
+                      d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14" />
+                    <line x1="12" y1="2" x2="12" y2="3" />
+                    <line x1="4.22" y1="4.22" x2="4.93" y2="4.93" />
+                    <line x1="19.78" y1="4.22" x2="19.07" y2="4.93" />
+                  </svg>
+                </div>
+                <div class="about-feature-details">
+                  <h4>Innovation &amp; Technology</h4>
+                  <p>Building smarter solutions with <strong style="color: #000000; font-weight: 700;">AI</strong>,
+                    <strong style="color: #000000; font-weight: 700;">cloud</strong>, and emerging technologies.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+                <div class="about-feature-details">
+                  <h4>Business-Focused Solutions</h4>
+                  <p>Delivering practical technology solutions designed around real <strong
+                      style="color: #000000; font-weight: 700;">business needs</strong>.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="about-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                  </svg>
+                </div>
+                <div class="about-feature-details">
+                  <h4>Secure &amp; Scalable</h4>
+                  <p>Creating <strong style="color: #000000; font-weight: 700;">reliable</strong>, <strong
+                      style="color: #000000; font-weight: 700;">secure</strong>, and <strong
+                      style="color: #000000; font-weight: 700;">scalable</strong> digital solutions that grow with your
+                    business.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="about-infotech.html" class="about-cta-button">
+              Learn More About Us <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                style="display:inline-block; vertical-align:middle; margin-left:6px;">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Image Column (Starts FULL-WIDTH, smoothly morphs to RIGHT, reveals matter on HOVER) -->
+          <div class="supercharge-image-col">
+            <div class="supercharge-showcase-frame">
+              <img src="assets/images/corporate-engineering-hub-2026.jpg?v=20260916_hub"
+                alt="InfoTech Innovation & Engineering Team - Supercharging Progress" class="supercharge-showcase-img">
+              <div class="supercharge-hover-overlay"></div>
+
+              <!-- Floating Top Badge -->
+              <div class="supercharge-hover-badge">
+                <span class="badge-dot"></span> Enterprise Innovation &amp; Scale
+              </div>
+
+              <!-- Floating Trust Badge -->
+              <div class="about-trust-card">
+                <div class="about-trust-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FDE68A" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                    <path d="M6 12H4a2 2 0 0 0-2 2v8h4" />
+                    <path d="M18 9h2a2 2 0 0 1 2 2v11h-4" />
+                    <path d="M10 6h4" />
+                    <path d="M10 10h4" />
+                    <path d="M10 14h4" />
+                    <path d="M10 18h4" />
+                  </svg>
+                </div>
+                <div class="about-trust-text">
+                  Building the future with technology and trust
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-padding bg-alt">
+    <div class="container">
+      <div class="text-center reveal-up capabilities-heading-wrap">
+        <h2 class="section-title capabilities-heading-animated">
+          Our <span class="capabilities-accent-reflect">Core Capabilities</span>
+        </h2>
+        <p class="section-subtitle">Comprehensive technology solutions tailored to your unique business challenges.</p>
+      </div>
+      <div class="services-grid">
+        <!-- Card 1: Digital Transformation -->
+        <div class="service-card reveal-scale delay-100" data-modal="digital-transformation">
+          <div class="service-card-bg"
+            style="background-image: url('assets/images/realtime-digital-transformation.jpg');"></div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-laptop-code service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-microchip"></i> Modernize</span>
+                <h3>Digital Transformation</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Transforming traditional business processes into connected digital experiences using modern technology,
+                intelligent automation, and data-driven solutions.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Legacy System Modernization</li>
+                <li><i class="fas fa-circle-check"></i> Business Process Automation</li>
+                <li><i class="fas fa-circle-check"></i> Digital Experience Transformation</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn">Explore Capabilities <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Cloud Computing -->
+        <div class="service-card reveal-scale delay-200" data-modal="cloud-computing">
+          <div class="service-card-bg" style="background-image: url('assets/images/realtime-cloud-computing.jpg');">
+          </div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-cloud service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-cloud-arrow-up"></i> Cloud Native</span>
+                <h3>Cloud Computing</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Designing secure and scalable cloud environments that improve flexibility, performance, availability,
+                and operational efficiency.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Cloud Migration & Modernization</li>
+                <li><i class="fas fa-circle-check"></i> Cloud Infrastructure</li>
+                <li><i class="fas fa-circle-check"></i> Cloud Security & Management</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn">Explore Capabilities <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Engineering & R&D -->
+        <div class="service-card reveal-scale delay-300" data-modal="engineering-rd">
+          <div class="service-card-bg" style="background-image: url('assets/images/realtime-engineering-rd.jpg');">
+          </div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-cogs service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-code-branch"></i> Innovation</span>
+                <h3>Engineering & R&D</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Turning complex ideas into reliable technology products through engineering expertise, research,
+                prototyping, and continuous innovation.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Product Engineering</li>
+                <li><i class="fas fa-circle-check"></i> Research & Innovation</li>
+                <li><i class="fas fa-circle-check"></i> Prototyping & Development</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn">Explore Capabilities <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: AI & Intelligent Solutions -->
+        <div class="service-card reveal-scale delay-400" data-modal="ai-intelligent-solutions">
+          <div class="service-card-bg" style="background-image: url('assets/images/realtime-ai-solutions.jpg');"></div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-brain service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-robot"></i> Applied AI</span>
+                <h3>AI & Intelligent Solutions</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Harnessing artificial intelligence and machine learning to automate repetitive work, generate insights,
+                and support smarter business decisions.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> AI & Machine Learning</li>
+                <li><i class="fas fa-circle-check"></i> Intelligent Automation</li>
+                <li><i class="fas fa-circle-check"></i> Predictive Analytics</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn">Explore Capabilities <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Cybersecurity -->
+        <div class="service-card reveal-scale delay-500" data-modal="cybersecurity">
+          <div class="service-card-bg" style="background-image: url('assets/images/realtime-cybersecurity.jpg');"></div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-shield-halved service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-shield-halved"></i> 24/7 SecOps</span>
+                <h3>Cybersecurity</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Strengthening digital environments with proactive security practices that protect applications,
+                infrastructure, systems, and business data.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Threat Detection & Monitoring</li>
+                <li><i class="fas fa-circle-check"></i> Application & Data Security</li>
+                <li><i class="fas fa-circle-check"></i> Security Assessment</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn">Explore Capabilities <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <!-- Industries Section - Horizontal Cinematic Expanding Panels -->
+  <section id="industries" class="section-padding">
+    <div class="container">
+      <div class="text-center reveal-up">
+        <h4 class="section-badge">Industries We Serve</h4>
+        <h2 class="section-title">Domain Expertise</h2>
+        <p class="section-subtitle">Delivering tailored technology solutions across major global industries.</p>
+      </div>
+
+      <!-- Horizontal Cinematic Expanding Stage -->
+      <div class="cinematic-stage reveal-up">
+
+        <!-- Panel 1: Financial Services -->
+        <div class="cinematic-panel" data-domain="finance">
+          <div class="cinematic-panel-bg" style="background-image: url('assets/images/real-industry-finance.jpg');">
+          </div>
+          <div class="cinematic-panel-overlay"></div>
+
+          <!-- Inactive Narrow Strip Preview Label -->
+          <div class="cinematic-strip-preview">
+            <span class="strip-pill-icon"><i class="fas fa-landmark"></i></span>
+            <span class="strip-pill-text">Banking &amp; FinTech</span>
+          </div>
+
+          <!-- Active Hero Banner Content -->
+          <div class="cinematic-banner-content">
+            <div class="cinematic-banner-header">
+              <span class="cinematic-tag-pill">
+                <i class="fas fa-landmark"></i> Banking &amp; FinTech
+              </span>
+            </div>
+
+            <h3 class="cinematic-main-title">Financial Services</h3>
+            <p class="cinematic-main-desc">Modernizing financial operations with secure digital platforms, intelligent
+              risk management, and technology-driven banking experiences.</p>
+
+            <ul class="cinematic-matter-list">
+              <li><i class="fas fa-circle-check"></i> Digital Banking Modernization</li>
+              <li><i class="fas fa-circle-check"></i> AI-Powered Risk &amp; Fraud Detection</li>
+              <li><i class="fas fa-circle-check"></i> Secure Payment &amp; Transaction Solutions</li>
+            </ul>
+
+            <div class="cinematic-action-wrap">
+              <button type="button" class="btn-cinematic-explore" data-domain-trigger="finance">
+                <span>Explore Solutions</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Healthcare (Default Active Center Banner) -->
+        <div class="cinematic-panel is-active" data-domain="healthcare">
+          <div class="cinematic-panel-bg" style="background-image: url('assets/images/real-industry-healthcare.jpg');">
+          </div>
+          <div class="cinematic-panel-overlay"></div>
+
+          <!-- Inactive Narrow Strip Preview Label -->
+          <div class="cinematic-strip-preview">
+            <span class="strip-pill-icon"><i class="fas fa-heart-pulse"></i></span>
+            <span class="strip-pill-text">Digital Health</span>
+          </div>
+
+          <!-- Active Hero Banner Content -->
+          <div class="cinematic-banner-content">
+            <div class="cinematic-banner-header">
+              <span class="cinematic-tag-pill">
+                <i class="fas fa-heart-pulse"></i> Digital Health
+              </span>
+            </div>
+
+            <h3 class="cinematic-main-title">Healthcare</h3>
+            <p class="cinematic-main-desc">Enabling connected healthcare experiences through secure digital platforms,
+              intelligent data solutions, and technology-enabled patient services.</p>
+
+            <ul class="cinematic-matter-list">
+              <li><i class="fas fa-circle-check"></i> Digital Healthcare Platforms</li>
+              <li><i class="fas fa-circle-check"></i> Healthcare Data &amp; Analytics</li>
+              <li><i class="fas fa-circle-check"></i> Connected Patient Experiences</li>
+            </ul>
+
+            <div class="cinematic-action-wrap">
+              <button type="button" class="btn-cinematic-explore" data-domain-trigger="healthcare">
+                <span>Explore Solutions</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Manufacturing -->
+        <div class="cinematic-panel" data-domain="manufacturing">
+          <div class="cinematic-panel-bg"
+            style="background-image: url('assets/images/real-industry-manufacturing.jpg');"></div>
+          <div class="cinematic-panel-overlay"></div>
+
+          <!-- Inactive Narrow Strip Preview Label -->
+          <div class="cinematic-strip-preview">
+            <span class="strip-pill-icon"><i class="fas fa-industry"></i></span>
+            <span class="strip-pill-text">Industry 4.0</span>
+          </div>
+
+          <!-- Active Hero Banner Content -->
+          <div class="cinematic-banner-content">
+            <div class="cinematic-banner-header">
+              <span class="cinematic-tag-pill">
+                <i class="fas fa-industry"></i> Industry 4.0
+              </span>
+            </div>
+
+            <h3 class="cinematic-main-title">Manufacturing</h3>
+            <p class="cinematic-main-desc">Connecting industrial operations with automation, intelligent systems, and
+              real-time insights to create smarter and more efficient manufacturing environments.</p>
+
+            <ul class="cinematic-matter-list">
+              <li><i class="fas fa-circle-check"></i> Smart Factory Solutions</li>
+              <li><i class="fas fa-circle-check"></i> Industrial Automation</li>
+              <li><i class="fas fa-circle-check"></i> Real-Time Operations &amp; Analytics</li>
+            </ul>
+
+            <div class="cinematic-action-wrap">
+              <button type="button" class="btn-cinematic-explore" data-domain-trigger="manufacturing">
+                <span>Explore Solutions</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: Retail & CPG -->
+        <div class="cinematic-panel" data-domain="retail">
+          <div class="cinematic-panel-bg" style="background-image: url('assets/images/real-industry-retail.jpg');">
+          </div>
+          <div class="cinematic-panel-overlay"></div>
+
+          <!-- Inactive Narrow Strip Preview Label -->
+          <div class="cinematic-strip-preview">
+            <span class="strip-pill-icon"><i class="fas fa-bag-shopping"></i></span>
+            <span class="strip-pill-text">Commerce &amp; CPG</span>
+          </div>
+
+          <!-- Active Hero Banner Content -->
+          <div class="cinematic-banner-content">
+            <div class="cinematic-banner-header">
+              <span class="cinematic-tag-pill">
+                <i class="fas fa-bag-shopping"></i> Commerce &amp; CPG
+              </span>
+            </div>
+
+            <h3 class="cinematic-main-title">Retail &amp; CPG</h3>
+            <p class="cinematic-main-desc">Creating connected retail experiences and intelligent commerce solutions that
+              help brands understand customers, optimize operations, and grow digitally.</p>
+
+            <ul class="cinematic-matter-list">
+              <li><i class="fas fa-circle-check"></i> Omnichannel Commerce</li>
+              <li><i class="fas fa-circle-check"></i> Customer Experience Solutions</li>
+              <li><i class="fas fa-circle-check"></i> Retail Analytics &amp; Optimization</li>
+            </ul>
+
+            <div class="cinematic-action-wrap">
+              <button type="button" class="btn-cinematic-explore" data-domain-trigger="retail">
+                <span>Explore Solutions</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Domain Expertise Solutions Popup Modal -->
+  <div id="domainSolutionsModal" class="domain-solutions-modal-backdrop" role="dialog" aria-modal="true"
+    aria-labelledby="domainModalTitle">
+    <div class="domain-solutions-modal-box">
+      <button type="button" class="domain-modal-close-btn" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <!-- Modal Header Banner -->
+      <div class="domain-modal-header">
+        <div class="domain-modal-banner" id="domainModalBanner"></div>
+        <div class="domain-modal-header-overlay"></div>
+        <div class="domain-modal-header-content">
+          <span class="domain-modal-pill" id="domainModalPill">
+            <i class="fas fa-landmark" id="domainModalPillIcon"></i>
+            <span id="domainModalPillText">Banking &amp; FinTech</span>
+          </span>
+          <h2 id="domainModalTitle" class="domain-modal-title">Financial Services &amp; Banking Solutions</h2>
+        </div>
+      </div>
+
+      <!-- Modal Scrollable Body -->
+      <div class="domain-modal-body">
+        <p class="domain-modal-overview" id="domainModalOverview"></p>
+
+        <!-- Key Offerings Grid -->
+        <div class="domain-modal-section-title">
+          <i class="fas fa-layer-group"></i> Key Capabilities &amp; Technology Offerings
+        </div>
+        <div class="domain-modal-grid" id="domainModalPillars"></div>
+
+        <!-- Impact Metrics -->
+        <div class="domain-modal-section-title">
+          <i class="fas fa-chart-line"></i> Measurable Business Impact
+        </div>
+        <div class="domain-modal-metrics-row" id="domainModalMetrics"></div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="domain-modal-footer">
+        <button type="button" class="domain-modal-back-btn">
+          <i class="fas fa-arrow-left"></i> Back to Domains
+        </button>
+        <button type="button" class="domain-modal-cta-btn" id="domainModalCta">
+          <span>Request Industry Consultation</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Careers Section -->
+  <section id="careers" class="careers-section">
+    <div class="container reveal-scale">
+      <div class="careers-content text-center">
+        <h2>Find Your Spark</h2>
+        <p>Join a global network of innovators, creators, and problem solvers. Build a career that supercharges your
+          potential and shapes the future of technology.</p>
+        <a href="#contact" class="btn btn-primary mt-4">Explore Opportunities</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats/Impact Section -->
+  <section id="stats" class="stats">
+    <div class="container reveal-up">
+      <div class="stat-item">
+        <h4 class="counter" data-target="8">0</h4>
+        <p>Years of Excellence</p>
+      </div>
+      <div class="stat-item">
+        <h4><span class="counter" data-target="20">0</span>+</h4>
+        <p>Global Clients</p>
+      </div>
+      <div class="stat-item">
+        <h4><span class="counter" data-target="100">0</span>+</h4>
+        <p>IT Professionals</p>
+      </div>
+      <!-- <div class="stat-item">
+        <h4 class="counter" data-target="40">0</h4>
+        <p>Countries Operated</p>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Why Info-tech Section -->
+  <section id="why-us" class="section-padding">
+    <div class="container">
+      <div class="text-center reveal-up">
+        <h4 class="section-badge">Why Choose Us</h4>
+        <h2 class="section-title">What Sets Info-tech Apart</h2>
+        <p class="section-subtitle">We don't just deliver technology — we deliver outcomes that transform how businesses
+          compete and grow.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card card-blue reveal-up delay-100">
+          <div class="why-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Outcome-First Approach</h3>
+          <p>We focus on measurable business outcomes, designing every solution around the goals, priorities, and
+            long-term success of our clients.</p>
+        </div>
+        <div class="why-card card-purple reveal-up delay-200">
+          <div class="why-icon"><i class="fas fa-users"></i></div>
+          <h3>Dedicated Expert Teams</h3>
+          <p>Our skilled professionals bring specialized technical and industry knowledge to every project, ensuring
+            focused execution and high-quality results.</p>
+        </div>
+        <div class="why-card card-red reveal-up delay-300">
+          <div class="why-icon"><i class="fas fa-lock"></i></div>
+          <h3>Security by Design</h3>
+          <p>Security is built into every stage of our solutions, from architecture and development to deployment,
+            helping protect systems and business data.</p>
+        </div>
+        <div class="why-card card-green reveal-up delay-400">
+          <div class="why-icon"><i class="fas fa-sync-alt"></i></div>
+          <h3>Agile Delivery</h3>
+          <p>We use flexible development practices to deliver solutions faster, adapt to changing requirements, and
+            continuously improve through client feedback.</p>
+        </div>
+        <div class="why-card card-orange reveal-up delay-500">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>Our support team helps keep critical systems reliable and available with continuous monitoring, proactive
+            assistance, and timely issue resolution.</p>
+        </div>
+        <div class="why-card card-teal reveal-up delay-600">
+          <div class="why-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Sustainable Tech</h3>
+          <p>We build efficient technology solutions that balance performance and scalability with responsible use of
+            resources and sustainable digital practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Stack Section -->
+  <section id="tech-stack" class="section-padding bg-alt">
+    <div class="container">
+      <div class="text-center reveal-up">
+        <h4 class="section-badge">Our Technology Stack</h4>
+        <h2 class="section-title">Powered by Industry-Leading Tools</h2>
+        <p class="section-subtitle">We leverage the world's most trusted platforms and frameworks to build solutions
+          that scale.</p>
+      </div>
+      <div class="tech-grid reveal-up delay-100">
+        <div class="tech-badge"><i class="fab fa-aws"></i><span>AWS</span></div>
+        <div class="tech-badge"><i class="fab fa-microsoft"></i><span>Azure</span></div>
+        <div class="tech-badge"><i class="fab fa-google"></i><span>Google Cloud</span></div>
+        <div class="tech-badge"><i class="fab fa-docker"></i><span>Docker</span></div>
+        <div class="tech-badge"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+        <div class="tech-badge"><i class="fab fa-react"></i><span>React</span></div>
+        <div class="tech-badge"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+        <div class="tech-badge"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="tech-badge"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+        <div class="tech-badge"><i class="fab fa-git-alt"></i><span>DevOps & CI/CD</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work Section -->
+  <section id="process" class="section-padding">
+    <div class="container">
+      <div class="text-center reveal-up">
+        <h4 class="section-badge">Our Process</h4>
+        <h2 class="section-title">How We Work</h2>
+        <p class="section-subtitle">A structured, transparent engagement model designed to deliver results at every
+          stage.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal-up delay-100">
+          <div class="step-num">01</div>
+          <h3>Discover</h3>
+          <p>Understand your business goals, challenges, users, and technical requirements through focused discussions
+            and collaborative analysis.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up delay-200">
+          <div class="step-num">02</div>
+          <h3>Design</h3>
+          <p>Translate business requirements into a clear solution blueprint, selecting the right technologies,
+            architecture, and user experience for your needs.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up delay-300">
+          <div class="step-num">03</div>
+          <h3>Build</h3>
+          <p>Develop and integrate the solution through an agile approach, with continuous testing, collaboration, and
+            regular progress updates.</p>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up delay-400">
+          <div class="step-num">04</div>
+          <h3>Scale &amp; Support</h3>
+          <p>Launch with confidence and continuously improve your solution through monitoring, optimization,
+            maintenance, and ongoing technical support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights Section -->
+  <section id="insights" class="section-padding bg-alt">
+    <div class="container">
+      <div class="text-center reveal-up">
+        <h2 class="section-title">Latest Insights</h2>
+        <p class="section-subtitle">Thought leadership, industry analysis, and expert perspectives from our team.</p>
+      </div>
+      <div class="insights-grid">
+        <!-- Card 1: Artificial Intelligence -->
+        <div class="insight-card reveal-up delay-100">
+          <div class="insight-img-wrap">
+            <div class="insight-img"
+              style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800');">
+            </div>
+          </div>
+          <div class="insight-content">
+            <span class="insight-meta">Artificial Intelligence • August 12, 2026</span>
+            <h3>How AI Is Transforming Enterprise Operations</h3>
+            <p>Discover how organizations are using artificial intelligence to automate workflows, improve
+              decision-making, enhance customer experiences, and create new opportunities for business growth.</p>
+            <div class="insight-author">
+              <div class="author-avatar"><i class="fas fa-brain"></i></div>
+              <div><strong>Arshith Info-Tech Research Team</strong><br><small>AI &amp; Innovation Team</small></div>
+            </div>
+            <a href="#contact" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 2: Cloud Computing -->
+        <div class="insight-card reveal-up delay-200">
+          <div class="insight-img-wrap">
+            <div class="insight-img"
+              style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800');">
+            </div>
+          </div>
+          <div class="insight-content">
+            <span class="insight-meta">Cloud Computing • July 28, 2026</span>
+            <h3>Building a Smarter Cloud Strategy for Modern Businesses</h3>
+            <p>Explore how organizations can use cloud technologies to improve scalability, optimize infrastructure,
+              strengthen resilience, and create a more flexible digital foundation.</p>
+            <div class="insight-author">
+              <div class="author-avatar"><i class="fas fa-cloud"></i></div>
+              <div><strong>Arshith Info-Tech Cloud Team</strong><br><small>Cloud Solutions Team</small></div>
+            </div>
+            <a href="#contact" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 3: Cybersecurity -->
+        <div class="insight-card reveal-up delay-300">
+          <div class="insight-img-wrap">
+            <div class="insight-img"
+              style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800');">
+            </div>
+          </div>
+          <div class="insight-content">
+            <span class="insight-meta">Cybersecurity • July 15, 2026</span>
+            <h3>Strengthening Enterprise Security in a Connected World</h3>
+            <p>Learn how modern security strategies can help organizations protect applications, data, infrastructure,
+              and digital operations against evolving cyber threats.</p>
+            <div class="insight-author">
+              <div class="author-avatar"><i class="fas fa-shield-halved"></i></div>
+              <div><strong>Arshith Info-Tech Security Team</strong><br><small>Cybersecurity Team</small></div>
+            </div>
+            <a href="#contact" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h4 class="section-badge">Get In Touch</h4>
+          <h2 class="section-title">Let's Build Something <span style="color: var(--primary);">Great Together</span>
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">Whether you're looking to
+            modernize your IT infrastructure, launch a new digital product, or explore AI-driven solutions — we're ready
+            to help you get there.</p>
+          <ul class="contact-details">
+            <li><i class="fas fa-map-marker-alt"></i>
+              <div><strong>Office</strong><br>Bengaluru, Karnataka, India - 560076</div>
+            </li>
+            <li><i class="fas fa-phone-alt"></i>
+              <div><strong>Phone</strong><br>+91 8618471424</div>
+            </li>
+            <li><i class="fas fa-envelope"></i>
+              <div><strong>Email</strong><br>info@arshithinfotech.com</div>
+            </li>
+            <li><i class="fas fa-clock"></i>
+              <div><strong>Business Hours</strong><br>Mon – Fri, 10:00 AM – 6:00 PM EST</div>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Arshith" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Infotech" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" placeholder="info@arshithinfotech.com" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" placeholder="arshith-infotech">
+            </div>
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service">
+                <option value="">Select a service...</option>
+                <option>Digital Transformation</option>
+                <option>Cloud Computing</option>
+                <option>Engineering &amp; R&amp;D</option>
+                <option>Data &amp; AI</option>
+                <option>Cybersecurity</option>
+                <option>Infrastructure Management</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us about your project or challenge..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn">Send Message <i
+                class="fas fa-paper-plane"></i></button>
+            <p class="form-note"><i class="fas fa-shield-alt"></i> Your information is secure and will never be shared.
+            </p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. Our team will contact you within 1 business day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Premium Footer -->
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h3>Stay Ahead in Tech</h3>
+            <p>Get the latest insights on AI, Cloud, and Digital Transformation delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your business email" required>
+            <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+          </a>
+          <p class="footer-about">Pioneering the future of digital services and consulting. We empower forward-thinking
+            enterprises across 40+ countries to reimagine their business for the digital age.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Cloud Migration</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Applied AI & Data</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Cybersecurity</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Digital Engineering</a></li>
+            <li><a href="#services"><i class="fas fa-angle-right"></i> Enterprise Software</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+            <li><a href="internships.html"><i class="fas fa-angle-right"></i> Internships</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Investor Relations</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Global Newsroom</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-minimal">
+            <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India - 560076</li>
+            <li><i class="fas fa-phone-alt"></i> +91 8618471424</li>
+            <li><i class="fas fa-envelope"></i> info@arshithinfotech.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Arshith Info-Tech. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA Button -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="#contact" class="floating-cta-btn" id="floatingCtaBtn">
+      <i class="fas fa-comments"></i>
+      <span>Let's Talk</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Individual Capability Details Modals -->
+  <!-- Modal 1: Digital Transformation ONLY -->
+  <div id="modal-digital-transformation" class="capability-detail-modal" role="dialog" aria-modal="true"
+    aria-labelledby="capModalTitle-dt">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Capability 01</span>
+          <h2 id="capModalTitle-dt" class="capability-detail-title">Digital Transformation</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">We help organizations modernize the way they operate by replacing outdated
+          processes with intelligent, connected, and scalable digital solutions. From legacy modernization to workflow
+          automation, we create technology environments that improve productivity, customer experience, and business
+          agility.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What we deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Digital strategy and transformation consulting</li>
+            <li><i class="fas fa-circle-check"></i> Legacy application modernization</li>
+            <li><i class="fas fa-circle-check"></i> Workflow and process automation</li>
+            <li><i class="fas fa-circle-check"></i> Enterprise application development</li>
+            <li><i class="fas fa-circle-check"></i> Data-driven business solutions</li>
+            <li><i class="fas fa-circle-check"></i> Customer experience modernization</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Capabilities
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Cloud Computing ONLY -->
+  <div id="modal-cloud-computing" class="capability-detail-modal" role="dialog" aria-modal="true"
+    aria-labelledby="capModalTitle-cc">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-cloud"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Capability 02</span>
+          <h2 id="capModalTitle-cc" class="capability-detail-title">Cloud Computing</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">We enable businesses to move beyond traditional infrastructure with cloud solutions
+          designed for flexibility and scale. Our approach helps organizations migrate workloads, modernize
+          applications, and build cloud environments that can adapt as business requirements evolve.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What we deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Cloud migration planning and execution</li>
+            <li><i class="fas fa-circle-check"></i> Cloud-native application development</li>
+            <li><i class="fas fa-circle-check"></i> Infrastructure modernization</li>
+            <li><i class="fas fa-circle-check"></i> Cloud monitoring and optimization</li>
+            <li><i class="fas fa-circle-check"></i> Backup and disaster recovery</li>
+            <li><i class="fas fa-circle-check"></i> Cloud security solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Capabilities
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Engineering & R&D ONLY -->
+  <div id="modal-engineering-rd" class="capability-detail-modal" role="dialog" aria-modal="true"
+    aria-labelledby="capModalTitle-erd">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-cogs"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Capability 03</span>
+          <h2 id="capModalTitle-erd" class="capability-detail-title">Engineering &amp; R&amp;D</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">We combine software engineering, technology research, and product thinking to help
+          businesses turn ideas into practical solutions. From early-stage concepts and prototypes to production-ready
+          systems, we focus on building technology that solves real-world challenges.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What we deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Product design and development</li>
+            <li><i class="fas fa-circle-check"></i> Software architecture</li>
+            <li><i class="fas fa-circle-check"></i> Rapid prototyping</li>
+            <li><i class="fas fa-circle-check"></i> Technology research</li>
+            <li><i class="fas fa-circle-check"></i> Application engineering</li>
+            <li><i class="fas fa-circle-check"></i> Product enhancement and modernization</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Capabilities
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: AI & Intelligent Solutions ONLY -->
+  <div id="modal-ai-intelligent-solutions" class="capability-detail-modal" role="dialog" aria-modal="true"
+    aria-labelledby="capModalTitle-ai">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-brain"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Capability 04</span>
+          <h2 id="capModalTitle-ai" class="capability-detail-title">AI &amp; Intelligent Solutions</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">We help organizations integrate AI into practical business processes rather than
+          treating it as just an emerging technology. Our solutions can analyze information, automate repetitive tasks,
+          identify patterns, and support faster, data-driven decision-making.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What we deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> AI and machine learning solutions</li>
+            <li><i class="fas fa-circle-check"></i> Intelligent process automation</li>
+            <li><i class="fas fa-circle-check"></i> Predictive analytics</li>
+            <li><i class="fas fa-circle-check"></i> Natural language solutions</li>
+            <li><i class="fas fa-circle-check"></i> AI-powered business applications</li>
+            <li><i class="fas fa-circle-check"></i> Data-driven decision support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Capabilities
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Cybersecurity ONLY -->
+  <div id="modal-cybersecurity" class="capability-detail-modal" role="dialog" aria-modal="true"
+    aria-labelledby="capModalTitle-cs">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-shield-halved"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Capability 05</span>
+          <h2 id="capModalTitle-cs" class="capability-detail-title">Cybersecurity</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">As businesses become increasingly digital, protecting critical systems and
+          information becomes essential. We help organizations identify vulnerabilities, strengthen security controls,
+          monitor potential threats, and build a stronger security foundation across their digital environment.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What we deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Security assessments</li>
+            <li><i class="fas fa-circle-check"></i> Vulnerability identification</li>
+            <li><i class="fas fa-circle-check"></i> Application security</li>
+            <li><i class="fas fa-circle-check"></i> Data protection</li>
+            <li><i class="fas fa-circle-check"></i> Threat monitoring</li>
+            <li><i class="fas fa-circle-check"></i> Security and compliance support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Capabilities
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       INDIVIDUAL DOMAIN EXPERTISE POPUP MODALS
+       =================================================== -->
+
+  <!-- Domain Popup 1: Financial Services ONLY -->
+  <div id="modal-domain-finance" class="domain-detail-modal capability-detail-modal" role="dialog" aria-modal="true"
+    aria-labelledby="domainModalTitle-finance">
+    <div class="modal-box domain-modal-box capability-modal-box">
+      <button class="modal-close domain-modal-close capability-modal-close" aria-label="Close modal"><i
+          class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-landmark"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Banking &amp; FinTech</span>
+          <h2 id="domainModalTitle-finance" class="capability-detail-title">Financial Services</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">We help financial institutions modernize their technology landscape with secure,
+          scalable, and intelligent solutions. Our capabilities support digital banking, financial operations, risk
+          management, and customer experiences while maintaining strong security and reliability.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What We Deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Digital banking platform development</li>
+            <li><i class="fas fa-circle-check"></i> Core banking modernization</li>
+            <li><i class="fas fa-circle-check"></i> Fraud and risk analytics</li>
+            <li><i class="fas fa-circle-check"></i> Secure payment solutions</li>
+            <li><i class="fas fa-circle-check"></i> Financial data management</li>
+            <li><i class="fas fa-circle-check"></i> Customer experience transformation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn domain-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Solutions
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Domain Popup 2: Healthcare ONLY -->
+  <div id="modal-domain-healthcare" class="domain-detail-modal capability-detail-modal" role="dialog" aria-modal="true"
+    aria-labelledby="domainModalTitle-healthcare">
+    <div class="modal-box domain-modal-box capability-modal-box">
+      <button class="modal-close domain-modal-close capability-modal-close" aria-label="Close modal"><i
+          class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-heart-pulse"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Digital Health</span>
+          <h2 id="domainModalTitle-healthcare" class="capability-detail-title">Healthcare</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">We create technology solutions that help healthcare organizations improve digital
+          access, operational efficiency, and patient engagement. Our solutions connect healthcare processes and
+          information while keeping security and privacy at the center.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What We Deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Healthcare application development</li>
+            <li><i class="fas fa-circle-check"></i> Patient engagement platforms</li>
+            <li><i class="fas fa-circle-check"></i> Healthcare data and analytics</li>
+            <li><i class="fas fa-circle-check"></i> Digital health solutions</li>
+            <li><i class="fas fa-circle-check"></i> Workflow automation</li>
+            <li><i class="fas fa-circle-check"></i> Secure information management</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn domain-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Solutions
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Domain Popup 3: Manufacturing ONLY -->
+  <div id="modal-domain-manufacturing" class="domain-detail-modal capability-detail-modal" role="dialog"
+    aria-modal="true" aria-labelledby="domainModalTitle-manufacturing">
+    <div class="modal-box domain-modal-box capability-modal-box">
+      <button class="modal-close domain-modal-close capability-modal-close" aria-label="Close modal"><i
+          class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-industry"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Industry 4.0</span>
+          <h2 id="domainModalTitle-manufacturing" class="capability-detail-title">Manufacturing</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">We help manufacturers adopt Industry 4.0 technologies to improve production
+          visibility, operational efficiency, and decision-making. By connecting machines, systems, and data, we enable
+          smarter and more responsive industrial operations.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What We Deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Smart manufacturing solutions</li>
+            <li><i class="fas fa-circle-check"></i> Industrial automation</li>
+            <li><i class="fas fa-circle-check"></i> IoT-enabled operations</li>
+            <li><i class="fas fa-circle-check"></i> Production monitoring</li>
+            <li><i class="fas fa-circle-check"></i> Predictive maintenance</li>
+            <li><i class="fas fa-circle-check"></i> Manufacturing analytics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn domain-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Solutions
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Domain Popup 4: Retail & CPG ONLY -->
+  <div id="modal-domain-retail" class="domain-detail-modal capability-detail-modal" role="dialog" aria-modal="true"
+    aria-labelledby="domainModalTitle-retail">
+    <div class="modal-box domain-modal-box capability-modal-box">
+      <button class="modal-close domain-modal-close capability-modal-close" aria-label="Close modal"><i
+          class="fas fa-times"></i></button>
+
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-bag-shopping"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Commerce &amp; CPG</span>
+          <h2 id="domainModalTitle-retail" class="capability-detail-title">Retail &amp; CPG</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">We help retail and consumer brands build stronger digital experiences across
+          stores, websites, mobile platforms, and connected channels. Our technology solutions support customer
+          engagement, commerce operations, and data-driven growth.</p>
+
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> What We Deliver:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> E-commerce solutions</li>
+            <li><i class="fas fa-circle-check"></i> Omnichannel customer experiences</li>
+            <li><i class="fas fa-circle-check"></i> Retail application development</li>
+            <li><i class="fas fa-circle-check"></i> Customer analytics</li>
+            <li><i class="fas fa-circle-check"></i> Inventory and operations solutions</li>
+            <li><i class="fas fa-circle-check"></i> Digital commerce transformation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn domain-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Solutions
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Free Consultation Request Popup Modal -->
+  <div id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="consultationModalTitle">
+    <div class="modal-box consultation-modal-box">
+      <button class="modal-close consultation-modal-close" aria-label="Close modal"><i
+          class="fas fa-times"></i></button>
+      <div class="consultation-header">
+        <div class="modal-badge"><i class="fas fa-calendar-check"></i> Free Consultation</div>
+        <h2 id="consultationModalTitle">Request Your Free Consultation</h2>
+        <p class="modal-subtitle">Connect with our enterprise technology experts for a personalized strategy session.
+        </p>
+      </div>
+
+      <form id="consultationForm" class="consultation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="consultName">Full Name *</label>
+            <input type="text" id="consultName" placeholder="Arshith Infotech" required>
+          </div>
+          <div class="form-group">
+            <label for="consultEmail">Work Email *</label>
+            <input type="email" id="consultEmail" placeholder="info@arshithinfotech.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="consultPhone">Phone Number</label>
+            <input type="tel" id="consultPhone" placeholder="+91 8618471424">
+          </div>
+          <div class="form-group">
+            <label for="consultService">Service / Industry of Interest</label>
+            <select id="consultService">
+              <option value="Banking & Financial Services">Banking &amp; Financial Services</option>
+              <option value="Healthcare & Life Sciences">Healthcare &amp; Life Sciences</option>
+              <option value="Industry 4.0 & Smart Manufacturing">Industry 4.0 &amp; Smart Manufacturing</option>
+              <option value="Retail, Commerce & CPG">Retail, Commerce &amp; CPG</option>
+              <option value="Digital Transformation">Digital Transformation</option>
+              <option value="Cloud Computing & Migration">Cloud Computing &amp; Migration</option>
+              <option value="Engineering & R&D">Engineering &amp; R&D</option>
+              <option value="Enterprise Software Solutions">Enterprise Software Solutions</option>
+              <option value="Infrastructure Management & SecOps">Infrastructure Management &amp; SecOps</option>
+              <option value="Other Technology Inquiry">Other Technology Inquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="consultMessage">Project Details / Goals</label>
+          <textarea id="consultMessage" rows="3"
+            placeholder="Tell us about your technical goals or challenge..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary consultation-submit-btn">
+          Submit Consultation Request <i class="fas fa-paper-plane"></i>
+        </button>
+        <p class="form-note"><i class="fas fa-shield-alt"></i> 100% Confidential. Zero obligation.</p>
+      </form>
+
+      <div id="consultationSuccess" class="consultation-success" style="display: none;">
+        <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+        <h3>Consultation Request Received!</h3>
+        <p>Thank you for reaching out. One of our lead solution architects will contact you within 24 business hours.
+        </p>
+        <button type="button" class="btn btn-primary consultation-done-btn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" role="alertdialog" aria-label="Cookie consent">
+    <div class="cookie-icon">🍪</div>
+    <div class="cookie-text">
+      <p>We use cookies to enhance your experience and analyze site performance. See our <a href="#">Privacy Policy</a>.
+      </p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-accept" id="cookieAccept">Accept All</button>
+      <button class="cookie-decline" id="cookieDecline">Decline</button>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=20260916_compact_track_v14"></script>
+</body>
+
+</html>
+<!-- Last Updated: 2026-09-04T07:32:27.501Z -->

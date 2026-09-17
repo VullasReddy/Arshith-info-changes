@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Arshith Info-Tech - Technology Solutions Built for Business</title>
+  <meta name="description"
+    content="We combine modern technology, engineering expertise, and business understanding to create secure, scalable solutions that help organizations modernize, innovate, and grow." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=20260904_services_white_deepdive">
+  <link rel="stylesheet" href="footer-premium.css?v=20260904_services_white_deepdive">
+</head>
+
+<body class="theme-page-cyber-blue page-services">
+
+  <!-- Global Animated Background (Interactive Constellation Canvas + Ambient Aurora Glow) -->
+  <div class="global-aurora-bg">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+    <div class="aurora-orb aurora-orb-4"></div>
+  </div>
+  <canvas id="globalParticlesCanvas"></canvas>
+
+  <!-- Navbar (Exact Same Header Component) -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <div class="drawer-brand">
+          <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+        </div>
+        <button class="drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html" class="active"><i class="fas fa-laptop-code"></i> Services</a></li>
+        <li><a href="industries.html"><i class="fas fa-layer-group"></i> Industries</a></li>
+        <li><a href="insights.html"><i class="fas fa-newspaper"></i> Insights</a></li>
+        
+        <!-- Careers Dropdown Navigation Item -->
+        <li class="nav-item-dropdown">
+          <a href="javascript:void(0)" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-briefcase"></i> Careers <i class="fas fa-chevron-down nav-dropdown-arrow"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="careers.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-user-tie"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Full-Time Careers</strong>
+                  <small>Experienced &amp; Early Career Openings</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Internships 2026</strong>
+                  <small>Students &amp; Graduate Programs</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="about-infotech.html"><i class="fas fa-building"></i> About Us</a></li>
+        <li class="drawer-cta-item"><a href="javascript:void(0)" class="btn btn-primary drawer-cta-btn" aria-haspopup="dialog"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+      </ul>
+      <a href="javascript:void(0)" class="btn btn-primary nav-cta" aria-haspopup="dialog">Contact Us</a>
+      <div class="menu-toggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menuOverlay"></div>
+
+  <!-- ===================================================
+       1. SERVICES PAGE HERO SECTION
+       =================================================== -->
+  <!-- ===================================================
+       1. HORIZONTAL ENTERPRISE SERVICES COMMAND HERO
+       =================================================== -->
+  <header class="hero services-hero-section">
+    <div class="services-hero-container">
+      
+      <!-- Top Header & Matter (Centered & Spacious) -->
+      <div class="services-hero-header reveal-up">
+        <div class="services-hero-badge">
+          <i class="fas fa-cubes-stacked"></i>
+          <span>FULL-CYCLE TECHNOLOGY SERVICES</span>
+        </div>
+        
+        <h1 class="services-hero-headline">
+          Enterprise Technology Solutions <span class="services-gradient-accent">Built for Scale</span>
+        </h1>
+        
+        <p class="services-hero-subtext">
+          We architect, modernize, and secure mission-critical digital systems. From legacy transformation and hybrid cloud engineering to enterprise AI and zero-trust cybersecurity, we power continuous business growth.
+        </p>
+
+        <div class="services-hero-actions">
+          <a href="#services-grid-section" class="btn btn-primary services-btn-primary">
+            <span>Explore All Capabilities</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+          <a href="#contact" class="services-btn-secondary">
+            <i class="fas fa-calendar-check"></i>
+            <span>Schedule Architecture Review</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Horizontal 5-Capability Cards Deck (Side-by-Side in 1 Row) -->
+      <div class="services-horizontal-deck reveal-up">
+        
+        <!-- 01. Digital Transformation -->
+        <a href="#services-grid-section" class="service-deck-card">
+          <div class="deck-card-top">
+            <div class="deck-card-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <span class="deck-card-num">01</span>
+          </div>
+          <div class="deck-card-body">
+            <h3>Digital Transformation</h3>
+            <p>Modernize legacy ecosystems, automate processes, and connect digital workflows.</p>
+            <span class="deck-card-tag">Modernization • Automation</span>
+          </div>
+          <div class="deck-card-footer">
+            <span>Explore Pillar</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <!-- 02. Cloud Computing -->
+        <a href="#services-grid-section" class="service-deck-card">
+          <div class="deck-card-top">
+            <div class="deck-card-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <span class="deck-card-num">02</span>
+          </div>
+          <div class="deck-card-body">
+            <h3>Cloud Computing</h3>
+            <p>Architect resilient multi-cloud foundations on AWS, Azure &amp; GCP with Kubernetes.</p>
+            <span class="deck-card-tag">Multi-Cloud • Kubernetes</span>
+          </div>
+          <div class="deck-card-footer">
+            <span>Explore Pillar</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <!-- 03. Engineering & R&D -->
+        <a href="#services-grid-section" class="service-deck-card">
+          <div class="deck-card-top">
+            <div class="deck-card-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <span class="deck-card-num">03</span>
+          </div>
+          <div class="deck-card-body">
+            <h3>Engineering &amp; R&amp;D</h3>
+            <p>High-velocity software engineering, IoT development, and custom platform builds.</p>
+            <span class="deck-card-tag">Platform Dev • Embedded</span>
+          </div>
+          <div class="deck-card-footer">
+            <span>Explore Pillar</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <!-- 04. AI Solutions -->
+        <a href="#services-grid-section" class="service-deck-card">
+          <div class="deck-card-top">
+            <div class="deck-card-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <span class="deck-card-num">04</span>
+          </div>
+          <div class="deck-card-body">
+            <h3>Applied AI Systems</h3>
+            <p>Deploy neural models, generative AI pipelines, and predictive business intelligence.</p>
+            <span class="deck-card-tag">LLMs • Predictive AI</span>
+          </div>
+          <div class="deck-card-footer">
+            <span>Explore Pillar</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+
+        <!-- 05. Cybersecurity -->
+        <a href="#services-grid-section" class="service-deck-card">
+          <div class="deck-card-top">
+            <div class="deck-card-icon">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <span class="deck-card-num">05</span>
+          </div>
+          <div class="deck-card-body">
+            <h3>Zero-Trust Security</h3>
+            <p>Safeguard infrastructure with continuous SecOps, proactive defense, and audit.</p>
+            <span class="deck-card-tag">SecOps • Governance</span>
+          </div>
+          <div class="deck-card-footer">
+            <span>Explore Pillar</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Horizontal Metrics & Reliability Ribbon -->
+      <div class="services-horizontal-metrics reveal-up">
+        <div class="horizontal-metric-item">
+          <div class="metric-highlight">99.99%</div>
+          <div class="metric-meta">
+            <strong>Architecture SLA</strong>
+            <span>High-Availability Systems</span>
+          </div>
+        </div>
+        <div class="horizontal-metric-item">
+          <div class="metric-highlight">5 Core</div>
+          <div class="metric-meta">
+            <strong>Practices</strong>
+            <span>Full-Lifecycle Delivery</span>
+          </div>
+        </div>
+        <div class="horizontal-metric-item">
+          <div class="metric-highlight">100%</div>
+          <div class="metric-meta">
+            <strong>Agile CI/CD</strong>
+            <span>DevSecOps Velocity</span>
+          </div>
+        </div>
+        <div class="horizontal-metric-item">
+          <div class="metric-highlight">24/7</div>
+          <div class="metric-meta">
+            <strong>Global Operations</strong>
+            <span>Continuous Cloud Support</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ===================================================
+       2. SERVICES OVERVIEW & 5 CORE PILLARS GRID
+       =================================================== -->
+  <section id="services-grid-section" class="section-padding bg-alt">
+    <div class="container">
+      <div class="text-center reveal-up capabilities-heading-wrap">
+        <h4 class="section-badge"><i class="fas fa-sparkles"></i> Core Capabilities</h4>
+        <h2 class="section-title capabilities-heading-animated">
+          Technology Solutions <span class="capabilities-accent-reflect">Built for Scale</span>
+        </h2>
+        <p class="section-subtitle">Comprehensive technology solutions designed to modernize legacy workflows, scale infrastructure, accelerate engineering innovation, and safeguard business data.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1: Digital Transformation -->
+        <div class="service-card reveal-up delay-100" data-modal="digital-transformation">
+          <div class="service-card-bg" style="background-image: url('assets/images/digital-transformation.jpg');"></div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-laptop-code service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-microchip"></i> Modernize</span>
+                <h3>Digital Transformation</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Modernize business operations with connected digital experiences, intelligent automation, and technology solutions designed to improve efficiency and accelerate growth.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Legacy Application Modernization</li>
+                <li><i class="fas fa-circle-check"></i> Business Process Automation</li>
+                <li><i class="fas fa-circle-check"></i> Enterprise Application Development</li>
+                <li><i class="fas fa-circle-check"></i> Digital Experience Transformation</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn" data-service-trigger="digital-transformation">Explore Service <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2: Cloud Computing -->
+        <div class="service-card reveal-up delay-200" data-modal="cloud-computing">
+          <div class="service-card-bg" style="background-image: url('assets/images/cloud-computing.jpg');"></div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-cloud service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-cloud-arrow-up"></i> Cloud Native</span>
+                <h3>Cloud Computing</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Build flexible and scalable cloud environments that improve performance, simplify infrastructure, and help businesses adapt to changing demands.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Cloud Migration</li>
+                <li><i class="fas fa-circle-check"></i> Cloud-Native Development</li>
+                <li><i class="fas fa-circle-check"></i> Infrastructure Modernization</li>
+                <li><i class="fas fa-circle-check"></i> Cloud Optimization &amp; Management</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn" data-service-trigger="cloud-computing">Explore Service <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3: Engineering & R&D -->
+        <div class="service-card reveal-up delay-300" data-modal="engineering-rd">
+          <div class="service-card-bg" style="background-image: url('assets/images/engineering-rd.jpg');"></div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-flask service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-atom"></i> Innovation</span>
+                <h3>Engineering &amp; R&amp;D</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Turn ideas into reliable technology products through product engineering, research, prototyping, and continuous innovation.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Product Engineering</li>
+                <li><i class="fas fa-circle-check"></i> Software Architecture</li>
+                <li><i class="fas fa-circle-check"></i> Rapid Prototyping</li>
+                <li><i class="fas fa-circle-check"></i> Technology Research &amp; Innovation</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn" data-service-trigger="engineering-rd">Explore Service <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4: AI & Intelligent Solutions -->
+        <div class="service-card reveal-up delay-400" data-modal="ai-intelligent-solutions">
+          <div class="service-card-bg" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800');"></div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-brain service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-robot"></i> Applied AI</span>
+                <h3>AI &amp; Intelligent Solutions</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Apply artificial intelligence and machine learning to automate processes, uncover valuable insights, and enable smarter business decisions.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Artificial Intelligence</li>
+                <li><i class="fas fa-circle-check"></i> Machine Learning</li>
+                <li><i class="fas fa-circle-check"></i> Intelligent Automation</li>
+                <li><i class="fas fa-circle-check"></i> Predictive Analytics</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn" data-service-trigger="ai-intelligent-solutions">Explore Service <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 5: Cybersecurity -->
+        <div class="service-card reveal-up delay-500" data-modal="cybersecurity">
+          <div class="service-card-bg" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800');"></div>
+          <div class="service-card-overlay"></div>
+          <div class="service-card-content">
+            <div class="service-card-header">
+              <div class="service-icon-wrap">
+                <i class="fas fa-shield-halved service-icon"></i>
+              </div>
+              <div class="service-title-col">
+                <span class="service-badge-tag"><i class="fas fa-lock"></i> Zero-Trust</span>
+                <h3>Cybersecurity</h3>
+              </div>
+              <div class="service-slide-cue">
+                <i class="fas fa-arrow-up"></i>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <div class="service-divider"></div>
+              <p>Protect applications, infrastructure, and business data with proactive security solutions designed to reduce risk and strengthen digital resilience.</p>
+              <ul class="service-matter-points">
+                <li><i class="fas fa-circle-check"></i> Security Assessment</li>
+                <li><i class="fas fa-circle-check"></i> Application Security</li>
+                <li><i class="fas fa-circle-check"></i> Threat Monitoring</li>
+                <li><i class="fas fa-circle-check"></i> Data Protection</li>
+              </ul>
+              <div class="service-footer">
+                <span class="card-learn" data-service-trigger="cybersecurity">Explore Service <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       3. DEEP-DIVE SERVICE FEATURE SHOWCASE SECTIONS
+       =================================================== -->
+
+  <!-- Deep-Dive 1: Digital Transformation -->
+  <section id="digital-transformation" class="section-padding services-deep-dive">
+    <div class="container">
+      <div class="services-detail-row">
+        <div class="services-detail-text reveal-left">
+          <span class="section-badge"><i class="fas fa-laptop-code"></i> Service 01</span>
+          <h2 class="services-detail-title">Digital Transformation</h2>
+          <p class="services-detail-lead">Modernize business operations with connected digital experiences, intelligent automation, and technology solutions designed to improve efficiency and accelerate growth.</p>
+          
+          <div class="services-deliverables-grid">
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Legacy Application Modernization</strong>
+                <p>Refactor legacy monoliths into agile, API-first microservices without disrupting operational continuity.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Business Process Automation</strong>
+                <p>Automate repetitive workflows, reduce operational overhead, and speed up turnaround times.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Enterprise Application Development</strong>
+                <p>Architect robust, scalable web and mobile software systems tailored to specific business demands.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Digital Experience Transformation</strong>
+                <p>Elevate client and employee engagement through frictionless, omni-channel user experiences.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-detail-actions">
+            <button type="button" class="btn btn-primary btn-service-explore" data-service-trigger="digital-transformation">
+              <span>Explore Digital Transformation</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <span>Schedule Strategy Call</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="services-detail-visual reveal-right">
+          <div class="service-media-frame">
+            <div class="service-media-img" style="background-image: url('assets/images/digital-transformation.jpg');"></div>
+            <div class="service-media-badge">
+              <i class="fas fa-microchip"></i>
+              <span>Agile Modernization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep-Dive 2: Cloud Computing -->
+  <section id="cloud-computing" class="section-padding bg-alt services-deep-dive">
+    <div class="container">
+      <div class="services-detail-row reverse-row">
+        <div class="services-detail-text reveal-right">
+          <span class="section-badge"><i class="fas fa-cloud"></i> Service 02</span>
+          <h2 class="services-detail-title">Cloud Computing</h2>
+          <p class="services-detail-lead">Build flexible and scalable cloud environments that improve performance, simplify infrastructure, and help businesses adapt to changing demands.</p>
+          
+          <div class="services-deliverables-grid">
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Cloud Migration</strong>
+                <p>Zero-downtime workload migration across AWS, Microsoft Azure, and Google Cloud platforms.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Cloud-Native Development</strong>
+                <p>Deploy scalable containerized applications with Docker, Kubernetes, and serverless compute.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Infrastructure Modernization</strong>
+                <p>Implement Infrastructure as Code (IaC), automated CI/CD pipelines, and hybrid cloud topologies.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Cloud Optimization &amp; Management</strong>
+                <p>Continuous cost telemetry, auto-scaling policy governance, and multi-region disaster recovery.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-detail-actions">
+            <button type="button" class="btn btn-primary btn-service-explore" data-service-trigger="cloud-computing">
+              <span>Explore Cloud Computing</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <span>Schedule Strategy Call</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="services-detail-visual reveal-left">
+          <div class="service-media-frame">
+            <div class="service-media-img" style="background-image: url('assets/images/cloud-computing.jpg');"></div>
+            <div class="service-media-badge">
+              <i class="fas fa-server"></i>
+              <span>Multi-Cloud Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep-Dive 3: Engineering & R&D -->
+  <section id="engineering-rd" class="section-padding services-deep-dive">
+    <div class="container">
+      <div class="services-detail-row">
+        <div class="services-detail-text reveal-left">
+          <span class="section-badge"><i class="fas fa-flask"></i> Service 03</span>
+          <h2 class="services-detail-title">Engineering &amp; R&amp;D</h2>
+          <p class="services-detail-lead">Turn ideas into reliable technology products through product engineering, research, prototyping, and continuous innovation.</p>
+          
+          <div class="services-deliverables-grid">
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Product Engineering</strong>
+                <p>Full-lifecycle development from user research and design to production-ready enterprise software.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Software Architecture</strong>
+                <p>High-throughput, distributed system design resilient to enterprise peak loads and concurrent users.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Rapid Prototyping</strong>
+                <p>Accelerate proof-of-concept validation with agile MVP creation and quick feedback loops.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Technology Research &amp; Innovation</strong>
+                <p>Investigative research into emerging technology stacks, quantum-safe encryption, and IoT devices.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-detail-actions">
+            <button type="button" class="btn btn-primary btn-service-explore" data-service-trigger="engineering-rd">
+              <span>Explore Engineering &amp; R&amp;D</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <span>Schedule Strategy Call</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="services-detail-visual reveal-right">
+          <div class="service-media-frame">
+            <div class="service-media-img" style="background-image: url('assets/images/engineering-rd.jpg');"></div>
+            <div class="service-media-badge">
+              <i class="fas fa-code-branch"></i>
+              <span>High-Throughput Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep-Dive 4: AI & Intelligent Solutions -->
+  <section id="ai-solutions" class="section-padding bg-alt services-deep-dive">
+    <div class="container">
+      <div class="services-detail-row reverse-row">
+        <div class="services-detail-text reveal-right">
+          <span class="section-badge"><i class="fas fa-brain"></i> Service 04</span>
+          <h2 class="services-detail-title">AI &amp; Intelligent Solutions</h2>
+          <p class="services-detail-lead">Apply artificial intelligence and machine learning to automate processes, uncover valuable insights, and enable smarter business decisions.</p>
+          
+          <div class="services-deliverables-grid">
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Artificial Intelligence</strong>
+                <p>Generative AI integration, enterprise knowledge search, and conversational intelligence agents.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Machine Learning</strong>
+                <p>Custom supervised and reinforcement ML model training, evaluation, and production MLOps deployment.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Intelligent Automation</strong>
+                <p>Cognitive RPA pipelines and automated decision-making engines for complex enterprise operations.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Predictive Analytics</strong>
+                <p>Real-time telemetry forecasting, customer behavior insights, and predictive churn prevention models.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-detail-actions">
+            <button type="button" class="btn btn-primary btn-service-explore" data-service-trigger="ai-intelligent-solutions">
+              <span>Explore AI &amp; Intelligent Solutions</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <span>Schedule Strategy Call</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="services-detail-visual reveal-left">
+          <div class="service-media-frame">
+            <div class="service-media-img" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800');"></div>
+            <div class="service-media-badge">
+              <i class="fas fa-robot"></i>
+              <span>Cognitive Intelligence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep-Dive 5: Cybersecurity -->
+  <section id="cybersecurity" class="section-padding services-deep-dive">
+    <div class="container">
+      <div class="services-detail-row">
+        <div class="services-detail-text reveal-left">
+          <span class="section-badge"><i class="fas fa-shield-halved"></i> Service 05</span>
+          <h2 class="services-detail-title">Cybersecurity</h2>
+          <p class="services-detail-lead">Protect applications, infrastructure, and business data with proactive security solutions designed to reduce risk and strengthen digital resilience.</p>
+          
+          <div class="services-deliverables-grid">
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Security Assessment</strong>
+                <p>Rigorous vulnerability assessments, penetration testing, and regulatory compliance audits (SOC2/ISO).</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Application Security</strong>
+                <p>DevSecOps integration with automated static/dynamic code scans (SAST/DAST) in CI/CD pipelines.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Threat Monitoring</strong>
+                <p>24/7 Security Operations Center (SOC) threat detection, SIEM intelligence, and incident mitigation.</p>
+              </div>
+            </div>
+            <div class="deliverable-item">
+              <i class="fas fa-circle-check"></i>
+              <div>
+                <strong>Data Protection</strong>
+                <p>End-to-end cryptographic key encryption, identity access management (IAM), and data privacy controls.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-detail-actions">
+            <button type="button" class="btn btn-primary btn-service-explore" data-service-trigger="cybersecurity">
+              <span>Explore Cybersecurity</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <span>Schedule Strategy Call</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="services-detail-visual reveal-right">
+          <div class="service-media-frame">
+            <div class="service-media-img" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800');"></div>
+            <div class="service-media-badge">
+              <i class="fas fa-lock"></i>
+              <span>Zero-Trust Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       4. CALL TO ACTION & CONSULTATION SECTION
+       =================================================== -->
+  <section id="contact" class="section-padding contact-section bg-alt">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h4 class="section-badge"><i class="fas fa-handshake"></i> Let's Collaborate</h4>
+          <h2 class="section-title">Ready to Transform Your Business?</h2>
+          <p class="section-subtitle" style="margin-left: 0; text-align: left;">Connect with our enterprise architects and domain specialists to discuss your technical roadmap, solution requirements, and implementation timeline.</p>
+          
+          <ul class="contact-details">
+            <li><i class="fas fa-map-marker-alt"></i>
+              <div><strong>Global Headquarters</strong><br>Bengaluru, Karnataka, India - 560076</div>
+            </li>
+            <li><i class="fas fa-phone-alt"></i>
+              <div><strong>Direct Telephone</strong><br>+91 8618471424</div>
+            </li>
+            <li><i class="fas fa-envelope"></i>
+              <div><strong>Email Inquiries</strong><br>info@arshithinfotech.com</div>
+            </li>
+            <li><i class="fas fa-clock"></i>
+              <div><strong>Operational Hours</strong><br>Monday – Friday, 10:00 AM – 6:00 PM EST</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" placeholder="Arshith" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" placeholder="Infotech" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email *</label>
+              <input type="email" id="email" placeholder="info@arshithinfotech.com" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" placeholder="Organization or Enterprise">
+            </div>
+            <div class="form-group">
+              <label for="service">Service of Interest *</label>
+              <select id="service" required>
+                <option value="">Select a service...</option>
+                <option selected>Digital Transformation</option>
+                <option>Cloud Computing</option>
+                <option>Engineering &amp; R&amp;D</option>
+                <option>AI &amp; Intelligent Solutions</option>
+                <option>Cybersecurity</option>
+                <option>Other Enterprise Solutions</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Description &amp; Goals</label>
+              <textarea id="message" rows="4" placeholder="Tell us about your project requirements, scope, or timeline..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <span>Submit Project Inquiry</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-note"><i class="fas fa-shield-alt"></i> Your information is secure and will never be shared.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <i class="fas fa-check-circle"></i>
+            <h3>Inquiry Received!</h3>
+            <p>Thank you for reaching out. Our solution architects will review your requirements and respond within 1 business day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       5. ENHANCED PREMIUM FOOTER
+       =================================================== -->
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h3>Stay Ahead in Tech</h3>
+            <p>Get the latest insights on AI, Cloud, and Digital Transformation delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your business email" required>
+            <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+          </a>
+          <p class="footer-about">Pioneering the future of digital services and consulting. We empower forward-thinking enterprises across 40+ countries to reimagine their business for the digital age.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="services.html#digital-transformation"><i class="fas fa-angle-right"></i> Digital Transformation</a></li>
+            <li><a href="services.html#cloud-computing"><i class="fas fa-angle-right"></i> Cloud Computing</a></li>
+            <li><a href="services.html#engineering-rd"><i class="fas fa-angle-right"></i> Engineering &amp; R&amp;D</a></li>
+            <li><a href="services.html#ai-solutions"><i class="fas fa-angle-right"></i> AI &amp; Intelligent Solutions</a></li>
+            <li><a href="services.html#cybersecurity"><i class="fas fa-angle-right"></i> Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+            <li><a href="internships.html"><i class="fas fa-angle-right"></i> Internships</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Investor Relations</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Global Newsroom</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-minimal">
+            <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India - 560076</li>
+            <li><i class="fas fa-phone-alt"></i> +91 8618471424</li>
+            <li><i class="fas fa-envelope"></i> info@arshithinfotech.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Arshith Info-Tech. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA Button -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="#contact" class="floating-cta-btn" id="floatingCtaBtn">
+      <i class="fas fa-comments"></i>
+      <span>Let's Talk</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- ===================================================
+       INDIVIDUAL SERVICE DETAIL POPUP MODALS (5 STANDALONE MODALS)
+       =================================================== -->
+
+  <!-- Modal 1: Digital Transformation ONLY -->
+  <div id="modal-digital-transformation" class="capability-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-dt">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Service 01 • Modernize</span>
+          <h2 id="modalTitle-dt" class="capability-detail-title">Digital Transformation</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">Modernize business operations with connected digital experiences, intelligent automation, and technology solutions designed to improve efficiency and accelerate growth. We help organizations rethink business models, eliminate legacy technical debt, and unlock continuous innovation across departments.</p>
+        
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> Key Capabilities &amp; Deliverables:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Legacy Application Modernization</li>
+            <li><i class="fas fa-circle-check"></i> Business Process Automation</li>
+            <li><i class="fas fa-circle-check"></i> Enterprise Application Development</li>
+            <li><i class="fas fa-circle-check"></i> Digital Experience Transformation</li>
+            <li><i class="fas fa-circle-check"></i> Digital Strategy &amp; Transformation Consulting</li>
+            <li><i class="fas fa-circle-check"></i> Data-Driven Business Solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Services
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Cloud Computing ONLY -->
+  <div id="modal-cloud-computing" class="capability-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-cc">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-cloud"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Service 02 • Infrastructure</span>
+          <h2 id="modalTitle-cc" class="capability-detail-title">Cloud Computing</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">Build flexible and scalable cloud environments that improve performance, simplify infrastructure, and help businesses adapt to changing demands. From enterprise multi-cloud migrations to resilient microservice deployments, we deliver high-availability cloud architecture tailored for rapid growth.</p>
+        
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> Key Capabilities &amp; Deliverables:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Cloud Migration Planning &amp; Execution</li>
+            <li><i class="fas fa-circle-check"></i> Cloud-Native Application Development</li>
+            <li><i class="fas fa-circle-check"></i> Infrastructure Modernization (IaC / DevOps)</li>
+            <li><i class="fas fa-circle-check"></i> Cloud Monitoring &amp; Cost Optimization</li>
+            <li><i class="fas fa-circle-check"></i> Backup &amp; Disaster Recovery Systems</li>
+            <li><i class="fas fa-circle-check"></i> Multi-Region Cloud Security Solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Services
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Engineering & R&D ONLY -->
+  <div id="modal-engineering-rd" class="capability-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-erd">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-flask"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Service 03 • Product Engineering</span>
+          <h2 id="modalTitle-erd" class="capability-detail-title">Engineering &amp; R&amp;D</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">Turn ideas into reliable technology products through product engineering, research, prototyping, and continuous innovation. Our specialized engineers combine rigorous software architecture principles with agile rapid prototyping to build high-performance products that lead their markets.</p>
+        
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> Key Capabilities &amp; Deliverables:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Product Engineering &amp; Design</li>
+            <li><i class="fas fa-circle-check"></i> Distributed Software Architecture</li>
+            <li><i class="fas fa-circle-check"></i> Rapid Prototyping &amp; MVP Development</li>
+            <li><i class="fas fa-circle-check"></i> Technology Research &amp; Emerging Tech</li>
+            <li><i class="fas fa-circle-check"></i> Systems Integration &amp; Scalability Testing</li>
+            <li><i class="fas fa-circle-check"></i> Continuous Innovation Sprints</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Services
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: AI & Intelligent Solutions ONLY -->
+  <div id="modal-ai-intelligent-solutions" class="capability-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-ai">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-brain"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Service 04 • Applied AI</span>
+          <h2 id="modalTitle-ai" class="capability-detail-title">AI &amp; Intelligent Solutions</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">Apply artificial intelligence and machine learning to automate processes, uncover valuable insights, and enable smarter business decisions. We design production AI ecosystems that transform enterprise workflows through generative AI models, deep analytics, and real-time intelligent automation.</p>
+        
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> Key Capabilities &amp; Deliverables:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Artificial Intelligence &amp; LLM Integration</li>
+            <li><i class="fas fa-circle-check"></i> Custom Machine Learning Models</li>
+            <li><i class="fas fa-circle-check"></i> Intelligent Automation Pipelines</li>
+            <li><i class="fas fa-circle-check"></i> Predictive Analytics &amp; Forecasting</li>
+            <li><i class="fas fa-circle-check"></i> Enterprise Data Modernization</li>
+            <li><i class="fas fa-circle-check"></i> Cognitive Business Decision Engines</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Services
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Cybersecurity ONLY -->
+  <div id="modal-cybersecurity" class="capability-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-cs">
+    <div class="modal-box capability-modal-box">
+      <button class="modal-close capability-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="capability-detail-header">
+        <div class="cap-panel-icon"><i class="fas fa-shield-halved"></i></div>
+        <div class="cap-panel-title-area">
+          <span class="cap-tag">Service 05 • Zero-Trust</span>
+          <h2 id="modalTitle-cs" class="capability-detail-title">Cybersecurity</h2>
+        </div>
+      </div>
+
+      <div class="capability-detail-body">
+        <p class="cap-expanded-desc">Protect applications, infrastructure, and business data with proactive security solutions designed to reduce risk and strengthen digital resilience. We engineer comprehensive defense architectures using zero-trust models, continuous threat intelligence, and automated vulnerability remediation.</p>
+        
+        <div class="cap-deliverables-wrap">
+          <h4 class="cap-deliver-title"><i class="fas fa-sparkles"></i> Key Capabilities &amp; Deliverables:</h4>
+          <ul class="cap-deliver-list">
+            <li><i class="fas fa-circle-check"></i> Comprehensive Security Assessment</li>
+            <li><i class="fas fa-circle-check"></i> DevSecOps &amp; Application Security</li>
+            <li><i class="fas fa-circle-check"></i> 24/7 Threat Monitoring &amp; SOC Response</li>
+            <li><i class="fas fa-circle-check"></i> Advanced Data Protection &amp; IAM</li>
+            <li><i class="fas fa-circle-check"></i> Zero-Trust Network Defense Architecture</li>
+            <li><i class="fas fa-circle-check"></i> Cloud &amp; Infrastructure Hardening</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capability-modal-footer">
+        <button type="button" class="cap-modal-back-btn capability-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Services
+        </button>
+        <a href="#contact" class="cap-modal-cta-btn modal-cta modal-close-trigger">
+          <span>Consult With Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Free Consultation Request Popup Modal -->
+  <div id="consultationModal" role="dialog" aria-modal="true" aria-labelledby="consultationModalTitle">
+    <div class="modal-box consultation-modal-box">
+      <button class="modal-close consultation-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      <div class="consultation-header">
+        <div class="modal-badge"><i class="fas fa-calendar-check"></i> Free Consultation</div>
+        <h2 id="consultationModalTitle">Request Your Free Consultation</h2>
+        <p class="modal-subtitle">Connect with our enterprise technology experts for a personalized strategy session.</p>
+      </div>
+      
+      <form id="consultationForm" class="consultation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="consultName">Full Name *</label>
+            <input type="text" id="consultName" placeholder="Arshith Infotech" required />
+          </div>
+          <div class="form-group">
+            <label for="consultEmail">Work Email *</label>
+            <input type="email" id="consultEmail" placeholder="info@arshithinfotech.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="consultPhone">Phone Number</label>
+            <input type="tel" id="consultPhone" placeholder="+91 8618471424" />
+          </div>
+          <div class="form-group">
+            <label for="consultService">Service of Interest</label>
+            <select id="consultService">
+              <option value="Digital Transformation">Digital Transformation</option>
+              <option value="Cloud Computing">Cloud Computing</option>
+              <option value="Engineering &amp; R&amp;D">Engineering &amp; R&amp;D</option>
+              <option value="AI &amp; Intelligent Solutions">AI &amp; Intelligent Solutions</option>
+              <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="consultNote">How can we help you? *</label>
+          <textarea id="consultNote" rows="3" placeholder="Briefly describe your project or operational challenge..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary consult-submit-btn">
+          <span>Book Your Strategy Call</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <p class="form-privacy-note"><i class="fas fa-lock"></i> Strict confidentiality. No obligation.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- Last Updated: 2026-09-04T07:32:27.501Z -->

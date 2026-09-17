@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers | Arshith Info-Tech - Build Your Future With Us</title>
+  <meta name="description"
+    content="Join Arshith Info-Tech. Build your career with curious thinkers, technology enthusiasts, and problem solvers creating transformative solutions across AI, Cloud, Cybersecurity, and Digital Transformation." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=1.1">
+  <link rel="stylesheet" href="footer-premium.css?v=1.1">
+  <style>
+    /* Direct override for Why Feature Cards */
+    .why-interactive-grid > .why-feature-card:nth-child(1) .why-icon-circle,
+    .why-feature-card.card-grow .why-icon-circle {
+      background: rgba(245, 166, 35, 0.08) !important;
+      border: 1px solid rgba(245, 166, 35, 0.25) !important;
+      color: #F5A623 !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(1) .why-card-title,
+    .why-feature-card.card-grow .why-card-title {
+      color: #F5A623 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(2) .why-icon-circle,
+    .why-feature-card.card-innovate .why-icon-circle {
+      background: rgba(124, 58, 237, 0.08) !important;
+      border: 1px solid rgba(124, 58, 237, 0.25) !important;
+      color: #D97706 !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(2) .why-card-title,
+    .why-feature-card.card-innovate .why-card-title {
+      color: #D97706 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(3) .why-icon-circle,
+    .why-feature-card.card-collaborate .why-icon-circle {
+      background: rgba(5, 150, 105, 0.08) !important;
+      border: 1px solid rgba(5, 150, 105, 0.25) !important;
+      color: #059669 !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(3) .why-card-title,
+    .why-feature-card.card-collaborate .why-card-title {
+      color: #059669 !important;
+    }
+
+    .why-interactive-grid > .why-feature-card:nth-child(4) .why-icon-circle,
+    .why-feature-card.card-impact .why-icon-circle {
+      background: rgba(234, 88, 12, 0.08) !important;
+      border: 1px solid rgba(234, 88, 12, 0.25) !important;
+      color: #ea580c !important;
+    }
+    .why-interactive-grid > .why-feature-card:nth-child(4) .why-card-title,
+    .why-feature-card.card-impact .why-card-title {
+      color: #ea580c !important;
+    }
+
+    /* Culture Value Pillars - Small clean icon box matching Why cards */
+    .culture-value-pillar .pillar-icon,
+    body.page-careers .pillar-icon {
+      width: 52px !important;
+      height: 52px !important;
+      border-radius: 14px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      font-size: 1.3rem !important;
+      margin-bottom: 1.4rem !important;
+    }
+
+    /* Pillar 1: Curiosity - Blue */
+    .culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-icon,
+    .culture-value-pillar.pillar-curiosity .pillar-icon {
+      background: rgba(245, 166, 35, 0.08) !important;
+      border: 1px solid rgba(245, 166, 35, 0.25) !important;
+      color: #F5A623 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-title,
+    .culture-value-pillar.pillar-curiosity .pillar-title {
+      color: #F5A623 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-top-accent,
+    .culture-value-pillar.pillar-curiosity .pillar-top-accent {
+      background: linear-gradient(90deg, #F5A623 0%, #FBBF24 100%) !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(1) .pillar-footer-tag,
+    .culture-value-pillar.pillar-curiosity .pillar-footer-tag {
+      color: #F5A623 !important;
+    }
+
+    /* Pillar 2: Ownership - Purple */
+    .culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-icon,
+    .culture-value-pillar.pillar-ownership .pillar-icon {
+      background: rgba(124, 58, 237, 0.08) !important;
+      border: 1px solid rgba(124, 58, 237, 0.25) !important;
+      color: #D97706 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-title,
+    .culture-value-pillar.pillar-ownership .pillar-title {
+      color: #D97706 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-top-accent,
+    .culture-value-pillar.pillar-ownership .pillar-top-accent {
+      background: linear-gradient(90deg, #D97706 0%, #a78bfa 100%) !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(2) .pillar-footer-tag,
+    .culture-value-pillar.pillar-ownership .pillar-footer-tag {
+      color: #D97706 !important;
+    }
+
+    /* Pillar 3: Collaboration - Green */
+    .culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-icon,
+    .culture-value-pillar.pillar-collaboration .pillar-icon {
+      background: rgba(5, 150, 105, 0.08) !important;
+      border: 1px solid rgba(5, 150, 105, 0.25) !important;
+      color: #059669 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-title,
+    .culture-value-pillar.pillar-collaboration .pillar-title {
+      color: #059669 !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-top-accent,
+    .culture-value-pillar.pillar-collaboration .pillar-top-accent {
+      background: linear-gradient(90deg, #059669 0%, #34d399 100%) !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(3) .pillar-footer-tag,
+    .culture-value-pillar.pillar-collaboration .pillar-footer-tag {
+      color: #059669 !important;
+    }
+
+    /* Pillar 4: Continuous Improvement - Orange */
+    .culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-icon,
+    .culture-value-pillar.pillar-improvement .pillar-icon {
+      background: rgba(234, 88, 12, 0.08) !important;
+      border: 1px solid rgba(234, 88, 12, 0.25) !important;
+      color: #ea580c !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-title,
+    .culture-value-pillar.pillar-improvement .pillar-title {
+      color: #ea580c !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-top-accent,
+    .culture-value-pillar.pillar-improvement .pillar-top-accent {
+      background: linear-gradient(90deg, #ea580c 0%, #fb923c 100%) !important;
+    }
+    .culture-values-layout > .culture-value-pillar:nth-child(4) .pillar-footer-tag,
+    .culture-value-pillar.pillar-improvement .pillar-footer-tag {
+      color: #ea580c !important;
+    }
+
+    /* Careers Opportunities Filter Bar & Job Cards Light Theme */
+    .careers-filter-bar,
+    body.page-careers .careers-filter-bar {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 50px !important;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06) !important;
+      padding: 0.9rem 1.4rem !important;
+      margin-bottom: 2.5rem !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 1.25rem !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .careers-filter-bar .career-filter-label,
+    body.page-careers .career-filter-label {
+      color: #0f172a !important;
+      font-weight: 800 !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      font-size: 0.85rem !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.06em !important;
+    }
+
+    .careers-filter-bar .career-filter-label i {
+      color: #F5A623 !important;
+    }
+
+    .careers-filter-bar .career-pill,
+    body.page-careers .career-pill {
+      color: #475569 !important;
+      background: #f8fafc !important;
+      border: 1px solid #cbd5e1 !important;
+      font-weight: 600 !important;
+      padding: 0.5rem 1.2rem !important;
+      border-radius: 50px !important;
+      font-size: 0.85rem !important;
+      cursor: pointer !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .careers-filter-bar .career-pill:hover,
+    body.page-careers .career-pill:hover {
+      color: #F5A623 !important;
+      background: #FFFBEB !important;
+      border-color: #F5A623 !important;
+    }
+
+    .careers-filter-bar .career-pill.active,
+    body.page-careers .career-pill.active {
+      color: #ffffff !important;
+      background: #F5A623 !important;
+      border-color: #F5A623 !important;
+      box-shadow: 0 4px 14px rgba(245, 166, 35, 0.35) !important;
+    }
+
+    /* Jobs List & Cards */
+    .jobs-list-container {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1.4rem !important;
+    }
+
+    .jobs-list-container .job-card-item,
+    body.page-careers .job-card-item {
+      background: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      border-radius: 20px !important;
+      padding: 2.2rem 2.5rem !important;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      display: flex;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 2rem !important;
+    }
+
+    .jobs-list-container .job-card-item.is-hidden,
+    body.page-careers .job-card-item.is-hidden,
+    .job-card-item[style*="display: none"] {
+      display: none !important;
+    }
+
+    .jobs-list-container .job-card-item:hover,
+    body.page-careers .job-card-item:hover {
+      transform: translateY(-4px) !important;
+      border-color: #F5A623 !important;
+      box-shadow: 0 16px 40px rgba(245, 166, 35, 0.16), 0 4px 12px rgba(15, 23, 42, 0.08) !important;
+    }
+
+    .job-card-item .job-title,
+    body.page-careers .job-title {
+      color: #0f172a !important;
+      font-size: 1.35rem !important;
+      font-weight: 800 !important;
+      margin-bottom: 0.5rem !important;
+    }
+
+    .job-card-item:hover .job-title,
+    body.page-careers .job-card-item:hover .job-title {
+      color: #F5A623 !important;
+    }
+
+    .job-card-item .job-snippet,
+    body.page-careers .job-snippet {
+      color: #475569 !important;
+      font-size: 0.95rem !important;
+      line-height: 1.6 !important;
+      margin-bottom: 1rem !important;
+    }
+
+    .job-meta-row .meta-tag,
+    body.page-careers .meta-tag {
+      background: #f1f5f9 !important;
+      border: 1px solid #e2e8f0 !important;
+      color: #334155 !important;
+      font-size: 0.82rem !important;
+      font-weight: 600 !important;
+      padding: 0.35rem 0.85rem !important;
+      border-radius: 50px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.4rem !important;
+    }
+
+    .job-meta-row .meta-tag i,
+    body.page-careers .meta-tag i {
+      color: #F5A623 !important;
+    }
+
+    .btn-view-job,
+    body.page-careers .btn-view-job {
+      background: #F5A623 !important;
+      color: #ffffff !important;
+      border: 1px solid #F5A623 !important;
+      font-weight: 700 !important;
+      padding: 0.75rem 1.5rem !important;
+      border-radius: 50px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      transition: all 0.3s ease !important;
+      cursor: pointer !important;
+      white-space: nowrap !important;
+    }
+
+    .btn-view-job:hover,
+    body.page-careers .btn-view-job:hover {
+      background: #D97706 !important;
+      border-color: #D97706 !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 6px 18px rgba(245, 166, 35, 0.35) !important;
+    }
+  </style>
+</head>
+
+<body class="theme-page-cyber-blue page-careers">
+
+  <!-- Global Animated Background (Interactive Constellation Canvas + Ambient Aurora Glow) -->
+  <div class="global-aurora-bg">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+    <div class="aurora-orb aurora-orb-4"></div>
+  </div>
+  <canvas id="globalParticlesCanvas"></canvas>
+
+  <!-- Navbar (Exact Same Header Component) -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <div class="drawer-brand">
+          <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+        </div>
+        <button class="drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-laptop-code"></i> Services</a></li>
+        <li><a href="industries.html"><i class="fas fa-layer-group"></i> Industries</a></li>
+        <li><a href="insights.html"><i class="fas fa-newspaper"></i> Insights</a></li>
+        
+        <!-- Careers Dropdown Navigation Item -->
+        <li class="nav-item-dropdown active">
+          <a href="javascript:void(0)" class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-briefcase"></i> Careers <i class="fas fa-chevron-down nav-dropdown-arrow"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="careers.html" class="nav-dropdown-link active">
+                <span class="dropdown-link-icon"><i class="fas fa-user-tie"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Full-Time Careers</strong>
+                  <small>Experienced &amp; Early Career Openings</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Internships 2026</strong>
+                  <small>Students &amp; Graduate Programs</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="about-infotech.html"><i class="fas fa-building"></i> About Us</a></li>
+        <li class="drawer-cta-item"><a href="javascript:void(0)" class="btn btn-primary drawer-cta-btn" aria-haspopup="dialog"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+      </ul>
+      <a href="javascript:void(0)" class="btn btn-primary nav-cta" aria-haspopup="dialog">Contact Us</a>
+      <div class="menu-toggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menuOverlay"></div>
+
+  <!-- ===================================================
+       1. CAREERS HERO SECTION
+       =================================================== -->
+  <header class="careers-hero-section">
+    <div class="container">
+      <div class="careers-hero-grid">
+        
+        <!-- Hero Left: Typography & Actions -->
+        <div class="careers-hero-content reveal-left">
+          <div class="careers-pill-badge">
+            <span class="careers-pulse-dot"></span>
+            <span>CAREERS</span>
+          </div>
+
+          <h1 class="careers-hero-title">
+            Build Your Future <br><span class="gradient-text">With Us</span>
+          </h1>
+
+          <p class="careers-hero-lead">
+            Join a team of curious thinkers, technology enthusiasts, and problem solvers who are building solutions for the digital world.
+          </p>
+
+          <!-- Fast Switcher between Full-Time and Internships -->
+          <div class="careers-switch-container" style="justify-content: flex-start; margin: 1.2rem 0 1.8rem 0;">
+            <div class="careers-switch-pill-wrapper">
+              <a href="careers.html" class="careers-switch-tab active">
+                <i class="fas fa-briefcase"></i> Full-Time Careers
+              </a>
+              <a href="internships.html" class="careers-switch-tab">
+                <i class="fas fa-graduation-cap"></i> Student Internships
+              </a>
+            </div>
+          </div>
+
+          <div class="careers-hero-cta-group">
+            <a href="#openings" class="btn btn-primary careers-primary-btn">
+              <span>Explore Opportunities</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="internships.html" class="btn btn-outline careers-secondary-btn" style="border-color: rgba(245, 166, 35, 0.35); color: #F5A623;">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Internship Programs</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Strip -->
+          <div class="careers-hero-metrics">
+            <div class="hero-metric-item">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Collaborative Spirit</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="hero-metric-item">
+              <span class="metric-value">Continuous</span>
+              <span class="metric-label">Learning &amp; Mentorship</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="hero-metric-item">
+              <span class="metric-value">Global</span>
+              <span class="metric-label">Project Exposure</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Team Collaboration Visual Frame -->
+        <div class="careers-hero-visual reveal-right">
+          <div class="careers-image-composition">
+            <div class="composition-main-img-wrapper">
+              <img src="assets/images/careers-hero.jpg" alt="Diverse Technology Team Collaborating at Arshith Info-Tech" class="careers-team-img">
+              <div class="img-ambient-gradient"></div>
+            </div>
+
+            <!-- Floating Employee Telemetry Badges -->
+            <div class="careers-floating-badge badge-top-right">
+              <div class="badge-icon"><i class="fas fa-brain"></i></div>
+              <div class="badge-text">
+                <strong>Modern Tech Stacks</strong>
+                <span>AI, Cloud &amp; Distributed Systems</span>
+              </div>
+            </div>
+
+            <div class="careers-floating-badge badge-bottom-left">
+              <div class="badge-icon"><i class="fas fa-seedling"></i></div>
+              <div class="badge-text">
+                <strong>Career Acceleration</strong>
+                <span>Structured Growth Pathways</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       CAREERS LIGHT THEME SHOWCASE WRAPPER
+       =================================================== -->
+  <div class="careers-light-wrapper" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 10 !important;">
+
+    <!-- ===================================================
+         2. WHY JOIN US SECTION (4 Interactive Feature Areas)
+         =================================================== -->
+    <section class="careers-why-section section-padding" id="why-join-us" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 12 !important;">
+    <div class="container">
+      
+      <div class="section-header-centered reveal-up">
+        <span class="section-eyebrow"><i class="fas fa-compass"></i> WHY BUILD YOUR CAREER</span>
+        <h2 class="section-heading">Why Build Your Career With Arshith Info-Tech?</h2>
+        <p class="section-subtitle">
+          We believe great technology starts with great people. We create an environment where individuals can learn, collaborate, experiment, and grow while working on meaningful technology challenges.
+        </p>
+      </div>
+
+      <div class="why-interactive-grid">
+        
+        <!-- Feature 01: GROW -->
+        <div class="why-feature-card card-grow reveal-up" data-delay="100">
+          <div class="why-card-glow"></div>
+          <div class="why-card-number">01</div>
+          <div class="why-icon-circle">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="why-card-title">GROW</h3>
+          <p class="why-card-desc">
+            Build your skills through continuous learning, mentorship, and exposure to modern technologies.
+          </p>
+          <ul class="why-card-points">
+            <li><i class="fas fa-check"></i> Personalized development roadmaps</li>
+            <li><i class="fas fa-check"></i> Industry certification sponsorships</li>
+            <li><i class="fas fa-check"></i> Senior executive mentorship</li>
+          </ul>
+        </div>
+
+        <!-- Feature 02: INNOVATE -->
+        <div class="why-feature-card card-innovate reveal-up" data-delay="200">
+          <div class="why-card-glow"></div>
+          <div class="why-card-number">02</div>
+          <div class="why-icon-circle">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="why-card-title">INNOVATE</h3>
+          <p class="why-card-desc">
+            Work on challenging problems and explore new ideas across AI, cloud, cybersecurity, engineering, and digital transformation.
+          </p>
+          <ul class="why-card-points">
+            <li><i class="fas fa-check"></i> Hackathons and incubation labs</li>
+            <li><i class="fas fa-check"></i> Next-generation cloud architectures</li>
+            <li><i class="fas fa-check"></i> Real-world AI implementation</li>
+          </ul>
+        </div>
+
+        <!-- Feature 03: COLLABORATE -->
+        <div class="why-feature-card card-collaborate reveal-up" data-delay="300">
+          <div class="why-card-glow"></div>
+          <div class="why-card-number">03</div>
+          <div class="why-icon-circle">
+            <i class="fas fa-people-carry-box"></i>
+          </div>
+          <h3 class="why-card-title">COLLABORATE</h3>
+          <p class="why-card-desc">
+            Work with talented teams where different perspectives come together to create better solutions.
+          </p>
+          <ul class="why-card-points">
+            <li><i class="fas fa-check"></i> Cross-functional agile squads</li>
+            <li><i class="fas fa-check"></i> Transparent, open-door leadership</li>
+            <li><i class="fas fa-check"></i> Inclusive, supportive culture</li>
+          </ul>
+        </div>
+
+        <!-- Feature 04: MAKE AN IMPACT -->
+        <div class="why-feature-card card-impact reveal-up" data-delay="400">
+          <div class="why-card-glow"></div>
+          <div class="why-card-number">04</div>
+          <div class="why-icon-circle">
+            <i class="fas fa-earth-americas"></i>
+          </div>
+          <h3 class="why-card-title">MAKE AN IMPACT</h3>
+          <p class="why-card-desc">
+            Contribute to technology solutions that solve real business problems and create measurable value.
+          </p>
+          <ul class="why-card-points">
+            <li><i class="fas fa-check"></i> Mission-critical enterprise client projects</li>
+            <li><i class="fas fa-check"></i> Global digital transformation scale</li>
+            <li><i class="fas fa-check"></i> Tangible business outcomes</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================
+       3. LIFE AT ARSHITH INFO-TECH (Editorial Visual Gallery)
+       =================================================== -->
+  <section class="careers-life-section section-padding" id="life-at-arshith" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 10 !important;">
+    <div class="container">
+
+      <div class="section-header-centered reveal-up">
+        <span class="section-eyebrow"><i class="fas fa-heart"></i> WORKPLACE CULTURE</span>
+        <h2 class="section-heading">Life at Arshith Info-Tech</h2>
+        <p class="section-subtitle">
+          More than projects and technology, we are building a workplace where people can learn, share ideas, and grow together.
+        </p>
+      </div>
+
+      <!-- Asymmetric Editorial Gallery Grid -->
+      <div class="life-gallery-mosaic">
+        
+        <!-- Large Featured Gallery Tile -->
+        <div class="gallery-tile tile-large reveal-left">
+          <div class="tile-img-container">
+            <img src="assets/images/life-collab.png" alt="Team Collaboration and Creative Problem Solving" class="gallery-img">
+            <div class="tile-overlay">
+              <span class="tile-tag"><i class="fas fa-users-gear"></i> TEAM COLLABORATION</span>
+              <h3 class="tile-title">Creative Problem Solving</h3>
+              <p class="tile-desc">Engineers and architects collaborating in open brainstorming sessions to architect scalable solutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stacked Gallery Tile 1 -->
+        <div class="gallery-tile tile-medium reveal-right">
+          <div class="tile-img-container">
+            <img src="assets/images/life-learning.jpg" alt="Technology Discussions and Learning" class="gallery-img">
+            <div class="tile-overlay">
+              <span class="tile-tag"><i class="fas fa-chalkboard-user"></i> KNOWLEDGE SHARING</span>
+              <h3 class="tile-title">Learning &amp; Development</h3>
+              <p class="tile-desc">Regular tech talks, peer code reviews, and deep-dive technical workshops.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stacked Gallery Tile 2 -->
+        <div class="gallery-tile tile-medium reveal-up">
+          <div class="tile-img-container">
+            <img src="assets/images/life-tech.jpg" alt="Technology Discussions & Architecture" class="gallery-img">
+            <div class="tile-overlay">
+              <span class="tile-tag"><i class="fas fa-microchip"></i> INNOVATION CULTURE</span>
+              <h3 class="tile-title">Technology Discussions</h3>
+              <p class="tile-desc">Exploring modern frameworks, cloud architectures, and emerging AI paradigms.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================
+       4. OUR CULTURE ("Grow With Us" 4 Core Values)
+       =================================================== -->
+  <section class="careers-culture-section section-padding" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 10 !important;">
+    <div class="container">
+      
+      <div class="section-header-centered reveal-up">
+        <span class="section-eyebrow"><i class="fas fa-award"></i> CORE PRINCIPLES</span>
+        <h2 class="section-heading">Grow With Us</h2>
+        <p class="section-subtitle">
+          Our core values guide how we work with clients, support our teammates, and evolve as a technology organization.
+        </p>
+      </div>
+
+      <div class="culture-values-layout">
+        
+        <!-- Value 1: Curiosity -->
+        <div class="culture-value-pillar pillar-curiosity reveal-left" data-delay="100">
+          <div class="pillar-top-accent"></div>
+          <div class="pillar-icon"><i class="fas fa-magnifying-glass"></i></div>
+          <h3 class="pillar-title">Curiosity</h3>
+          <p class="pillar-desc">
+            Stay curious, keep learning, and explore better ways to solve problems.
+          </p>
+          <span class="pillar-footer-tag">Never stop exploring</span>
+        </div>
+
+        <!-- Value 2: Ownership -->
+        <div class="culture-value-pillar pillar-ownership reveal-up" data-delay="200">
+          <div class="pillar-top-accent"></div>
+          <div class="pillar-icon"><i class="fas fa-shield-heart"></i></div>
+          <h3 class="pillar-title">Ownership</h3>
+          <p class="pillar-desc">
+            Take responsibility, follow through, and create meaningful results.
+          </p>
+          <span class="pillar-footer-tag">Empowered accountability</span>
+        </div>
+
+        <!-- Value 3: Collaboration -->
+        <div class="culture-value-pillar pillar-collaboration reveal-up" data-delay="300">
+          <div class="pillar-top-accent"></div>
+          <div class="pillar-icon"><i class="fas fa-handshake-angle"></i></div>
+          <h3 class="pillar-title">Collaboration</h3>
+          <p class="pillar-desc">
+            Share knowledge, respect different perspectives, and succeed together.
+          </p>
+          <span class="pillar-footer-tag">Win as one team</span>
+        </div>
+
+        <!-- Value 4: Continuous Improvement -->
+        <div class="culture-value-pillar pillar-improvement reveal-right" data-delay="400">
+          <div class="pillar-top-accent"></div>
+          <div class="pillar-icon"><i class="fas fa-arrows-spin"></i></div>
+          <h3 class="pillar-title">Continuous Improvement</h3>
+          <p class="pillar-desc">
+            Learn from every experience and keep raising the quality of our work.
+          </p>
+          <span class="pillar-footer-tag">Excellence by design</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================
+       5. CAREER OPPORTUNITIES & JOB SEARCH INTERFACE
+       =================================================== -->
+  <section class="careers-openings-section section-padding" id="openings" style="background-color: #ffffff !important; background: #ffffff !important; position: relative !important; z-index: 10 !important;">
+    <div class="container">
+      
+      <div class="section-header-centered reveal-up">
+        <span class="section-eyebrow"><i class="fas fa-briefcase"></i> CAREER OPPORTUNITIES</span>
+        <h2 class="section-heading">Find Your Opportunity</h2>
+        <p class="section-subtitle">
+          Explore opportunities to work with our teams and build your career across technology, engineering, consulting, and business functions.
+        </p>
+      </div>
+
+      <!-- Department Filter Pills -->
+      <div class="careers-filter-bar reveal-up" id="careersFilterBar">
+        <span class="career-filter-label"><i class="fas fa-filter"></i> Department:</span>
+        <div class="career-pills-scroll">
+          <button type="button" class="career-pill active" data-job-filter="all">All Opportunities</button>
+          <button type="button" class="career-pill" data-job-filter="engineering">Engineering</button>
+          <button type="button" class="career-pill" data-job-filter="ai-data">AI &amp; Data</button>
+          <button type="button" class="career-pill" data-job-filter="cloud">Cloud</button>
+          <button type="button" class="career-pill" data-job-filter="cybersecurity">Cybersecurity</button>
+          <button type="button" class="career-pill" data-job-filter="design">Design</button>
+          <button type="button" class="career-pill" data-job-filter="business-consulting">Business &amp; Consulting</button>
+        </div>
+      </div>
+
+      <!-- Job Listings Grid -->
+      <div class="jobs-list-container">
+        
+        <!-- Job 1: Software Engineer -->
+        <div class="job-card-item reveal-up" data-job-category="engineering">
+          <div class="job-card-main">
+            <div class="job-dept-tag tag-engineering">
+              <i class="fas fa-code"></i> Engineering
+            </div>
+            <h3 class="job-title">Software Engineer</h3>
+            <p class="job-snippet">
+              Design, build, and maintain scalable full-stack applications, microservices, and backend APIs using modern frameworks.
+            </p>
+            <div class="job-meta-row">
+              <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+              <span class="meta-tag"><i class="fas fa-clock"></i> Full Time</span>
+              <span class="meta-tag"><i class="fas fa-layer-group"></i> 2-5 Years Exp</span>
+            </div>
+          </div>
+          <div class="job-card-action">
+            <button type="button" class="btn btn-outline btn-view-job" data-open-job-modal="se">
+              <span>View Position</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job 2: AI / ML Engineer -->
+        <div class="job-card-item reveal-up" data-job-category="ai-data">
+          <div class="job-card-main">
+            <div class="job-dept-tag tag-ai">
+              <i class="fas fa-brain"></i> AI &amp; Data
+            </div>
+            <h3 class="job-title">AI / ML Engineer</h3>
+            <p class="job-snippet">
+              Develop, fine-tune, and deploy machine learning models, generative AI workflows, and predictive analytics engines.
+            </p>
+            <div class="job-meta-row">
+              <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+              <span class="meta-tag"><i class="fas fa-clock"></i> Full Time</span>
+              <span class="meta-tag"><i class="fas fa-layer-group"></i> 3-6 Years Exp</span>
+            </div>
+          </div>
+          <div class="job-card-action">
+            <button type="button" class="btn btn-outline btn-view-job" data-open-job-modal="aiml">
+              <span>View Position</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job 3: Cloud Engineer -->
+        <div class="job-card-item reveal-up" data-job-category="cloud">
+          <div class="job-card-main">
+            <div class="job-dept-tag tag-cloud">
+              <i class="fas fa-cloud"></i> Cloud
+            </div>
+            <h3 class="job-title">Cloud Engineer</h3>
+            <p class="job-snippet">
+              Architect and manage enterprise cloud infrastructure, Kubernetes clusters, and automated CI/CD deployment pipelines.
+            </p>
+            <div class="job-meta-row">
+              <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+              <span class="meta-tag"><i class="fas fa-clock"></i> Full Time</span>
+              <span class="meta-tag"><i class="fas fa-layer-group"></i> 3-5 Years Exp</span>
+            </div>
+          </div>
+          <div class="job-card-action">
+            <button type="button" class="btn btn-outline btn-view-job" data-open-job-modal="cloud">
+              <span>View Position</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job 4: Cybersecurity Analyst -->
+        <div class="job-card-item reveal-up" data-job-category="cybersecurity">
+          <div class="job-card-main">
+            <div class="job-dept-tag tag-cyber">
+              <i class="fas fa-shield-halved"></i> Cybersecurity
+            </div>
+            <h3 class="job-title">Cybersecurity Analyst</h3>
+            <p class="job-snippet">
+              Monitor threat intelligence, implement zero-trust protocols, and perform vulnerability assessments across enterprise platforms.
+            </p>
+            <div class="job-meta-row">
+              <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+              <span class="meta-tag"><i class="fas fa-clock"></i> Full Time</span>
+              <span class="meta-tag"><i class="fas fa-layer-group"></i> 2-4 Years Exp</span>
+            </div>
+          </div>
+          <div class="job-card-action">
+            <button type="button" class="btn btn-outline btn-view-job" data-open-job-modal="cyber">
+              <span>View Position</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job 5: UI/UX Designer -->
+        <div class="job-card-item reveal-up" data-job-category="design">
+          <div class="job-card-main">
+            <div class="job-dept-tag tag-design">
+              <i class="fas fa-pen-ruler"></i> Design
+            </div>
+            <h3 class="job-title">UI/UX Designer</h3>
+            <p class="job-snippet">
+              Craft intuitive user interfaces, enterprise design systems, interactive prototypes, and frictionless user experiences.
+            </p>
+            <div class="job-meta-row">
+              <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+              <span class="meta-tag"><i class="fas fa-clock"></i> Full Time</span>
+              <span class="meta-tag"><i class="fas fa-layer-group"></i> 2-5 Years Exp</span>
+            </div>
+          </div>
+          <div class="job-card-action">
+            <button type="button" class="btn btn-outline btn-view-job" data-open-job-modal="design">
+              <span>View Position</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job 6: Business Analyst -->
+        <div class="job-card-item reveal-up" data-job-category="business-consulting">
+          <div class="job-card-main">
+            <div class="job-dept-tag tag-business">
+              <i class="fas fa-briefcase"></i> Business &amp; Consulting
+            </div>
+            <h3 class="job-title">Business Analyst</h3>
+            <p class="job-snippet">
+              Translate complex business requirements into clear technical specifications, process flows, and measurable digital initiatives.
+            </p>
+            <div class="job-meta-row">
+              <span class="meta-tag"><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+              <span class="meta-tag"><i class="fas fa-clock"></i> Full Time</span>
+              <span class="meta-tag"><i class="fas fa-layer-group"></i> 2-5 Years Exp</span>
+            </div>
+          </div>
+          <div class="job-card-action">
+            <button type="button" class="btn btn-outline btn-view-job" data-open-job-modal="ba">
+              <span>View Position</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================
+       6. CAREERS FINAL CALL TO ACTION
+       =================================================== -->
+  <section class="careers-cta-section section-padding">
+    <div class="container">
+      <div class="careers-cta-box reveal-scale">
+        <div class="careers-cta-content">
+          <span class="cta-kicker"><i class="fas fa-rocket"></i> JOIN OUR MISSION</span>
+          <h2 class="careers-cta-heading">Ready to Build What's Next?</h2>
+          <p class="careers-cta-desc">
+            Bring your ideas, skills, and curiosity to a team building technology for the future.
+          </p>
+          <div class="careers-cta-actions">
+            <a href="#openings" class="btn btn-primary btn-cta-careers">
+              <span>Explore Opportunities</span>
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       7. STANDALONE JOB DETAIL MODALS (6 Positions)
+       =================================================== -->
+
+  <!-- Modal: Software Engineer -->
+  <div id="modal-job-se" class="job-detail-modal" role="dialog" aria-modal="true" aria-labelledby="jobTitle-se">
+    <div class="modal-box job-modal-box">
+      <button class="modal-close job-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="job-modal-header">
+        <div class="job-dept-tag tag-engineering"><i class="fas fa-code"></i> Engineering</div>
+        <h2 id="jobTitle-se" class="job-modal-title">Software Engineer</h2>
+        <div class="job-modal-meta">
+          <span><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> Full Time</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-building"></i> Arshith Core Engineering</span>
+        </div>
+      </div>
+
+      <div class="job-modal-body">
+        <h3>Role Overview</h3>
+        <p>As a Software Engineer at Arshith Info-Tech, you will build and scale mission-critical web applications, backend APIs, and enterprise digital solutions. You will collaborate with cross-functional squads to engineer clean, maintainable, and high-performance software.</p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+          <li>Design, develop, and test modular backend services and responsive frontend interfaces.</li>
+          <li>Write robust unit, integration, and end-to-end automated test suites.</li>
+          <li>Participate in peer code reviews, architectural discussions, and agile sprints.</li>
+          <li>Optimize application performance, database queries, and API response latencies.</li>
+        </ul>
+
+        <h3>Required Skills</h3>
+        <div class="skills-pill-group">
+          <span class="skill-tag">JavaScript / TypeScript</span>
+          <span class="skill-tag">Node.js / Python / Java</span>
+          <span class="skill-tag">React / Modern Web</span>
+          <span class="skill-tag">REST / GraphQL APIs</span>
+          <span class="skill-tag">SQL / NoSQL Databases</span>
+        </div>
+
+        <h3>Preferred Qualifications</h3>
+        <ul>
+          <li>Familiarity with Docker containerization and CI/CD pipelines.</li>
+          <li>Strong understanding of software design patterns and distributed architectures.</li>
+        </ul>
+      </div>
+
+      <div class="job-modal-footer">
+        <button type="button" class="btn btn-outline job-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Positions
+        </button>
+        <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="Software Engineer" data-apply-dept="Engineering">
+          <span>Apply Now</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: AI / ML Engineer -->
+  <div id="modal-job-aiml" class="job-detail-modal" role="dialog" aria-modal="true" aria-labelledby="jobTitle-aiml">
+    <div class="modal-box job-modal-box">
+      <button class="modal-close job-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="job-modal-header">
+        <div class="job-dept-tag tag-ai"><i class="fas fa-brain"></i> AI &amp; Data</div>
+        <h2 id="jobTitle-aiml" class="job-modal-title">AI / ML Engineer</h2>
+        <div class="job-modal-meta">
+          <span><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> Full Time</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-robot"></i> Arshith AI Practice</span>
+        </div>
+      </div>
+
+      <div class="job-modal-body">
+        <h3>Role Overview</h3>
+        <p>Join our AI &amp; Intelligent Solutions squad to develop, fine-tune, and deploy state-of-the-art machine learning models, generative AI pipelines, and predictive analytics tools for enterprise clients.</p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+          <li>Build and deploy ML inference pipelines and agentic generative AI workflows.</li>
+          <li>Fine-tune open source LLMs on proprietary domain data with strict guardrails.</li>
+          <li>Collaborate with data engineers to construct clean ETL training pipelines.</li>
+          <li>Monitor model drift, latency, and inference cost efficiency.</li>
+        </ul>
+
+        <h3>Required Skills</h3>
+        <div class="skills-pill-group">
+          <span class="skill-tag">Python / PyTorch / TensorFlow</span>
+          <span class="skill-tag">Generative AI / LLMs / RAG</span>
+          <span class="skill-tag">Vector Databases</span>
+          <span class="skill-tag">MLOps &amp; Model Deployment</span>
+          <span class="skill-tag">Pandas / NumPy</span>
+        </div>
+
+        <h3>Preferred Qualifications</h3>
+        <ul>
+          <li>Experience with LangChain, LlamaIndex, or agentic frameworks.</li>
+          <li>Published AI/ML projects or contributions to open-source models.</li>
+        </ul>
+      </div>
+
+      <div class="job-modal-footer">
+        <button type="button" class="btn btn-outline job-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Positions
+        </button>
+        <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="AI / ML Engineer" data-apply-dept="AI &amp; Data">
+          <span>Apply Now</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Cloud Engineer -->
+  <div id="modal-job-cloud" class="job-detail-modal" role="dialog" aria-modal="true" aria-labelledby="jobTitle-cloud">
+    <div class="modal-box job-modal-box">
+      <button class="modal-close job-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="job-modal-header">
+        <div class="job-dept-tag tag-cloud"><i class="fas fa-cloud"></i> Cloud</div>
+        <h2 id="jobTitle-cloud" class="job-modal-title">Cloud Engineer</h2>
+        <div class="job-modal-meta">
+          <span><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> Full Time</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-server"></i> Arshith Cloud Platform Team</span>
+        </div>
+      </div>
+
+      <div class="job-modal-body">
+        <h3>Role Overview</h3>
+        <p>Architect, provision, and maintain secure, highly available cloud infrastructures across AWS, Azure, and Google Cloud Platform. You will implement automated Infrastructure as Code (IaC) and reliable CI/CD pipelines.</p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+          <li>Implement Infrastructure as Code using Terraform and CloudFormation.</li>
+          <li>Manage Kubernetes (EKS/AKS/GKE) clusters, service meshes, and ingress controllers.</li>
+          <li>Implement FinOps strategies to monitor and optimize cloud expenditure.</li>
+          <li>Ensure disaster recovery, automated backups, and multi-region resilience.</li>
+        </ul>
+
+        <h3>Required Skills</h3>
+        <div class="skills-pill-group">
+          <span class="skill-tag">AWS / Azure / GCP</span>
+          <span class="skill-tag">Kubernetes &amp; Docker</span>
+          <span class="skill-tag">Terraform / Ansible</span>
+          <span class="skill-tag">CI/CD (GitHub Actions / GitLab)</span>
+          <span class="skill-tag">Linux / Bash / Python</span>
+        </div>
+
+        <h3>Preferred Qualifications</h3>
+        <ul>
+          <li>Certified Cloud Architect or Certified Kubernetes Administrator (CKA).</li>
+        </ul>
+      </div>
+
+      <div class="job-modal-footer">
+        <button type="button" class="btn btn-outline job-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Positions
+        </button>
+        <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="Cloud Engineer" data-apply-dept="Cloud">
+          <span>Apply Now</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Cybersecurity Analyst -->
+  <div id="modal-job-cyber" class="job-detail-modal" role="dialog" aria-modal="true" aria-labelledby="jobTitle-cyber">
+    <div class="modal-box job-modal-box">
+      <button class="modal-close job-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="job-modal-header">
+        <div class="job-dept-tag tag-cyber"><i class="fas fa-shield-halved"></i> Cybersecurity</div>
+        <h2 id="jobTitle-cyber" class="job-modal-title">Cybersecurity Analyst</h2>
+        <div class="job-modal-meta">
+          <span><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> Full Time</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-lock"></i> Arshith Cyber Defense Center</span>
+        </div>
+      </div>
+
+      <div class="job-modal-body">
+        <h3>Role Overview</h3>
+        <p>Protect enterprise digital ecosystems by evaluating vulnerability vectors, configuring zero-trust network boundaries, and responding to cyber incidents across cloud and on-premise environments.</p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+          <li>Conduct periodic vulnerability assessments and penetration testing.</li>
+          <li>Monitor SIEM/SOC alerts and orchestrate rapid incident response.</li>
+          <li>Implement Identity and Access Management (IAM) and least-privilege policies.</li>
+          <li>Ensure compliance with ISO 27001, SOC 2, and GDPR standards.</li>
+        </ul>
+
+        <h3>Required Skills</h3>
+        <div class="skills-pill-group">
+          <span class="skill-tag">SIEM / SOAR Tools</span>
+          <span class="skill-tag">Zero-Trust Architecture</span>
+          <span class="skill-tag">Network Security &amp; Firewalls</span>
+          <span class="skill-tag">Vulnerability Assessment</span>
+          <span class="skill-tag">OWASP Security Standards</span>
+        </div>
+
+        <h3>Preferred Qualifications</h3>
+        <ul>
+          <li>CompTIA Security+, CEH, or CISSP certifications.</li>
+        </ul>
+      </div>
+
+      <div class="job-modal-footer">
+        <button type="button" class="btn btn-outline job-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Positions
+        </button>
+        <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="Cybersecurity Analyst" data-apply-dept="Cybersecurity">
+          <span>Apply Now</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: UI/UX Designer -->
+  <div id="modal-job-design" class="job-detail-modal" role="dialog" aria-modal="true" aria-labelledby="jobTitle-design">
+    <div class="modal-box job-modal-box">
+      <button class="modal-close job-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="job-modal-header">
+        <div class="job-dept-tag tag-design"><i class="fas fa-pen-ruler"></i> Design</div>
+        <h2 id="jobTitle-design" class="job-modal-title">UI/UX Designer</h2>
+        <div class="job-modal-meta">
+          <span><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> Full Time</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-palette"></i> Arshith Product Design Studio</span>
+        </div>
+      </div>
+
+      <div class="job-modal-body">
+        <h3>Role Overview</h3>
+        <p>Design modern, elegant, and user-centric interfaces for enterprise platforms, mobile applications, and web software. You will transform complex workflows into simple, visually stunning digital experiences.</p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+          <li>Create user journey maps, wireframes, high-fidelity mockups, and interactive prototypes.</li>
+          <li>Build and maintain comprehensive design systems and component libraries.</li>
+          <li>Conduct user research, usability testing sessions, and feedback synthesis.</li>
+          <li>Collaborate closely with frontend engineers to ensure pixel-perfect implementation.</li>
+        </ul>
+
+        <h3>Required Skills</h3>
+        <div class="skills-pill-group">
+          <span class="skill-tag">Figma / FigJam</span>
+          <span class="skill-tag">Design Systems</span>
+          <span class="skill-tag">Prototyping &amp; Wireframing</span>
+          <span class="skill-tag">User Research &amp; Testing</span>
+          <span class="skill-tag">Information Architecture</span>
+        </div>
+
+        <h3>Preferred Qualifications</h3>
+        <ul>
+          <li>Strong portfolio demonstrating web and mobile enterprise design solutions.</li>
+        </ul>
+      </div>
+
+      <div class="job-modal-footer">
+        <button type="button" class="btn btn-outline job-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Positions
+        </button>
+        <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="UI/UX Designer" data-apply-dept="Design">
+          <span>Apply Now</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Business Analyst -->
+  <div id="modal-job-ba" class="job-detail-modal" role="dialog" aria-modal="true" aria-labelledby="jobTitle-ba">
+    <div class="modal-box job-modal-box">
+      <button class="modal-close job-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="job-modal-header">
+        <div class="job-dept-tag tag-business"><i class="fas fa-briefcase"></i> Business &amp; Consulting</div>
+        <h2 id="jobTitle-ba" class="job-modal-title">Business Analyst</h2>
+        <div class="job-modal-meta">
+          <span><i class="fas fa-map-marker-alt"></i> India / Hybrid</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> Full Time</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-chart-pie"></i> Arshith Technology Advisory</span>
+        </div>
+      </div>
+
+      <div class="job-modal-body">
+        <h3>Role Overview</h3>
+        <p>Bridge the gap between enterprise business stakeholders and engineering squads by eliciting requirements, documenting user stories, and modeling digital transformation roadmaps.</p>
+
+        <h3>Key Responsibilities</h3>
+        <ul>
+          <li>Facilitate discovery workshops with enterprise executives and product managers.</li>
+          <li>Author functional requirements documents (FRDs), epics, and acceptance criteria.</li>
+          <li>Analyze business process workflows and identify digital optimization opportunities.</li>
+          <li>Support sprint planning, backlog grooming, and user acceptance testing (UAT).</li>
+        </ul>
+
+        <h3>Required Skills</h3>
+        <div class="skills-pill-group">
+          <span class="skill-tag">Requirements Elicitation</span>
+          <span class="skill-tag">Agile &amp; Scrum Methodologies</span>
+          <span class="skill-tag">Process Mapping (BPMN)</span>
+          <span class="skill-tag">Jira &amp; Confluence</span>
+          <span class="skill-tag">Data Analysis &amp; BI</span>
+        </div>
+
+        <h3>Preferred Qualifications</h3>
+        <ul>
+          <li>CBAP, PMI-PBA, or Scrum Product Owner (CSPO) certifications.</li>
+        </ul>
+      </div>
+
+      <div class="job-modal-footer">
+        <button type="button" class="btn btn-outline job-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Positions
+        </button>
+        <button type="button" class="btn btn-primary btn-apply-trigger" data-apply-title="Business Analyst" data-apply-dept="Business &amp; Consulting">
+          <span>Apply Now</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       8. APPLICATION FORM POPUP MODAL
+       =================================================== -->
+  <div id="modal-career-apply" class="job-apply-modal" role="dialog" aria-modal="true" aria-labelledby="applyModalTitle">
+    <div class="modal-box apply-modal-box">
+      <button class="modal-close apply-modal-close" aria-label="Close application modal"><i class="fas fa-times"></i></button>
+      
+      <div id="applyFormContainer">
+        <div class="apply-modal-header">
+          <span class="apply-dept-badge" id="applyDeptDisplay">Engineering</span>
+          <h2 id="applyModalTitle" class="apply-modal-title">Apply for <span id="applyJobTitleDisplay">Software Engineer</span></h2>
+          <p class="apply-modal-subtitle">Submit your details below. Our talent acquisition team will review your profile.</p>
+        </div>
+
+        <form id="careerApplicationForm" class="career-apply-form" novalidate>
+          <input type="hidden" id="appliedJobRole" name="jobRole" value="Software Engineer">
+          
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="applyFullName">Full Name <span class="required">*</span></label>
+              <input type="text" id="applyFullName" name="fullName" placeholder="e.g. Rahul Sharma" required>
+              <span class="field-error-msg">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="applyEmail">Email Address <span class="required">*</span></label>
+              <input type="email" id="applyEmail" name="email" placeholder="e.g. rahul.sharma@example.com" required>
+              <span class="field-error-msg">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="applyPhone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="applyPhone" name="phone" placeholder="e.g. +91 98765 43210" required>
+              <span class="field-error-msg">Please enter your contact phone number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="applyResume">Resume / CV (PDF, DOCX) <span class="required">*</span></label>
+              <input type="file" id="applyResume" name="resume" accept=".pdf,.doc,.docx" required>
+              <span class="field-error-msg">Please attach your resume file.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="applyCover">Cover Message / Why Arshith? <span class="optional">(Optional)</span></label>
+            <textarea id="applyCover" name="coverMessage" rows="3" placeholder="Tell us briefly about your experience, interests, or what excites you about this role..."></textarea>
+          </div>
+
+          <div class="form-footer-action">
+            <button type="submit" class="btn btn-primary btn-submit-app">
+              <span>Submit Application</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <span class="form-privacy-note"><i class="fas fa-lock"></i> Your data is processed securely and kept strictly confidential.</span>
+          </div>
+        </form>
+      </div>
+
+      <!-- Success Confirmation View -->
+      <div id="applySuccessContainer" class="apply-success-view" style="display: none;">
+        <div class="success-icon-badge">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3 class="success-title">Application Received!</h3>
+        <p class="success-message">
+          Thank you for your interest in joining Arshith Info-Tech. Our team will review your application and get back to you if your profile matches an opportunity.
+        </p>
+        <div class="success-actions">
+          <button type="button" class="btn btn-primary apply-modal-close">
+            <span>Back to Opportunities</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================================================
+       9. GLOBAL PREMIUM FOOTER (Exact Same White Theme)
+       =================================================== -->
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h3>Stay Ahead in Tech</h3>
+            <p>Get the latest insights on AI, Cloud, and Digital Transformation delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your business email" required>
+            <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+          </a>
+          <p class="footer-about">Pioneering the future of digital services and consulting. We empower forward-thinking enterprises across 40+ countries to reimagine their business for the digital age.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="services.html#digital-transformation"><i class="fas fa-angle-right"></i> Digital Transformation</a></li>
+            <li><a href="services.html#cloud-computing"><i class="fas fa-angle-right"></i> Cloud Computing</a></li>
+            <li><a href="services.html#engineering-rd"><i class="fas fa-angle-right"></i> Engineering &amp; R&amp;D</a></li>
+            <li><a href="services.html#ai-solutions"><i class="fas fa-angle-right"></i> AI &amp; Intelligent Solutions</a></li>
+            <li><a href="services.html#cybersecurity"><i class="fas fa-angle-right"></i> Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+            <li><a href="internships.html"><i class="fas fa-angle-right"></i> Internships</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Investor Relations</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Global Newsroom</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-minimal">
+            <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India - 560076</li>
+            <li><i class="fas fa-phone-alt"></i> +91 8618471424</li>
+            <li><i class="fas fa-envelope"></i> info@arshithinfotech.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Arshith Info-Tech. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA Button -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="javascript:void(0)" class="floating-cta-btn nav-cta" id="floatingCtaBtn" aria-haspopup="dialog">
+      <i class="fas fa-comments"></i>
+      <span>Let's Talk</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js?v=1.2"></script>
+  <script>
+    // Ensure department filtering works seamlessly
+    document.addEventListener('DOMContentLoaded', function () {
+      const careerFilterBar = document.getElementById('careersFilterBar');
+      if (careerFilterBar) {
+        const filterPills = careerFilterBar.querySelectorAll('.career-pill');
+        const jobItems = document.querySelectorAll('.job-card-item');
+
+        filterPills.forEach(pill => {
+          pill.addEventListener('click', function () {
+            filterPills.forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+
+            const filterValue = pill.getAttribute('data-job-filter');
+
+            jobItems.forEach(job => {
+              const category = job.getAttribute('data-job-category');
+              if (filterValue === 'all' || category === filterValue) {
+                job.classList.remove('is-hidden');
+                job.style.setProperty('display', 'flex', 'important');
+                job.style.opacity = '1';
+                job.style.transform = 'translateY(0)';
+              } else {
+                job.classList.add('is-hidden');
+                job.style.setProperty('display', 'none', 'important');
+              }
+            });
+          });
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+<!-- Last Updated: 2026-09-04T07:32:27.501Z -->

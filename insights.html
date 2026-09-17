@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights &amp; Perspectives | Arshith Info-Tech - Ideas That Shape the Future of Technology</title>
+  <meta name="description"
+    content="Explore practical insights, technology trends, and expert perspectives that help businesses understand what's next and make smarter digital decisions in AI, Cloud, Cybersecurity, and Industry 4.0." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=20260904_insights_white_v2">
+  <link rel="stylesheet" href="footer-premium.css">
+</head>
+
+<body class="theme-page-cyber-blue page-insights">
+
+  <!-- Global Animated Background (Interactive Constellation Canvas + Ambient Aurora Glow) -->
+  <div class="global-aurora-bg">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+    <div class="aurora-orb aurora-orb-4"></div>
+  </div>
+  <canvas id="globalParticlesCanvas"></canvas>
+
+  <!-- Navbar (Exact Same Header Component) -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <div class="drawer-brand">
+          <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+        </div>
+        <button class="drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-laptop-code"></i> Services</a></li>
+        <li><a href="industries.html"><i class="fas fa-layer-group"></i> Industries</a></li>
+        <li><a href="insights.html" class="active"><i class="fas fa-newspaper"></i> Insights</a></li>
+        
+        <!-- Careers Dropdown Navigation Item -->
+        <li class="nav-item-dropdown">
+          <a href="javascript:void(0)" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-briefcase"></i> Careers <i class="fas fa-chevron-down nav-dropdown-arrow"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="careers.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-user-tie"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Full-Time Careers</strong>
+                  <small>Experienced &amp; Early Career Openings</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Internships 2026</strong>
+                  <small>Students &amp; Graduate Programs</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="about-infotech.html"><i class="fas fa-building"></i> About Us</a></li>
+        <li class="drawer-cta-item"><a href="javascript:void(0)" class="btn btn-primary drawer-cta-btn" aria-haspopup="dialog"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+      </ul>
+      <a href="javascript:void(0)" class="btn btn-primary nav-cta" aria-haspopup="dialog">Contact Us</a>
+      <div class="menu-toggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menuOverlay"></div>
+
+  <!-- ===================================================
+       1. INSIGHTS EDITORIAL HERO SECTION
+       =================================================== -->
+  <header class="insights-hero-section">
+    <div class="container">
+      <div class="insights-hero-layout">
+        
+        <!-- Editorial Header Meta & Headline -->
+        <div class="insights-hero-main reveal-left">
+          <div class="insights-editorial-badge">
+            <span class="editorial-pulse"></span>
+            <span>INSIGHTS &amp; PERSPECTIVES</span>
+          </div>
+
+          <h1 class="insights-hero-title">
+            Ideas That Shape the Future of Technology
+          </h1>
+
+          <p class="insights-hero-lead">
+            Explore practical insights, technology trends, and expert perspectives that help businesses understand what's next and make smarter digital decisions.
+          </p>
+
+          <div class="insights-meta-strip">
+            <div class="meta-item">
+              <i class="fas fa-book-open"></i>
+              <span>Curated Thought Leadership</span>
+            </div>
+            <div class="meta-separator">•</div>
+            <div class="meta-item">
+              <i class="fas fa-microchip"></i>
+              <span>6 Strategic Domains</span>
+            </div>
+            <div class="meta-separator">•</div>
+            <div class="meta-item">
+              <i class="fas fa-clock-rotate-left"></i>
+              <span>Updated Monthly</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editorial Spotlight Teaser Card (Asymmetric Right) -->
+        <div class="insights-hero-side reveal-right">
+          <div class="spotlight-teaser-card" data-open-insight-modal="ai">
+            <div class="spotlight-badge"><i class="fas fa-bolt"></i> TRENDING TOPIC</div>
+            <h3 class="spotlight-title">The Enterprise AI Paradigm Shift</h3>
+            <p class="spotlight-summary">How generative AI, intelligent agents, and automated data pipelines are transforming corporate decision-making in 2026.</p>
+            <div class="spotlight-action">
+              <span>Read Featured Perspective</span>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       2. MINIMAL ELEGANT CATEGORY FILTER BAR
+       =================================================== -->
+  <section class="insights-filter-section">
+    <div class="container">
+      <div class="insights-filter-bar" id="insightsFilterBar">
+        <span class="filter-label"><i class="fas fa-filter"></i> Filter Topic:</span>
+        <div class="filter-pills-scroll">
+          <button type="button" class="filter-pill active" data-filter="all">All Perspectives</button>
+          <button type="button" class="filter-pill" data-filter="ai">AI &amp; Machine Learning</button>
+          <button type="button" class="filter-pill" data-filter="cloud">Cloud Computing</button>
+          <button type="button" class="filter-pill" data-filter="cybersecurity">Cybersecurity</button>
+          <button type="button" class="filter-pill" data-filter="digital-transformation">Digital Transformation</button>
+          <button type="button" class="filter-pill" data-filter="industry-40">Industry 4.0</button>
+          <button type="button" class="filter-pill" data-filter="emerging-tech">Emerging Technology</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       3. EDITORIAL ARTICLES SHOWCASE (Uniform Professional Grid)
+       =================================================== -->
+  <main class="insights-magazine-wrapper">
+    <div class="container">
+      <div class="insights-uniform-grid">
+
+        <!-- Topic 1: Artificial Intelligence -->
+        <article class="insight-article-card reveal-up" data-category="ai">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/ai-enterprise.png" alt="How AI Is Reshaping the Modern Enterprise" class="insight-media-img" loading="lazy">
+              <div class="insight-media-overlay"></div>
+              <span class="reading-time-pill"><i class="fas fa-clock"></i> 6 min read</span>
+            </div>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-ai">
+                  <i class="fas fa-brain"></i> ARTIFICIAL INTELLIGENCE
+                </span>
+                <span class="article-pub-date">September 2026</span>
+              </div>
+              <h3 class="article-title">How AI Is Reshaping the Modern Enterprise</h3>
+              <p class="article-summary">
+                Explore how organizations are using cognitive agentic workflows and automated intelligence to improve decisions and operational scale.
+              </p>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="ai">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Topic 2: Cloud Computing -->
+        <article class="insight-article-card reveal-up" data-category="cloud">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/cloud-computing.jpg" alt="Building a Cloud Foundation for Long-Term Growth" class="insight-media-img" loading="lazy">
+              <div class="insight-media-overlay"></div>
+              <span class="reading-time-pill"><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-cloud">
+                  <i class="fas fa-cloud"></i> CLOUD COMPUTING
+                </span>
+                <span class="article-pub-date">August 2026</span>
+              </div>
+              <h3 class="article-title">Building a Cloud Foundation for Long-Term Growth</h3>
+              <p class="article-summary">
+                How modern cloud topologies help organizations improve scalability, resilience, flexibility, and operational efficiency across distributed systems.
+              </p>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="cloud">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Topic 3: Cybersecurity -->
+        <article class="insight-article-card reveal-up" data-category="cybersecurity">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/cybersecurity-insight.jpg" alt="Preparing Businesses for Next-Gen Cyber Threats" class="insight-media-img" loading="lazy">
+              <div class="insight-media-overlay"></div>
+              <span class="reading-time-pill"><i class="fas fa-clock"></i> 4 min read</span>
+            </div>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-cybersecurity">
+                  <i class="fas fa-shield-halved"></i> CYBERSECURITY
+                </span>
+                <span class="article-pub-date">August 2026</span>
+              </div>
+              <h3 class="article-title">Preparing Businesses for Next-Gen Cyber Threats</h3>
+              <p class="article-summary">
+                Proactive zero-trust architectures and automated SOC telemetry that protect applications, infrastructure, and distributed enterprise data.
+              </p>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="cybersecurity">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Topic 4: Digital Transformation -->
+        <article class="insight-article-card reveal-up" data-category="digital-transformation">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/digital-transformation.jpg" alt="Why Modernization Is a Business Imperative" class="insight-media-img" loading="lazy">
+              <div class="insight-media-overlay"></div>
+              <span class="reading-time-pill"><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-transformation">
+                  <i class="fas fa-arrows-spin"></i> DIGITAL TRANSFORMATION
+                </span>
+                <span class="article-pub-date">July 2026</span>
+              </div>
+              <h3 class="article-title">Why Modernization Is a Business Imperative</h3>
+              <p class="article-summary">
+                How enterprises eliminate legacy technical debt through strangler patterns and composable API architectures for sustained agility.
+              </p>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="modernization">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Topic 5: Industry 4.0 -->
+        <article class="insight-article-card reveal-up" data-category="industry-40">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/smart-manufacturing.png" alt="How Connected Technologies Change Manufacturing" class="insight-media-img" loading="lazy">
+              <div class="insight-media-overlay"></div>
+              <span class="reading-time-pill"><i class="fas fa-clock"></i> 6 min read</span>
+            </div>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-industry">
+                  <i class="fas fa-industry"></i> INDUSTRY 4.0
+                </span>
+                <span class="article-pub-date">July 2026</span>
+              </div>
+              <h3 class="article-title">How Connected Technologies Change Manufacturing</h3>
+              <p class="article-summary">
+                Industrial IoT, digital twin telemetry, and autonomous quality control driving real-time intelligence across modern shopfloors.
+              </p>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="industry40">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Topic 6: Emerging Technology -->
+        <article class="insight-article-card reveal-up" data-category="emerging-tech">
+          <div class="card-inner-uniform">
+            <div class="insight-img-frame">
+              <img src="assets/images/emerging-tech.jpg" alt="Technology Trends Shaping the Next Business Era" class="insight-media-img" loading="lazy">
+              <div class="insight-media-overlay"></div>
+              <span class="reading-time-pill"><i class="fas fa-clock"></i> 7 min read</span>
+            </div>
+            <div class="card-content-body">
+              <div class="article-meta-header">
+                <span class="article-category-tag cat-emerging">
+                  <i class="fas fa-wand-magic-sparkles"></i> EMERGING TECHNOLOGY
+                </span>
+                <span class="article-pub-date">June 2026</span>
+              </div>
+              <h3 class="article-title">Technology Trends Shaping the Next Business Era</h3>
+              <p class="article-summary">
+                A forward-looking analysis of quantum readiness, synthetic intelligence, and sustainable low-carbon cloud computing models.
+              </p>
+              <div class="article-card-bottom">
+                <button type="button" class="btn-read-inline" data-open-insight-modal="emerging">
+                  <span>Read Insight</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================================================
+       4. INSIGHTS EDITORIAL CALL TO ACTION
+       =================================================== -->
+  <section class="insights-cta-section section-padding">
+    <div class="container">
+      <div class="insights-cta-box reveal-scale">
+        <div class="cta-editorial-quote-mark">
+          <i class="fas fa-quote-right"></i>
+        </div>
+        
+        <div class="insights-cta-layout">
+          <div class="cta-text-side">
+            <span class="cta-kicker"><i class="fas fa-lightbulb"></i> STRATEGIC ADVISORY</span>
+            <h2 class="insights-cta-heading">Have a Technology Challenge?</h2>
+            <p class="insights-cta-desc">
+              Let's explore how the right technology strategy can help your organization solve today's challenges and prepare for tomorrow.
+            </p>
+          </div>
+
+          <div class="cta-action-side">
+            <button type="button" class="btn btn-primary btn-cta-insights nav-cta" aria-haspopup="dialog">
+              <span>Talk to Our Experts</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <span class="cta-sub-note">Connect with senior technology leaders &bull; Zero obligation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       5. 6 INDIVIDUAL ARTICLE DETAIL POPUP MODALS
+       =================================================== -->
+
+  <!-- Modal 1: Artificial Intelligence Detailed View -->
+  <div id="modal-insight-ai" class="insight-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-insight-ai">
+    <div class="modal-box insight-modal-box">
+      <button class="modal-close insight-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="insight-modal-header">
+        <div class="insight-modal-category cat-ai">
+          <i class="fas fa-brain"></i> ARTIFICIAL INTELLIGENCE
+        </div>
+        <h2 id="modalTitle-insight-ai" class="insight-modal-title">How AI Is Reshaping the Modern Enterprise</h2>
+        <div class="insight-modal-byline">
+          <span><i class="fas fa-calendar-alt"></i> September 2026</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> 6 min read</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-user-tie"></i> Arshith AI Practice</span>
+        </div>
+      </div>
+
+      <div class="insight-modal-body">
+        <div class="insight-modal-hero-img">
+          <img src="assets/images/ai-enterprise.png" alt="AI Enterprise Visualization" class="modal-article-img">
+        </div>
+
+        <div class="insight-editorial-content">
+          <p class="lead-paragraph">
+            Artificial intelligence has rapidly transitioned from an experimental research sandbox into a core operational backbone for modern enterprise strategy. Organizations that master AI integration are outpacing competitors in agility, customer responsiveness, and operational efficiency.
+          </p>
+
+          <h3>Moving from Reactive Automation to Agentic Intelligence</h3>
+          <p>
+            Traditional robotic process automation (RPA) was limited to rigid, rule-based workflows. Today, autonomous multi-agent AI ecosystems are equipped with reasoning capabilities, understanding unstructured context across supply chains, financial transactions, and customer inquiries.
+          </p>
+
+          <div class="insight-key-takeaways-box">
+            <h4><i class="fas fa-bookmark"></i> Key Strategic Takeaways:</h4>
+            <ul>
+              <li><strong>Agentic Workflows:</strong> AI systems now coordinate multi-step complex enterprise processes autonomously.</li>
+              <li><strong>Domain Fine-Tuning:</strong> Enterprise value is unlocked by training specialized models on proprietary internal knowledge bases.</li>
+              <li><strong>Ethical Governance &amp; Security:</strong> Strict guardrails, data privacy safeguards, and transparent model auditability are essential.</li>
+            </ul>
+          </div>
+
+          <h3>Driving Measurable ROI Through Applied AI</h3>
+          <p>
+            The most successful enterprise adopters focus on high-impact vertical use cases: predictive inventory replenishment, automated contract intelligence, real-time cyber defense correlation, and hyper-personalized consumer recommendation engines.
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-modal-footer">
+        <button type="button" class="btn btn-outline insight-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Insights
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Discuss This Perspective</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Cloud Computing Detailed View -->
+  <div id="modal-insight-cloud" class="insight-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-insight-cloud">
+    <div class="modal-box insight-modal-box">
+      <button class="modal-close insight-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="insight-modal-header">
+        <div class="insight-modal-category cat-cloud">
+          <i class="fas fa-cloud"></i> CLOUD COMPUTING
+        </div>
+        <h2 id="modalTitle-insight-cloud" class="insight-modal-title">Building a Cloud Foundation for Long-Term Growth</h2>
+        <div class="insight-modal-byline">
+          <span><i class="fas fa-calendar-alt"></i> August 2026</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> 5 min read</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-user-tie"></i> Arshith Cloud Architecture Team</span>
+        </div>
+      </div>
+
+      <div class="insight-modal-body">
+        <div class="insight-modal-hero-img">
+          <img src="assets/images/cloud-computing.jpg" alt="Cloud Foundation Visualization" class="modal-article-img">
+        </div>
+
+        <div class="insight-editorial-content">
+          <p class="lead-paragraph">
+            A resilient cloud strategy is no longer just about hosting infrastructure offsite; it is the fundamental platform that dictates how quickly a modern enterprise can build, deploy, and scale digital products.
+          </p>
+
+          <h3>Overcoming Multi-Cloud Complexity and FinOps</h3>
+          <p>
+            As enterprises embrace hybrid and multi-cloud topologies, operational complexity can escalate. Implementing mature Infrastructure as Code (IaC), GitOps pipelines, and active FinOps governance ensures predictable costs and automated elasticity during peak workloads.
+          </p>
+
+          <div class="insight-key-takeaways-box">
+            <h4><i class="fas fa-bookmark"></i> Key Strategic Takeaways:</h4>
+            <ul>
+              <li><strong>Cloud-Native Modularity:</strong> Decouple monolithic systems into microservices and containerized Kubernetes clusters.</li>
+              <li><strong>FinOps Observability:</strong> Continuous telemetry tracking to prevent cloud sprawl and optimize resource expenditure.</li>
+              <li><strong>Disaster Resilience:</strong> Active-active multi-region failover protocols ensuring near-zero recovery time objectives (RTO).</li>
+            </ul>
+          </div>
+
+          <h3>Accelerating Developer Velocity</h3>
+          <p>
+            Standardized developer platforms built on scalable cloud primitives empower engineering squads to release features in hours rather than months, creating sustained competitive momentum.
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-modal-footer">
+        <button type="button" class="btn btn-outline insight-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Insights
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Discuss This Perspective</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Cybersecurity Detailed View -->
+  <div id="modal-insight-cybersecurity" class="insight-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-insight-sec">
+    <div class="modal-box insight-modal-box">
+      <button class="modal-close insight-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="insight-modal-header">
+        <div class="insight-modal-category cat-cybersecurity">
+          <i class="fas fa-shield-halved"></i> CYBERSECURITY
+        </div>
+        <h2 id="modalTitle-insight-sec" class="insight-modal-title">Preparing Businesses for the Next Generation of Cyber Threats</h2>
+        <div class="insight-modal-byline">
+          <span><i class="fas fa-calendar-alt"></i> August 2026</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> 4 min read</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-user-tie"></i> Arshith Cybersecurity Research</span>
+        </div>
+      </div>
+
+      <div class="insight-modal-body">
+        <div class="insight-modal-hero-img">
+          <img src="assets/images/cybersecurity-insight.jpg" alt="Cybersecurity Visualization" class="modal-article-img">
+        </div>
+
+        <div class="insight-editorial-content">
+          <p class="lead-paragraph">
+            The perimeter is dead. With distributed workforces, edge devices, and ubiquitous cloud APIs, enterprise defense requires an uncompromising Zero-Trust architecture backed by automated threat hunting.
+          </p>
+
+          <h3>Continuous Verification in a Hyper-Connected World</h3>
+          <p>
+            Zero-Trust mandates: never trust, always verify. Every request—whether originating from inside or outside the network—is authenticated, authorized, and dynamically evaluated based on risk signals.
+          </p>
+
+          <div class="insight-key-takeaways-box">
+            <h4><i class="fas fa-bookmark"></i> Key Strategic Takeaways:</h4>
+            <ul>
+              <li><strong>Identity-Centric Defense:</strong> Modern IAM with context-aware biometric authentication and least-privilege access.</li>
+              <li><strong>AI-Driven SOC Telemetry:</strong> Automate SIEM/SOAR incident response to isolate lateral malware propagation in seconds.</li>
+              <li><strong>Supply Chain Verification:</strong> Continuous vulnerability scanning across third-party open source packages and vendor APIs.</li>
+            </ul>
+          </div>
+
+          <h3>Building Cyber Resilience as a Boardroom Priority</h3>
+          <p>
+            Security is no longer merely an IT concern; it is a prerequisite for customer trust, regulatory compliance, and business continuity.
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-modal-footer">
+        <button type="button" class="btn btn-outline insight-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Insights
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Discuss This Perspective</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Digital Transformation Detailed View -->
+  <div id="modal-insight-modernization" class="insight-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-insight-dt">
+    <div class="modal-box insight-modal-box">
+      <button class="modal-close insight-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="insight-modal-header">
+        <div class="insight-modal-category cat-transformation">
+          <i class="fas fa-arrows-spin"></i> DIGITAL TRANSFORMATION
+        </div>
+        <h2 id="modalTitle-insight-dt" class="insight-modal-title">Why Modernization Is Becoming a Business Imperative</h2>
+        <div class="insight-modal-byline">
+          <span><i class="fas fa-calendar-alt"></i> July 2026</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> 5 min read</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-user-tie"></i> Arshith Enterprise Consulting</span>
+        </div>
+      </div>
+
+      <div class="insight-modal-body">
+        <div class="insight-modal-hero-img">
+          <img src="assets/images/digital-transformation.jpg" alt="Digital Transformation Visualization" class="modal-article-img">
+        </div>
+
+        <div class="insight-editorial-content">
+          <p class="lead-paragraph">
+            Legacy technical debt is the single greatest bottleneck to innovation. Modernizing legacy systems is no longer a technology upgrade project—it is a critical business imperative for market survival.
+          </p>
+
+          <h3>De-risking Legacy Modernization with Strangler Patterns</h3>
+          <p>
+            Replacing monolithic mainframes all at once carries immense operational risk. Incremental modernization via API facades and event-driven microservices allows enterprises to modernize mission-critical systems without operational disruptions.
+          </p>
+
+          <div class="insight-key-takeaways-box">
+            <h4><i class="fas fa-bookmark"></i> Key Strategic Takeaways:</h4>
+            <ul>
+              <li><strong>Continuous Modernization:</strong> Shift from big-bang redesigns to continuous iterative software evolution.</li>
+              <li><strong>Composable Architecture:</strong> Reusable API-driven business capabilities that can be recombined as markets evolve.</li>
+              <li><strong>Culture &amp; Operating Model:</strong> Empower cross-functional product squads with end-to-end operational ownership.</li>
+            </ul>
+          </div>
+
+          <h3>Unlocking Data Trapped in Silos</h3>
+          <p>
+            Transforming legacy databases into modern streaming data pipelines unlocks actionable business intelligence for front-line decision makers.
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-modal-footer">
+        <button type="button" class="btn btn-outline insight-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Insights
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Discuss This Perspective</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Industry 4.0 Detailed View -->
+  <div id="modal-insight-industry40" class="insight-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-insight-i40">
+    <div class="modal-box insight-modal-box">
+      <button class="modal-close insight-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="insight-modal-header">
+        <div class="insight-modal-category cat-industry">
+          <i class="fas fa-industry"></i> INDUSTRY 4.0
+        </div>
+        <h2 id="modalTitle-insight-i40" class="insight-modal-title">How Connected Technologies Are Changing Manufacturing</h2>
+        <div class="insight-modal-byline">
+          <span><i class="fas fa-calendar-alt"></i> July 2026</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> 6 min read</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-user-tie"></i> Arshith Smart Factory Lab</span>
+        </div>
+      </div>
+
+      <div class="insight-modal-body">
+        <div class="insight-modal-hero-img">
+          <img src="assets/images/smart-manufacturing.png" alt="Smart Manufacturing Visualization" class="modal-article-img">
+        </div>
+
+        <div class="insight-editorial-content">
+          <p class="lead-paragraph">
+            The convergence of Industrial IoT (IIoT), edge compute, computer vision, and digital twins is giving rise to autonomous manufacturing facilities capable of self-optimization and self-healing.
+          </p>
+
+          <h3>Real-Time Shopfloor Visibility and Digital Twins</h3>
+          <p>
+            By mapping physical production lines to virtual digital twins in real time, industrial leaders can run predictive stress simulations, balance production loads, and eliminate bottlenecks before they occur.
+          </p>
+
+          <div class="insight-key-takeaways-box">
+            <h4><i class="fas fa-bookmark"></i> Key Strategic Takeaways:</h4>
+            <ul>
+              <li><strong>Zero Unplanned Downtime:</strong> AI acoustic and vibration telemetry predicting mechanical failure weeks ahead.</li>
+              <li><strong>Automated Quality Assurance:</strong> High-speed optical computer vision inspecting micrometer deviations at line speed.</li>
+              <li><strong>End-to-End Traceability:</strong> Immutable audit trails tracking component provenance from supplier to finished product.</li>
+            </ul>
+          </div>
+
+          <h3>Empowering the Connected Industrial Worker</h3>
+          <p>
+            Augmented reality interfaces and mobile telemetry dashboards provide factory operators with immediate, actionable machine health diagnostics.
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-modal-footer">
+        <button type="button" class="btn btn-outline insight-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Insights
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Discuss This Perspective</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Emerging Technology Detailed View -->
+  <div id="modal-insight-emerging" class="insight-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-insight-em">
+    <div class="modal-box insight-modal-box">
+      <button class="modal-close insight-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="insight-modal-header">
+        <div class="insight-modal-category cat-emerging">
+          <i class="fas fa-wand-magic-sparkles"></i> EMERGING TECHNOLOGY
+        </div>
+        <h2 id="modalTitle-insight-em" class="insight-modal-title">Technology Trends That Will Shape the Next Business Era</h2>
+        <div class="insight-modal-byline">
+          <span><i class="fas fa-calendar-alt"></i> June 2026</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-clock"></i> 7 min read</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-user-tie"></i> Arshith R&amp;D Research Council</span>
+        </div>
+      </div>
+
+      <div class="insight-modal-body">
+        <div class="insight-modal-hero-img">
+          <img src="assets/images/emerging-tech.jpg" alt="Emerging Technology Visualization" class="modal-article-img">
+        </div>
+
+        <div class="insight-editorial-content">
+          <p class="lead-paragraph">
+            The next era of computing is taking shape at the intersection of spatial interfaces, quantum algorithms, synthetic intelligence, and sustainable green cloud infrastructure.
+          </p>
+
+          <h3>Preparing the Architecture for Quantum and Neuromorphic Compute</h3>
+          <p>
+            While full quantum commercialization is emerging, forward-thinking organizations are already deploying post-quantum cryptographic standards to safeguard sensitive data against future decryption vectors.
+          </p>
+
+          <div class="insight-key-takeaways-box">
+            <h4><i class="fas fa-bookmark"></i> Key Strategic Takeaways:</h4>
+            <ul>
+              <li><strong>Autonomous Software Engineering:</strong> AI coding copilots and synthetic testing platforms multiplying team throughput.</li>
+              <li><strong>Post-Quantum Cryptography:</strong> Proactive transition to quantum-resistant encryption algorithms today.</li>
+              <li><strong>Sustainable Tech Engineering:</strong> Low-carbon software architecture and carbon-aware workload scheduling.</li>
+            </ul>
+          </div>
+
+          <h3>Designing for Agility in an Accelerating World</h3>
+          <p>
+            Building modular, experimentation-friendly digital architectures allows modern organizations to adopt emerging technologies quickly without rewriting foundational systems.
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-modal-footer">
+        <button type="button" class="btn btn-outline insight-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Insights
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Discuss This Perspective</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       6. GLOBAL PREMIUM FOOTER (Exact Same White Theme)
+       =================================================== -->
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h3>Stay Ahead in Tech</h3>
+            <p>Get the latest insights on AI, Cloud, and Digital Transformation delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your business email" required>
+            <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+          </a>
+          <p class="footer-about">Pioneering the future of digital services and consulting. We empower forward-thinking enterprises across 40+ countries to reimagine their business for the digital age.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="services.html#digital-transformation"><i class="fas fa-angle-right"></i> Digital Transformation</a></li>
+            <li><a href="services.html#cloud-computing"><i class="fas fa-angle-right"></i> Cloud Computing</a></li>
+            <li><a href="services.html#engineering-rd"><i class="fas fa-angle-right"></i> Engineering &amp; R&amp;D</a></li>
+            <li><a href="services.html#ai-solutions"><i class="fas fa-angle-right"></i> AI &amp; Intelligent Solutions</a></li>
+            <li><a href="services.html#cybersecurity"><i class="fas fa-angle-right"></i> Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+            <li><a href="internships.html"><i class="fas fa-angle-right"></i> Internships</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Investor Relations</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Global Newsroom</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-minimal">
+            <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India - 560076</li>
+            <li><i class="fas fa-phone-alt"></i> +91 8618471424</li>
+            <li><i class="fas fa-envelope"></i> info@arshithinfotech.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Arshith Info-Tech. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA Button -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="javascript:void(0)" class="floating-cta-btn nav-cta" id="floatingCtaBtn" aria-haspopup="dialog">
+      <i class="fas fa-comments"></i>
+      <span>Let's Talk</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- Last Updated: 2026-09-04T07:32:27.501Z -->

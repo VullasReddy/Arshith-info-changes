@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Arshith Group | Leadership & Our Story</title>
+  <meta name="description"
+    content="Meet the executive leaders of Arshith Group. Learn about our story, values, and the team driving innovation across E-Commerce, Technology, and Digital Services." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="footer-premium.css" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       CYBER BLUE PROFESSIONAL ABOUT US & LEADERSHIP
+       ═══════════════════════════════════════════════════ */
+    :root {
+      --font-brand: 'Outfit', 'Inter', -apple-system, sans-serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+      --primary-cyan: #F5A623;
+      --primary-blue: #F5A623;
+      --cyber-border: rgba(245, 166, 35, 0.28);
+      --cyber-glow: rgba(245, 166, 35, 0.5);
+    }
+
+    body.page-about-cyber {
+      background-color: #0F1115;
+      color: #ffffff;
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* ── 1. UNIFIED WHITE TOP NAVBAR ── */
+    .navbar {
+      background: rgba(255, 255, 255, 0.96) !important;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      padding: 0.35rem 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: var(--transition);
+    }
+
+    .nav-links a {
+      color: #334155;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #F5A623;
+    }
+
+    .menu-toggle {
+      color: #F5A623;
+    }
+
+    /* ── 2. GLOBAL AURORA ORBS & CANVAS (MATCHING HOME PAGE) ── */
+    /* Inherited from global css/style.css */
+
+    /* ── 3. HERO & CONGLOMERATE PILLARS (3-PILLAR ECOSYSTEM) ── */
+    .hero-conglomerate {
+      padding: 9.5rem 0 5.5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-conglomerate-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 4.5rem;
+      align-items: center;
+    }
+
+    .hero-left-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 18px;
+      background: rgba(8, 17, 38, 0.9);
+      border: 1px solid var(--cyber-border);
+      border-radius: 50px;
+      color: #FBBF24;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.4rem;
+      box-shadow: 0 0 20px rgba(245, 166, 35, 0.25);
+    }
+
+    .pulse-dot-cyan {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #F5A623;
+      box-shadow: 0 0 10px #F5A623;
+      display: inline-block;
+      position: relative;
+    }
+
+    .pulse-dot-cyan::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 1.5px solid #F5A623;
+      animation: sonarPulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes sonarPulse {
+      0% { transform: scale(0.8); opacity: 1; }
+      100% { transform: scale(2.6); opacity: 0; }
+    }
+
+    .hero-main-title {
+      font-family: var(--font-brand);
+      font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: #ffffff;
+      margin-bottom: 1.4rem;
+      letter-spacing: -0.025em;
+    }
+
+    .pillars-accent {
+      background: linear-gradient(135deg, #F5A623 0%, #FBBF24 50%, #FDE68A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 20px rgba(245, 166, 35, 0.5));
+    }
+
+    .hero-main-desc {
+      font-size: 1.08rem;
+      line-height: 1.8;
+      color: #cbd5e1;
+      margin-bottom: 2.2rem;
+      max-width: 600px;
+    }
+
+    .hero-main-desc strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .hero-actions-row {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-hero-glow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      background: #F5A623 !important;
+      border: 1px solid #F5A623 !important;
+      color: #ffffff !important;
+      font-family: var(--font-brand);
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(245, 166, 35, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    .btn-hero-glow:hover {
+      background: #D97706 !important;
+      border-color: #D97706 !important;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(245, 166, 35, 0.3);
+      color: #ffffff !important;
+    }
+
+    .btn-hero-glass {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 28px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(10px);
+      color: #ffffff !important;
+      font-family: var(--font-brand);
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-hero-glass:hover {
+      background: #ffffff !important;
+      color: #0f172a !important;
+      border-color: #ffffff !important;
+      transform: translateY(-1px);
+    }
+
+      color: #ffffff !important;
+      transform: translateY(-2px);
+    }
+
+    .hero-metrics-bar {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid rgba(245, 166, 35, 0.18);
+      flex-wrap: wrap;
+    }
+
+    .hero-metric-item h4 {
+      font-family: var(--font-brand);
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0 0 2px;
+    }
+
+    .hero-metric-item span {
+      font-size: 0.76rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    /* Right Stack of 3 Floating Pillar Cards */
+    .hero-pillars-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    .pillar-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.6rem;
+      background: rgba(8, 17, 38, 0.88);
+      border: 1.5px solid rgba(245, 166, 35, 0.25);
+      border-radius: 20px;
+      backdrop-filter: blur(14px);
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(245, 166, 35, 0.08);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .pillar-card:hover {
+      transform: translateX(8px) scale(1.02);
+      border-color: #F5A623;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(245, 166, 35, 0.35);
+    }
+
+    .pillar-card-left {
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+    }
+
+    .pillar-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      box-shadow: 0 0 18px rgba(245, 166, 35, 0.3);
+    }
+
+    .icon-tech-blue {
+      background: linear-gradient(135deg, rgba(245, 166, 35, 0.35) 0%, rgba(245, 166, 35, 0.6) 100%);
+      border: 1.5px solid #F5A623;
+      color: #F5A623;
+    }
+
+    .icon-agri-green {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.35) 0%, rgba(5, 150, 105, 0.6) 100%);
+      border: 1.5px solid #10b981;
+      color: #10b981;
+    }
+
+    .icon-services-orange {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.35) 0%, rgba(217, 119, 6, 0.6) 100%);
+      border: 1.5px solid #f97316;
+      color: #f97316;
+    }
+
+    .pillar-text h3 {
+      font-family: var(--font-brand);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 4px;
+    }
+
+    .pillar-text p {
+      font-size: 0.88rem;
+      color: #94a3b8;
+      margin: 0;
+    }
+
+    .pillar-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 50px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #cbd5e1;
+    }
+
+    .tag-dot-blue { width: 6px; height: 6px; border-radius: 50%; background: #F5A623; box-shadow: 0 0 6px #F5A623; }
+    .tag-dot-green { width: 6px; height: 6px; border-radius: 50%; background: #10b981; box-shadow: 0 0 6px #10b981; }
+    .tag-dot-orange { width: 6px; height: 6px; border-radius: 50%; background: #f97316; box-shadow: 0 0 6px #f97316; }
+
+    /* ── 4. THE ARSHITH STORY (ORIGIN & MILESTONES) ── */
+    .story-cyber-section {
+      padding: 6.5rem 0;
+      position: relative;
+      border-top: 1px solid rgba(245, 166, 35, 0.15);
+      border-bottom: 1px solid rgba(245, 166, 35, 0.15);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 4.5rem;
+      align-items: center;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      color: #FBBF24;
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.6rem;
+    }
+
+    .story-title {
+      font-family: var(--font-brand);
+      font-size: clamp(2.2rem, 3.8vw, 3rem);
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 1.6rem;
+      letter-spacing: -0.02em;
+    }
+
+    .story-text p {
+      font-size: 1.02rem;
+      line-height: 1.85;
+      color: #cbd5e1;
+      margin-bottom: 1.4rem;
+    }
+
+    .story-text p strong {
+      color: #FBBF24;
+      font-weight: 700;
+      background: rgba(245, 166, 35, 0.18);
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      padding: 1px 8px;
+      border-radius: 6px;
+      box-shadow: 0 0 14px rgba(245, 166, 35, 0.22);
+      display: inline-block;
+      line-height: 1.4;
+      margin: 1px 2px;
+      text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+    }
+
+    .story-img-wrap {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1.5px solid rgba(245, 166, 35, 0.35);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 0 35px rgba(245, 166, 35, 0.2);
+    }
+
+    .story-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .story-img-wrap:hover img {
+      transform: scale(1.03);
+    }
+
+    /* ── 5. EXECUTIVE LEADERSHIP PROFILES ── */
+    .leadership-cyber-section {
+      padding: 6.5rem 0;
+      position: relative;
+    }
+
+    .leadership-header {
+      text-align: center;
+      margin-bottom: 4.5rem;
+    }
+
+    .leader-block {
+      display: grid;
+      gap: 64px;
+      align-items: center;
+      margin-bottom: 90px;
+      background: rgba(8, 17, 38, 0.85);
+      border: 1px solid rgba(245, 166, 35, 0.25);
+      border-radius: 28px;
+      padding: 45px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+      transition: all 0.35s ease;
+    }
+
+    .leader-block:hover {
+      border-color: rgba(245, 166, 35, 0.6);
+      box-shadow: 0 0 45px rgba(245, 166, 35, 0.3);
+    }
+
+    .leader-block-farook {
+      grid-template-columns: 380px 1fr;
+    }
+
+    .leader-block-pallavi {
+      grid-template-columns: 1fr 380px;
+    }
+
+    .leader-photo-card {
+      position: relative;
+    }
+
+    .leader-photo-card img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 20px;
+      border: 1.5px solid rgba(245, 166, 35, 0.3);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .leader-photo-card:hover img {
+      transform: scale(1.015);
+      border-color: #F5A623;
+    }
+
+    .leader-credential-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(10px);
+      color: #FBBF24;
+      border: 1px solid rgba(245, 166, 35, 0.4);
+      padding: 8px 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .leader-credential-badge i {
+      color: #F5A623;
+    }
+
+    .leader-info h3 {
+      font-family: var(--font-brand);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+
+    .leader-role {
+      font-family: var(--font-brand);
+      font-size: 1.15rem;
+      color: #FBBF24;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .leader-info p {
+      font-size: 1.02rem;
+      line-height: 1.85;
+      color: #cbd5e1;
+      margin-bottom: 18px;
+      text-align: justify;
+    }
+
+    /* ── 3.3 EXECUTIVE TEAM SECTION ── */
+    .executive-team-wrapper {
+      margin-top: 5rem;
+      padding-top: 3.5rem;
+      border-top: 1px solid rgba(245, 166, 35, 0.2);
+    }
+
+    .executive-team-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .executive-team-header .section-eyebrow {
+      color: #FBBF24;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .executive-team-header h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.8rem;
+      font-family: var(--font-brand);
+      letter-spacing: -0.02em;
+      text-align: center;
+    }
+
+    .executive-team-header p {
+      font-size: 1.05rem;
+      color: #cbd5e1;
+      max-width: 850px;
+      line-height: 1.65;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .executive-team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.8rem;
+    }
+
+    .executive-member-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .executive-member-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .exec-photo-wrap {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 20px;
+      overflow: hidden;
+      background: rgba(8, 17, 38, 0.85);
+      border: 1.5px solid rgba(245, 166, 35, 0.25);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+      transition: all 0.35s ease;
+    }
+
+    .executive-member-card:hover .exec-photo-wrap {
+      border-color: #F5A623;
+      box-shadow: 0 0 30px rgba(245, 166, 35, 0.35), 0 16px 36px rgba(0, 0, 0, 0.6);
+    }
+
+    .exec-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      transition: transform 0.4s ease;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: high-quality;
+    }
+
+    .executive-member-card:hover .exec-photo-wrap img {
+      transform: scale(1.03);
+    }
+
+    .exec-info {
+      padding-top: 1.1rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    .exec-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.35rem;
+      font-family: var(--font-brand);
+      letter-spacing: -0.01em;
+      text-align: center;
+    }
+
+    .exec-designation {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #FBBF24;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+      .executive-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .executive-team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+    }
+
+    /* ── 6. RESPONSIVE BREAKPOINTS (MOBILE & TABLET) ── */
+    @media (max-width: 1024px) {
+      .hero-conglomerate {
+        padding: 7rem 0 3.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-conglomerate .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-conglomerate-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-left-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 700px;
+      }
+      .hero-pill-badge {
+        margin: 0 auto 1.2rem auto;
+      }
+      .hero-main-title {
+        text-align: center;
+        width: 100%;
+      }
+      .hero-main-desc {
+        text-align: center;
+        margin: 0 auto 1.8rem auto;
+      }
+      .hero-actions-row {
+        justify-content: center;
+        margin: 0 auto 2rem auto;
+      }
+      .hero-metrics-bar {
+        justify-content: center;
+        margin: 1.5rem auto 0 auto;
+        width: 100%;
+      }
+      .hero-pillars-stack {
+        width: 100%;
+        max-width: 520px;
+        margin: 1.5rem auto 0 auto;
+      }
+      .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .leader-block-farook,
+      .leader-block-pallavi {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 32px;
+      }
+      .leader-block-pallavi .leader-photo-card {
+        order: -1;
+      }
+      .leader-photo-card img {
+        height: 420px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-conglomerate {
+        padding: 5.5rem 0 2.5rem 0;
+      }
+      .hero-main-title {
+        font-size: clamp(2rem, 7vw, 2.7rem);
+        text-align: center;
+      }
+      .hero-main-desc {
+        font-size: 0.98rem;
+        line-height: 1.7;
+        text-align: center;
+        padding: 0 0.5rem;
+      }
+      .hero-actions-row {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.85rem;
+      }
+      .hero-actions-row .btn-hero-glow,
+      .hero-actions-row .btn-hero-glass {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero-metrics-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1.25rem 0.5rem 0 0.5rem;
+      }
+      .hero-metric-item h4 {
+        font-size: 1.25rem;
+      }
+      .hero-metric-item span {
+        font-size: 0.72rem;
+      }
+      .pillar-card {
+        padding: 14px 16px;
+      }
+      .pillar-icon-box {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+      }
+      .pillar-text h3 {
+        font-size: 1.15rem;
+      }
+      .story-cyber-section,
+      .leadership-cyber-section {
+        padding: 4.5rem 0;
+      }
+      .story-title {
+        font-size: clamp(1.85rem, 6.5vw, 2.4rem);
+      }
+      .story-text p {
+        font-size: 0.95rem;
+        line-height: 1.75;
+      }
+      .leader-block {
+        padding: 24px 18px;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        gap: 24px;
+      }
+      .leader-photo-card img {
+        height: 360px;
+      }
+      .leader-info h3 {
+        font-size: 2rem;
+      }
+      .leader-role {
+        font-size: 1rem;
+        margin-bottom: 16px;
+      }
+      .leader-info p {
+        font-size: 0.94rem;
+        line-height: 1.75;
+        text-align: left;
+      }
+      /* Mobile Drawer Nav Link Colors */
+      .nav-links a {
+        color: #1e293b !important;
+      }
+      .nav-links a:hover,
+      .nav-links a.active {
+        color: #F5A623 !important;
+      }
+      #menuOverlay {
+        z-index: 990 !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-metrics-bar {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        text-align: center;
+      }
+      .hero-metric-item {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .leader-photo-card img {
+        height: 300px;
+      }
+      .leader-credential-badge {
+        font-size: 9.5px;
+        padding: 6px 12px;
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body class="page-about-cyber theme-page-cyber-blue">
+
+  <!-- Global Animated Background (Interactive Constellation Canvas + Ambient Aurora Glow) -->
+  <div class="global-aurora-bg">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+    <div class="aurora-orb aurora-orb-4"></div>
+  </div>
+  <canvas id="globalParticlesCanvas"></canvas>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <div class="drawer-brand">
+          <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+        </div>
+        <button class="drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-laptop-code"></i> Services</a></li>
+        <li><a href="industries.html"><i class="fas fa-layer-group"></i> Industries</a></li>
+        <li><a href="insights.html"><i class="fas fa-newspaper"></i> Insights</a></li>
+        
+        <!-- Careers Dropdown Navigation Item -->
+        <li class="nav-item-dropdown">
+          <a href="javascript:void(0)" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-briefcase"></i> Careers <i class="fas fa-chevron-down nav-dropdown-arrow"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="careers.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-user-tie"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Full-Time Careers</strong>
+                  <small>Experienced &amp; Early Career Openings</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Internships 2026</strong>
+                  <small>Students &amp; Graduate Programs</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="about-infotech.html" class="active"><i class="fas fa-building"></i> About Us</a></li>
+        <li class="drawer-cta-item"><a href="javascript:void(0)" class="btn btn-primary drawer-cta-btn" aria-haspopup="dialog"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+      </ul>
+      <a href="javascript:void(0)" class="btn btn-primary nav-cta" aria-haspopup="dialog">Contact Us</a>
+      <div class="menu-toggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menuOverlay"></div>
+
+  <main>
+    <!-- ══════════ 1. HERO SECTION (Screenshot 1) ══════════ -->
+    <section class="hero-conglomerate">
+      <div class="container">
+        <div class="hero-conglomerate-grid">
+          <!-- Left Column -->
+          <div class="hero-left-content reveal-left">
+            <div class="hero-pill-badge">
+              <span class="pulse-dot-cyan"></span> Multi-Sector Conglomerate
+            </div>
+            
+            <h1 class="hero-main-title">
+              Architecting Growth<br>
+              Across <span class="pillars-accent">3 Core Pillars</span>
+            </h1>
+
+            <p class="hero-main-desc">
+              <strong>Arshith Group</strong> is a high-growth corporate ecosystem built on innovation, digital transformation, and sustainable business solutions. Through our three key entities, we empower enterprises to scale, innovate, and succeed across global markets.
+            </p>
+
+            <div class="hero-actions-row">
+              <a href="#story" class="btn-hero-glow">
+                Explore Our Story <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#entities" class="btn-hero-glass">
+                View Business Entities
+              </a>
+            </div>
+
+            <div class="hero-metrics-bar">
+              <div class="hero-metric-item">
+                <h4>3 Distinct</h4>
+                <span>Strengths</span>
+              </div>
+              <div class="hero-metric-item">
+                <h4>Est. 2019</h4>
+                <span>Innovation Legacy</span>
+              </div>
+              <div class="hero-metric-item">
+                <h4>Global</h4>
+                <span>Digital Footprint</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 3 Floating Glass Pillar Cards -->
+          <div class="hero-pillars-stack reveal-right" id="entities">
+            <!-- Pillar 1: Arshith InfoTech -->
+            <a href="infotech.html" class="pillar-card">
+              <div class="pillar-card-left">
+                <div class="pillar-icon-box icon-tech-blue">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="pillar-text">
+                  <h3>Arshith InfoTech</h3>
+                  <p>IT &amp; Software Solutions</p>
+                </div>
+              </div>
+              <span class="pillar-tag">
+                <span class="tag-dot-blue"></span> Tech Pillar
+              </span>
+            </a>
+
+            <!-- Pillar 2: Arshith Fresh -->
+            <a href="https://arshithfresh.com/" target="_blank" class="pillar-card">
+              <div class="pillar-card-left">
+                <div class="pillar-icon-box icon-agri-green">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="pillar-text">
+                  <h3>Arshith Fresh</h3>
+                  <p>Sustainable Agri &amp; E-Commerce</p>
+                </div>
+              </div>
+              <span class="pillar-tag">
+                <span class="tag-dot-green"></span> Agri Pillar
+              </span>
+            </a>
+
+            <!-- Pillar 3: SunTech Solutions -->
+            <a href="https://suntechorganization.com/" target="_blank" class="pillar-card">
+              <div class="pillar-card-left">
+                <div class="pillar-icon-box icon-services-orange">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="pillar-text">
+                  <h3>SunTech Solutions</h3>
+                  <p>Business Consulting &amp; Services</p>
+                </div>
+              </div>
+              <span class="pillar-tag">
+                <span class="tag-dot-orange"></span> Services Pillar
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 2. OUR JOURNEY / THE ARSHITH STORY (Screenshot 2) ══════════ -->
+    <section class="story-cyber-section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <!-- Story Content -->
+          <div class="story-text reveal-left">
+            <span class="section-eyebrow">Our Journey</span>
+            <h2 class="story-title">The Arshith Story</h2>
+
+            <p>
+              Founded in <strong>2019</strong> with the inception of <strong>SunTech Solutions</strong>, Arshith Group began as an ambitious enterprise dedicated to corporate consulting, operations management, and business scaling. By delivering backend operational support and strategic consulting, SunTech built a strong foundation of trust and client satisfaction.
+            </p>
+
+            <p>
+              As service operations expanded into digital consulting and technical infrastructure, all business divisions were consolidated under the unified corporate identity of <strong>Arshith Group in 2023</strong>—establishing a multi-sector conglomerate engineered for sustainable innovation.
+            </p>
+
+            <p>
+              In <strong>2025</strong>, the group incorporated <strong>Arshith Fresh India Pvt Ltd</strong>, pioneering a direct-to-consumer e-commerce platform that connects farmers directly with consumers. By delivering 100% natural, farm-sourced products, Arshith Fresh empowers local agricultural communities while guaranteeing uncompromised purity to households.
+            </p>
+
+            <p>
+              Today, through <strong>Arshith InfoTech</strong> (scaled globally in <strong>2025</strong>), the organization engineers cutting-edge software solutions, cloud architectures, and digital transformations for enterprises worldwide. By uniting technology, sustainability, and trust, Arshith Group is building a future where innovation benefits everyone.
+            </p>
+          </div>
+
+          <!-- Story Image -->
+          <div class="story-img-wrap reveal-right">
+            <img src="assets/images/about-team.jpg" alt="Arshith Group Corporate Team in Glass Atrium" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 3. LEADERSHIP SECTION (Screenshot 3 & 4) ══════════ -->
+    <section class="leadership-cyber-section" id="leadership">
+      <div class="container">
+        <div class="leadership-header reveal-up">
+          <span class="section-eyebrow">Our Team</span>
+          <h2 class="story-title" style="margin-bottom: 0;">Leadership</h2>
+        </div>
+
+        <!-- 3.1 CEO Section: Farook N (Screenshot 3) -->
+        <div class="leader-block leader-block-farook reveal-up">
+          <!-- Left: Farook N Photo Card -->
+          <div class="leader-photo-card">
+            <img src="logos/farook_executive.jpg" alt="Farook N - CEO & Chairman, Arshith Group" />
+            <div class="leader-credential-badge">
+              <i class="fa-solid fa-star"></i> Est. 10 Yrs Software &amp; Scaling
+            </div>
+          </div>
+
+          <!-- Right: Farook N Biography -->
+          <div class="leader-info">
+            <h3>Farook N</h3>
+            <div class="leader-role">CEO - Arshith Group</div>
+
+            <p>
+              Arshith Group is a growing ecosystem of businesses united by one vision — to build with purpose, innovate with confidence, and create lasting value. Our portfolio spans Technology &amp; Software, E-Commerce, and Business Consulting &amp; Services, bringing together diverse capabilities under one group. Each business operates with its own expertise and identity, while benefiting from the strength of a shared vision. This enables us to combine technology, commerce, strategy, and execution to solve complex challenges and unlock new possibilities.
+            </p>
+
+            <p>
+              We are driven by an entrepreneurial mindset and a commitment to excellence — constantly evolving with changing markets, emerging technologies, and the needs of the businesses we serve. Our ambition goes beyond growth. It is to build businesses that matter, create value that endures, and leave a meaningful mark on the future.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3.2 MD Section: Pallavi N (Screenshot 4) -->
+        <div class="leader-block leader-block-pallavi reveal-up">
+          <!-- Left: Pallavi N Biography -->
+          <div class="leader-info">
+            <h3>Pallavi N</h3>
+            <div class="leader-role">Managing Director - Arshith Group</div>
+
+            <p>
+              Leadership at Arshith Group is driven by a commitment to innovation, excellence, and sustainable growth. Across Technology &amp; Software, E-Commerce, and Business Consulting &amp; Services, we focus on building businesses that are scalable, resilient, and future-ready.
+            </p>
+
+            <p>
+              Our leadership philosophy is built on integrity, strategic thinking, continuous innovation, and disciplined execution — empowering people, strengthening businesses, and creating lasting value. We don't just pursue growth. We build the foundation for what comes next.
+            </p>
+          </div>
+
+          <!-- Right: Pallavi N Photo Card -->
+          <div class="leader-photo-card">
+            <img src="logos/pallavi_wooden.jpg" alt="Pallavi N - Managing Director, Arshith Group" />
+            <div class="leader-credential-badge">
+              <i class="fa-solid fa-star"></i> Est. 10 Yrs Operational Systems
+            </div>
+          </div>
+        </div>
+
+        <!-- 3.3 Executive Team Section (Our Executive Team) -->
+        <div class="executive-team-wrapper reveal-up">
+          <div class="executive-team-header">
+            <span class="section-eyebrow">OUR TEAM</span>
+            <h2>Our Executive Team</h2>
+            <p>
+              Our executive leadership drives strategic vision, commercial operations, marketing expansion, financial excellence, and operational delivery across Arshith Group.
+            </p>
+          </div>
+
+          <div class="executive-team-grid">
+            <!-- 1. P. Satyanarayan -->
+            <div class="executive-member-card reveal-up" data-delay="100">
+              <div class="exec-photo-wrap">
+                <img src="assets/images/exec_satyanarayan.jpg?v=7" alt="P. Satyanarayan - CEO - Arshith Commercial Business" loading="lazy">
+              </div>
+              <div class="exec-info">
+                <h3 class="exec-name">P. Satyanarayan</h3>
+                <div class="exec-designation">CEO - Arshith Commercial Business</div>
+              </div>
+            </div>
+
+            <!-- 2. K. Trinadh -->
+            <div class="executive-member-card reveal-up" data-delay="200">
+              <div class="exec-photo-wrap">
+                <img src="assets/images/exec_trinadh.jpg?v=7" alt="K. Trinadh - Chief Marketing Officer (CMO)" loading="lazy">
+              </div>
+              <div class="exec-info">
+                <h3 class="exec-name">K. Trinadh</h3>
+                <div class="exec-designation">Chief Marketing Officer (CMO)</div>
+              </div>
+            </div>
+
+            <!-- 3. P. Swapnika -->
+            <div class="executive-member-card reveal-up" data-delay="300">
+              <div class="exec-photo-wrap">
+                <img src="assets/images/exec_swapnika.jpg?v=7" alt="P. Swapnika - Chief Financial Officer (CFO)" loading="lazy">
+              </div>
+              <div class="exec-info">
+                <h3 class="exec-name">P. Swapnika</h3>
+                <div class="exec-designation">Chief Financial Officer (CFO)</div>
+              </div>
+            </div>
+
+            <!-- 4. I. Stephen -->
+            <div class="executive-member-card reveal-up" data-delay="400">
+              <div class="exec-photo-wrap">
+                <img src="assets/images/exec_stephen.jpg?v=7" alt="I. Stephen - Chief Operating Officer (COO)" loading="lazy">
+              </div>
+              <div class="exec-info">
+                <h3 class="exec-name">I. Stephen</h3>
+                <div class="exec-designation">Chief Operating Officer (COO)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ IMPACT STATS (Above Footer) ══════════ -->
+  <section class="pre-footer-stats">
+    <div class="container">
+      <div class="stats-counter-grid">
+        <div class="stats-counter-item">
+          <div class="stats-counter-number"><span class="counter" data-target="7">7</span>+</div>
+          <div class="stats-counter-label">Years of Experience</div>
+        </div>
+        <div class="stats-counter-item">
+          <div class="stats-counter-number"><span class="counter" data-target="10">10</span>+</div>
+          <div class="stats-counter-label">Services &amp; Solutions</div>
+        </div>
+        <div class="stats-counter-item">
+          <div class="stats-counter-number"><span class="counter" data-target="100">100</span>+</div>
+          <div class="stats-counter-label">Quality Products</div>
+        </div>
+        <div class="stats-counter-item">
+          <div class="stats-counter-number"><span class="counter" data-target="30">30</span>k+</div>
+          <div class="stats-counter-label">Happy Customers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 4. PREMIUM FOOTER (Screenshot 5) ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-newsletter">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h3>Subscribe to Our Tech Insights</h3>
+            <p>Stay ahead with the latest in enterprise technology, cloud modernization, and digital leadership.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your corporate email" required>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <img src="assets/images/logo-official.png" alt="Arshith Group Logo" class="logo-img">
+          </a>
+          <p class="footer-about">
+            Arshith Group is committed to innovation, sustainability, and excellence across multiple industries including E-Commerce, Technology, and Digital Services. We empower communities and deliver trusted solutions.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/farook-n-2bb2b5344/" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/company/arshith-fresh-india-pvt-ltd/posts/?feedView=all" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/pallavi-n-4578033ab/" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/company/suntech-it-solution/" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/arshithgroup?igsh=MWRnNXN0NDRpeWQ1bg==" target="_blank" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@arshithfresh?si=ZjvzneHlriAxv322" target="_blank" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> About Arshith Group</a></li>
+            <li><a href="about-infotech.html#leadership"><i class="fas fa-angle-right"></i> CEO Office</a></li>
+            <li><a href="about-infotech.html#leadership"><i class="fas fa-angle-right"></i> Leadership</a></li>
+            <li><a href="#story"><i class="fas fa-angle-right"></i> Our Journey</a></li>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> Awards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Businesses</h4>
+          <ul>
+            <li><a href="https://arshithfresh.com/" target="_blank"><i class="fas fa-angle-right"></i> E-Commerce</a></li>
+            <li><a href="https://suntechorganization.com/" target="_blank"><i class="fas fa-angle-right"></i> Business Consulting &amp; Services</a></li>
+            <li><a href="https://suntechorganization.com/" target="_blank"><i class="fas fa-angle-right"></i> Digital &amp; Marketing</a></li>
+            <li><a href="infotech.html"><i class="fas fa-angle-right"></i> Software Development</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="index.html#insights"><i class="fas fa-angle-right"></i> News</a></li>
+            <li><a href="index.html#services"><i class="fas fa-angle-right"></i> Business</a></li>
+            <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+            <li><a href="internships.html"><i class="fas fa-angle-right"></i> Internships</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Need Help?</h4>
+          <ul class="footer-contact-minimal">
+            <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India - 560076</li>
+            <li><i class="fas fa-phone-alt"></i> +91 8618471424</li>
+            <li><i class="fas fa-envelope"></i> info@arshithinfotech.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Arshith Group. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Legal Disclaimer</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- Last Updated: 2026-09-04T07:32:27.501Z -->

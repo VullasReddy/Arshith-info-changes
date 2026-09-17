@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries | Arshith Info-Tech - Technology Solutions for Every Industry</title>
+  <meta name="description"
+    content="We combine technology expertise with industry knowledge to help organizations solve complex challenges, improve operations, and create sustainable digital growth across Banking, Healthcare, Manufacturing, and Retail." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=20260904_ind_white">
+  <link rel="stylesheet" href="footer-premium.css">
+</head>
+
+<body class="theme-page-cyber-blue page-industries">
+
+  <!-- Global Animated Background (Interactive Constellation Canvas + Ambient Aurora Glow) -->
+  <div class="global-aurora-bg">
+    <div class="aurora-orb aurora-orb-1"></div>
+    <div class="aurora-orb aurora-orb-2"></div>
+    <div class="aurora-orb aurora-orb-3"></div>
+    <div class="aurora-orb aurora-orb-4"></div>
+  </div>
+  <canvas id="globalParticlesCanvas"></canvas>
+
+  <!-- Navbar (Exact Same Header Component) -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <div class="drawer-brand">
+          <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+        </div>
+        <button class="drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <li><a href="index.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-laptop-code"></i> Services</a></li>
+        <li><a href="industries.html" class="active"><i class="fas fa-layer-group"></i> Industries</a></li>
+        <li><a href="insights.html"><i class="fas fa-newspaper"></i> Insights</a></li>
+        
+        <!-- Careers Dropdown Navigation Item -->
+        <li class="nav-item-dropdown">
+          <a href="javascript:void(0)" class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-briefcase"></i> Careers <i class="fas fa-chevron-down nav-dropdown-arrow"></i>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="careers.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-user-tie"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Full-Time Careers</strong>
+                  <small>Experienced &amp; Early Career Openings</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="internships.html" class="nav-dropdown-link">
+                <span class="dropdown-link-icon"><i class="fas fa-graduation-cap"></i></span>
+                <div class="dropdown-link-text">
+                  <strong>Internships 2026</strong>
+                  <small>Students &amp; Graduate Programs</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="about-infotech.html"><i class="fas fa-building"></i> About Us</a></li>
+        <li class="drawer-cta-item"><a href="javascript:void(0)" class="btn btn-primary drawer-cta-btn" aria-haspopup="dialog"><i class="fas fa-paper-plane"></i> Contact Us</a></li>
+      </ul>
+      <a href="javascript:void(0)" class="btn btn-primary nav-cta" aria-haspopup="dialog">Contact Us</a>
+      <div class="menu-toggle" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="menuOverlay"></div>
+
+  <!-- ===================================================
+       1. INDUSTRIES PAGE HERO SECTION (Unique Visual Experience)
+       =================================================== -->
+  <header class="industries-hero-section">
+    <div class="container">
+      <div class="industries-hero-grid">
+        
+        <!-- Hero Text Content -->
+        <div class="industries-hero-text reveal-left">
+          <div class="industry-hero-badge">
+            <span class="pulse-indicator"></span> INDUSTRIES
+          </div>
+          <h1 class="industries-hero-title">
+            Technology Solutions for Every Industry
+          </h1>
+          <p class="industries-hero-desc">
+            We combine technology expertise with industry knowledge to help organizations solve complex challenges, improve operations, and create sustainable digital growth.
+          </p>
+          
+          <div class="industries-hero-actions">
+            <a href="#banking-fintech" class="btn btn-primary btn-hero-explore">
+              <span>Explore All Sectors</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+            <a href="javascript:void(0)" class="btn btn-outline nav-cta" aria-haspopup="dialog">
+              <i class="fas fa-headset"></i> Talk to Specialists
+            </a>
+          </div>
+
+          <!-- Quick Sector Highlights Counter -->
+          <div class="industry-stats-strip">
+            <div class="stat-pill">
+              <span class="stat-val">4</span>
+              <span class="stat-lbl">Core Sectors</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-pill">
+              <span class="stat-val">100%</span>
+              <span class="stat-lbl">Domain Focused</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-pill">
+              <span class="stat-val">40+</span>
+              <span class="stat-lbl">Enterprises Empowered</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Sector Constellation Hub Visual -->
+        <div class="industries-hero-visual reveal-right">
+          <div class="industry-matrix-hub">
+            <div class="matrix-orbit orbit-outer"></div>
+            <div class="matrix-orbit orbit-inner"></div>
+            <div class="matrix-center-core">
+              <div class="core-ring-pulse"></div>
+              <i class="fas fa-layer-group core-icon"></i>
+              <span class="core-title">INDUSTRY HUB</span>
+              <span class="core-sub">4 SECTORS</span>
+            </div>
+
+            <!-- Connected Industry Nodes -->
+            <a href="#banking-fintech" class="hub-node node-fintech" title="Banking & FinTech">
+              <div class="node-icon-wrap"><i class="fas fa-building-columns"></i></div>
+              <div class="node-meta">
+                <span class="node-tag">01</span>
+                <strong>Banking &amp; FinTech</strong>
+              </div>
+            </a>
+
+            <a href="#healthcare" class="hub-node node-healthcare" title="Healthcare">
+              <div class="node-icon-wrap"><i class="fas fa-heart-pulse"></i></div>
+              <div class="node-meta">
+                <span class="node-tag">02</span>
+                <strong>Healthcare</strong>
+              </div>
+            </a>
+
+            <a href="#manufacturing" class="hub-node node-manufacturing" title="Manufacturing">
+              <div class="node-icon-wrap"><i class="fas fa-industry"></i></div>
+              <div class="node-meta">
+                <span class="node-tag">03</span>
+                <strong>Manufacturing</strong>
+              </div>
+            </a>
+
+            <a href="#retail-cpg" class="hub-node node-retail" title="Retail & CPG">
+              <div class="node-icon-wrap"><i class="fas fa-cart-shopping"></i></div>
+              <div class="node-meta">
+                <span class="node-tag">04</span>
+                <strong>Retail &amp; CPG</strong>
+              </div>
+            </a>
+
+            <!-- Ambient Connecting Laser Beams -->
+            <svg class="hub-conduits-svg" viewBox="0 0 500 500">
+              <line x1="250" y1="250" x2="80" y2="80" class="conduit-line line-1"></line>
+              <line x1="250" y1="250" x2="420" y2="80" class="conduit-line line-2"></line>
+              <line x1="250" y1="250" x2="80" y2="420" class="conduit-line line-3"></line>
+              <line x1="250" y1="250" x2="420" y2="420" class="conduit-line line-4"></line>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       2. STICKY INDUSTRY NAVIGATION INDICATOR
+       =================================================== -->
+  <nav class="industry-quickbar" id="industryQuickbar" aria-label="Industry navigation bar">
+    <div class="container quickbar-container">
+      <div class="quickbar-label">
+        <i class="fas fa-compass"></i> <span>Jump to Industry:</span>
+      </div>
+      <div class="quickbar-links">
+        <a href="#banking-fintech" class="quickbar-link active" data-target="banking-fintech">
+          <span class="link-num">01</span> Banking &amp; FinTech
+        </a>
+        <a href="#healthcare" class="quickbar-link" data-target="healthcare">
+          <span class="link-num">02</span> Healthcare
+        </a>
+        <a href="#manufacturing" class="quickbar-link" data-target="manufacturing">
+          <span class="link-num">03</span> Manufacturing
+        </a>
+        <a href="#retail-cpg" class="quickbar-link" data-target="retail-cpg">
+          <span class="link-num">04</span> Retail &amp; CPG
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================================================
+       3. INDUSTRY SHOWCASE — ALTERNATING IMMERSIVE SECTIONS
+       =================================================== -->
+  <main class="industries-showcase-wrapper">
+
+    <!-- ──────────────────────────────────────────────────
+         01 — BANKING & FINTECH (Visual Left + Content Right)
+         ────────────────────────────────────────────────── -->
+    <section id="banking-fintech" class="industry-section-item section-padding">
+      <div class="container">
+        <div class="industry-row-grid layout-visual-left">
+          
+          <!-- Large Industry Visual with Live Cyber HUD -->
+          <div class="industry-visual-col reveal-left">
+            <div class="industry-image-card">
+              <div class="industry-img-box">
+                <img src="assets/images/fintech-banking.jpg" alt="Banking & FinTech Technology Dashboard" class="industry-img" loading="lazy">
+                <div class="image-gradient-overlay"></div>
+              </div>
+              <!-- Floating Live Telemetry HUD Tag -->
+              <div class="industry-floating-hud hud-top-right">
+                <div class="hud-indicator-dot"></div>
+                <div class="hud-info">
+                  <strong>FinTech Engine 4.0</strong>
+                  <span>99.999% Transaction Reliability</span>
+                </div>
+              </div>
+              <div class="industry-floating-hud hud-bottom-left">
+                <i class="fas fa-shield-check hud-icon"></i>
+                <div class="hud-info">
+                  <strong>Zero-Trust Banking</strong>
+                  <span>Real-Time Fraud Prevention</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Industry Information & Key Areas -->
+          <div class="industry-content-col reveal-right">
+            <div class="industry-badge-meta">
+              <span class="industry-number-tag">01</span>
+              <span class="industry-category">FINANCIAL SERVICES</span>
+            </div>
+            
+            <h2 class="industry-title">Banking &amp; FinTech</h2>
+            
+            <p class="industry-lead-desc">
+              Helping financial organizations modernize banking experiences, strengthen security, and build intelligent financial platforms.
+            </p>
+            
+            <p class="industry-sub-desc">
+              We empower financial institutions, neo-banks, and wealth managers to navigate regulatory complexity, eliminate legacy core bottlenecks, and deliver hyper-personalized digital transactions.
+            </p>
+
+            <div class="industry-key-areas-header">
+              <i class="fas fa-cube"></i> <span>Core Focus Areas:</span>
+            </div>
+
+            <!-- Key Focus Areas 4-Grid -->
+            <div class="key-areas-grid">
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                <div class="area-text">
+                  <strong>Digital Banking</strong>
+                  <span>Next-gen mobile banking and frictionless client journeys</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-money-bill-transfer"></i></div>
+                <div class="area-text">
+                  <strong>Payments &amp; Financial Platforms</strong>
+                  <span>Instant payment rails, ISO 20022, and smart settlements</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-shield-halved"></i></div>
+                <div class="area-text">
+                  <strong>Risk &amp; Fraud Management</strong>
+                  <span>AI anomaly detection, automated AML, and compliance</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="area-text">
+                  <strong>Financial Analytics</strong>
+                  <span>Predictive credit scoring and portfolio intelligence</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-actions">
+              <button type="button" class="btn btn-primary btn-explore-industry" data-open-industry-modal="fintech">
+                <span>Explore Industry Details</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <a href="javascript:void(0)" class="btn btn-outline nav-cta" aria-haspopup="dialog">
+                <i class="fas fa-comments"></i> Inquire FinTech Solutions
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────
+         02 — HEALTHCARE (Content Left + Visual Right)
+         ────────────────────────────────────────────────── -->
+    <section id="healthcare" class="industry-section-item section-padding bg-alt-subtle">
+      <div class="container">
+        <div class="industry-row-grid layout-visual-right">
+          
+          <!-- Industry Information & Key Areas -->
+          <div class="industry-content-col reveal-left">
+            <div class="industry-badge-meta">
+              <span class="industry-number-tag">02</span>
+              <span class="industry-category">LIFE SCIENCES &amp; CLINICAL CARE</span>
+            </div>
+            
+            <h2 class="industry-title">Healthcare</h2>
+            
+            <p class="industry-lead-desc">
+              Enabling healthcare organizations with secure digital platforms, connected patient experiences, intelligent data solutions, and efficient workflows.
+            </p>
+            
+            <p class="industry-sub-desc">
+              From HIPAA-compliant clinical cloud platforms to AI-assisted diagnostic pipelines, we engineer resilient software architectures that protect sensitive health data and enhance patient care.
+            </p>
+
+            <div class="industry-key-areas-header">
+              <i class="fas fa-cube"></i> <span>Core Focus Areas:</span>
+            </div>
+
+            <!-- Key Focus Areas 4-Grid -->
+            <div class="key-areas-grid">
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-laptop-medical"></i></div>
+                <div class="area-text">
+                  <strong>Digital Health Platforms</strong>
+                  <span>Interoperable EHR/EMR architectures and FHIR data pipelines</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-hospital-user"></i></div>
+                <div class="area-text">
+                  <strong>Patient Experience</strong>
+                  <span>Connected telehealth, mobile health portals, and triage bots</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-dna"></i></div>
+                <div class="area-text">
+                  <strong>Healthcare Analytics</strong>
+                  <span>Predictive diagnostic models and population health telemetry</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-robot"></i></div>
+                <div class="area-text">
+                  <strong>Workflow Automation</strong>
+                  <span>Automated clinical documentation and claim validation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-actions">
+              <button type="button" class="btn btn-primary btn-explore-industry" data-open-industry-modal="healthcare">
+                <span>Explore Industry Details</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <a href="javascript:void(0)" class="btn btn-outline nav-cta" aria-haspopup="dialog">
+                <i class="fas fa-comments"></i> Inquire Healthcare Solutions
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Large Industry Visual with Live Medical HUD -->
+          <div class="industry-visual-col reveal-right">
+            <div class="industry-image-card">
+              <div class="industry-img-box">
+                <img src="assets/images/healthcare-tech.jpg" alt="Healthcare Technology and Clinical Intelligence" class="industry-img" loading="lazy">
+                <div class="image-gradient-overlay"></div>
+              </div>
+              <!-- Floating Live Telemetry HUD Tag -->
+              <div class="industry-floating-hud hud-top-left">
+                <div class="hud-indicator-dot"></div>
+                <div class="hud-info">
+                  <strong>HIPAA / HITECH Compliant</strong>
+                  <span>End-to-End Clinical Encryption</span>
+                </div>
+              </div>
+              <div class="industry-floating-hud hud-bottom-right">
+                <i class="fas fa-heartbeat hud-icon"></i>
+                <div class="hud-info">
+                  <strong>Diagnostic AI Network</strong>
+                  <span>Real-Time Clinical Telemetry</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────
+         03 — MANUFACTURING (Visual Left + Content Right)
+         ────────────────────────────────────────────────── -->
+    <section id="manufacturing" class="industry-section-item section-padding">
+      <div class="container">
+        <div class="industry-row-grid layout-visual-left">
+          
+          <!-- Large Industry Visual with Live Smart Factory HUD -->
+          <div class="industry-visual-col reveal-left">
+            <div class="industry-image-card">
+              <div class="industry-img-box">
+                <img src="assets/images/smart-manufacturing.png" alt="Smart Manufacturing & Industrial Automation" class="industry-img" loading="lazy">
+                <div class="image-gradient-overlay"></div>
+              </div>
+              <!-- Floating Live Telemetry HUD Tag -->
+              <div class="industry-floating-hud hud-top-right">
+                <div class="hud-indicator-dot"></div>
+                <div class="hud-info">
+                  <strong>Industry 4.0 Telemetry</strong>
+                  <span>Active Shopfloor Synchronization</span>
+                </div>
+              </div>
+              <div class="industry-floating-hud hud-bottom-left">
+                <i class="fas fa-gears hud-icon"></i>
+                <div class="hud-info">
+                  <strong>Predictive Maintenance</strong>
+                  <span>Zero Unplanned Machine Downtime</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Industry Information & Key Areas -->
+          <div class="industry-content-col reveal-right">
+            <div class="industry-badge-meta">
+              <span class="industry-number-tag">03</span>
+              <span class="industry-category">INDUSTRY 4.0 &amp; OPERATIONS</span>
+            </div>
+            
+            <h2 class="industry-title">Manufacturing</h2>
+            
+            <p class="industry-lead-desc">
+              Helping manufacturers connect operations, automate processes, and use real-time intelligence to create smarter and more efficient industrial environments.
+            </p>
+            
+            <p class="industry-sub-desc">
+              We bridge operational technology (OT) with enterprise IT to unlock holistic industrial IoT telemetry, automated quality assurance, digital twin simulation, and resilient supply chain networks.
+            </p>
+
+            <div class="industry-key-areas-header">
+              <i class="fas fa-cube"></i> <span>Core Focus Areas:</span>
+            </div>
+
+            <!-- Key Focus Areas 4-Grid -->
+            <div class="key-areas-grid">
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-industry"></i></div>
+                <div class="area-text">
+                  <strong>Smart Manufacturing</strong>
+                  <span>Digital twin production lines and real-time shopfloor MES</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-microchip"></i></div>
+                <div class="area-text">
+                  <strong>Industrial Automation</strong>
+                  <span>Robotic process automation and PLC/SCADA cloud telemetry</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="area-text">
+                  <strong>IoT &amp; Connected Operations</strong>
+                  <span>Industrial edge sensor fabrics and asset tracking systems</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-wrench"></i></div>
+                <div class="area-text">
+                  <strong>Predictive Maintenance</strong>
+                  <span>Vibration/thermal anomaly detection and automated work orders</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-actions">
+              <button type="button" class="btn btn-primary btn-explore-industry" data-open-industry-modal="manufacturing">
+                <span>Explore Industry Details</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <a href="javascript:void(0)" class="btn btn-outline nav-cta" aria-haspopup="dialog">
+                <i class="fas fa-comments"></i> Inquire Manufacturing Solutions
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────
+         04 — RETAIL & CPG (Content Left + Visual Right)
+         ────────────────────────────────────────────────── -->
+    <section id="retail-cpg" class="industry-section-item section-padding bg-alt-subtle">
+      <div class="container">
+        <div class="industry-row-grid layout-visual-right">
+          
+          <!-- Industry Information & Key Areas -->
+          <div class="industry-content-col reveal-left">
+            <div class="industry-badge-meta">
+              <span class="industry-number-tag">04</span>
+              <span class="industry-category">COMMERCE &amp; CONSUMER GOODS</span>
+            </div>
+            
+            <h2 class="industry-title">Retail &amp; CPG</h2>
+            
+            <p class="industry-lead-desc">
+              Creating connected commerce experiences that help retailers and consumer brands understand customers, optimize operations, and grow through digital innovation.
+            </p>
+            
+            <p class="industry-sub-desc">
+              We engineer headless e-commerce architectures, AI recommendation engines, dynamic pricing frameworks, and real-time omnichannel inventory engines to maximize lifetime customer value.
+            </p>
+
+            <div class="industry-key-areas-header">
+              <i class="fas fa-cube"></i> <span>Core Focus Areas:</span>
+            </div>
+
+            <!-- Key Focus Areas 4-Grid -->
+            <div class="key-areas-grid">
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-bag-shopping"></i></div>
+                <div class="area-text">
+                  <strong>Digital Commerce</strong>
+                  <span>Composable, headless e-commerce and microservices storefronts</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                <div class="area-text">
+                  <strong>Customer Experience</strong>
+                  <span>Hyper-personalized recommendation systems and loyalty hubs</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-chart-pie"></i></div>
+                <div class="area-text">
+                  <strong>Retail Analytics</strong>
+                  <span>Consumer sentiment analysis and dynamic basket intelligence</span>
+                </div>
+              </div>
+
+              <div class="key-area-item">
+                <div class="area-icon"><i class="fas fa-boxes-packing"></i></div>
+                <div class="area-text">
+                  <strong>Omnichannel Solutions</strong>
+                  <span>Unified POS, automated fulfillment, and smart inventory</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="industry-actions">
+              <button type="button" class="btn btn-primary btn-explore-industry" data-open-industry-modal="retail">
+                <span>Explore Industry Details</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <a href="javascript:void(0)" class="btn btn-outline nav-cta" aria-haspopup="dialog">
+                <i class="fas fa-comments"></i> Inquire Retail Solutions
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Large Industry Visual with Live Retail HUD -->
+          <div class="industry-visual-col reveal-right">
+            <div class="industry-image-card">
+              <div class="industry-img-box">
+                <img src="assets/images/retail-commerce.jpg" alt="Retail and Digital Commerce Innovation" class="industry-img" loading="lazy">
+                <div class="image-gradient-overlay"></div>
+              </div>
+              <!-- Floating Live Telemetry HUD Tag -->
+              <div class="industry-floating-hud hud-top-left">
+                <div class="hud-indicator-dot"></div>
+                <div class="hud-info">
+                  <strong>Omnichannel Cloud</strong>
+                  <span>Real-Time Inventory Routing</span>
+                </div>
+              </div>
+              <div class="industry-floating-hud hud-bottom-right">
+                <i class="fas fa-cart-arrow-down hud-icon"></i>
+                <div class="hud-info">
+                  <strong>Personalization Engine</strong>
+                  <span>AI Predictive Merchandising</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       4. FINAL CALL TO ACTION (Distinct from Services)
+       =================================================== -->
+  <section class="industry-final-cta-section section-padding">
+    <div class="container">
+      <div class="industry-cta-card reveal-scale">
+        <div class="cta-cyber-grid"></div>
+        <div class="cta-ambient-glow"></div>
+        
+        <div class="industry-cta-content">
+          <div class="industry-cta-badge">
+            <i class="fas fa-rocket"></i> ACCELERATE YOUR DOMAIN
+          </div>
+          <h2 class="industry-cta-heading">Let's Build for Your Industry</h2>
+          <p class="industry-cta-description">
+            Tell us about your business challenge and discover how technology can create measurable value for your organization.
+          </p>
+          <div class="industry-cta-buttons">
+            <button type="button" class="btn btn-primary btn-cta-large nav-cta" aria-haspopup="dialog">
+              <span>Talk to Our Experts</span>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <a href="services.html" class="btn btn-outline">
+              <i class="fas fa-laptop-code"></i> Explore Our Services
+            </a>
+          </div>
+        </div>
+
+        <div class="industry-cta-features">
+          <div class="cta-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Domain-Specific Architectures</span>
+          </div>
+          <div class="cta-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Enterprise SLA &amp; Zero-Trust</span>
+          </div>
+          <div class="cta-feature-item">
+            <i class="fas fa-circle-check"></i>
+            <span>Measurable Operational ROI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       5. 4 INDIVIDUAL INDUSTRY DETAIL POPUP MODALS
+       =================================================== -->
+
+  <!-- Modal 1: Banking & FinTech ONLY -->
+  <div id="modal-industry-fintech" class="industry-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-fintech">
+    <div class="modal-box industry-modal-box">
+      <button class="modal-close industry-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="industry-modal-header">
+        <div class="ind-modal-icon-badge"><i class="fas fa-building-columns"></i></div>
+        <div class="ind-modal-title-wrap">
+          <span class="ind-modal-tag">Industry 01 • Financial Services</span>
+          <h2 id="modalTitle-fintech" class="industry-modal-title">Banking &amp; FinTech</h2>
+        </div>
+      </div>
+
+      <div class="industry-modal-body">
+        <div class="industry-modal-banner">
+          <img src="assets/images/fintech-banking.jpg" alt="Banking & FinTech Visual" class="modal-banner-img">
+        </div>
+
+        <div class="industry-modal-overview">
+          <h4>Overview</h4>
+          <p>We help financial institutions modernize their technology landscape with secure, scalable, and intelligent solutions that improve digital banking, financial operations, and customer experiences.</p>
+        </div>
+
+        <div class="industry-modal-solutions">
+          <h4 class="solutions-heading"><i class="fas fa-sparkles"></i> Key Solutions:</h4>
+          <ul class="industry-solutions-list">
+            <li><i class="fas fa-circle-check"></i> <strong>Digital banking platforms:</strong> Omnichannel mobile and web banking infrastructures with sub-second responsiveness.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Payment solutions:</strong> High-throughput real-time payment gateways, ISO 20022 rails, and distributed ledger settlements.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Fraud and risk analytics:</strong> Machine learning behavioral analytics for instant anomaly detection and automated compliance.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Financial data solutions:</strong> Centralized real-time ledger intelligence, data mesh architecture, and regulatory reporting.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Customer experience platforms:</strong> AI financial assistants, tailored wealth advisory tools, and automated onboarding.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="industry-modal-footer">
+        <button type="button" class="btn btn-outline industry-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Industries
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Talk to Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Healthcare ONLY -->
+  <div id="modal-industry-healthcare" class="industry-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-healthcare">
+    <div class="modal-box industry-modal-box">
+      <button class="modal-close industry-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="industry-modal-header">
+        <div class="ind-modal-icon-badge"><i class="fas fa-heart-pulse"></i></div>
+        <div class="ind-modal-title-wrap">
+          <span class="ind-modal-tag">Industry 02 • Life Sciences &amp; Healthcare</span>
+          <h2 id="modalTitle-healthcare" class="industry-modal-title">Healthcare</h2>
+        </div>
+      </div>
+
+      <div class="industry-modal-body">
+        <div class="industry-modal-banner">
+          <img src="assets/images/healthcare-tech.jpg" alt="Healthcare Technology Visual" class="modal-banner-img">
+        </div>
+
+        <div class="industry-modal-overview">
+          <h4>Overview</h4>
+          <p>We deliver secure, HIPAA-compliant digital health ecosystems, telehealth architectures, and predictive analytics that modernize clinical workflows and elevate patient outcomes.</p>
+        </div>
+
+        <div class="industry-modal-solutions">
+          <h4 class="solutions-heading"><i class="fas fa-sparkles"></i> Key Solutions:</h4>
+          <ul class="industry-solutions-list">
+            <li><i class="fas fa-circle-check"></i> <strong>Digital health platforms:</strong> Scalable cloud clinical management platforms with seamless EHR/EMR interoperability.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Patient experience:</strong> Unified telehealth consults, self-service portals, and remote physiological monitoring.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Healthcare analytics:</strong> AI-powered clinical decision support systems and epidemiological trend forecasting.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Workflow automation:</strong> Intelligent medical billing, claim adjudication automation, and digital prescription routing.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Data protection &amp; compliance:</strong> End-to-end encryption complying with HIPAA, HITECH, and global health data standards.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="industry-modal-footer">
+        <button type="button" class="btn btn-outline industry-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Industries
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Talk to Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Manufacturing ONLY -->
+  <div id="modal-industry-manufacturing" class="industry-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-manufacturing">
+    <div class="modal-box industry-modal-box">
+      <button class="modal-close industry-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="industry-modal-header">
+        <div class="ind-modal-icon-badge"><i class="fas fa-industry"></i></div>
+        <div class="ind-modal-title-wrap">
+          <span class="ind-modal-tag">Industry 03 • Smart Factories &amp; IIoT</span>
+          <h2 id="modalTitle-manufacturing" class="industry-modal-title">Manufacturing</h2>
+        </div>
+      </div>
+
+      <div class="industry-modal-body">
+        <div class="industry-modal-banner">
+          <img src="assets/images/smart-manufacturing.png" alt="Smart Manufacturing Visual" class="modal-banner-img">
+        </div>
+
+        <div class="industry-modal-overview">
+          <h4>Overview</h4>
+          <p>We empower industrial enterprises with smart factory transformation, real-time IoT observability, predictive asset maintenance, and autonomous supply chains.</p>
+        </div>
+
+        <div class="industry-modal-solutions">
+          <h4 class="solutions-heading"><i class="fas fa-sparkles"></i> Key Solutions:</h4>
+          <ul class="industry-solutions-list">
+            <li><i class="fas fa-circle-check"></i> <strong>Smart manufacturing:</strong> Shopfloor telemetry, automated Manufacturing Execution Systems (MES), and digital twins.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Industrial automation:</strong> Edge robotic process control, automated assembly lines, and PLC integration.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>IoT &amp; connected operations:</strong> High-density sensor fabrics, equipment health tracking, and edge analytics.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Predictive maintenance:</strong> Machine-learning anomaly detection algorithms that eliminate unplanned plant downtime.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Supply chain visibility:</strong> End-to-end logistics tracking, automated inventory buffering, and raw material demand forecasting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="industry-modal-footer">
+        <button type="button" class="btn btn-outline industry-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Industries
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Talk to Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Retail & CPG ONLY -->
+  <div id="modal-industry-retail" class="industry-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle-retail">
+    <div class="modal-box industry-modal-box">
+      <button class="modal-close industry-modal-close" aria-label="Close modal"><i class="fas fa-times"></i></button>
+      
+      <div class="industry-modal-header">
+        <div class="ind-modal-icon-badge"><i class="fas fa-cart-shopping"></i></div>
+        <div class="ind-modal-title-wrap">
+          <span class="ind-modal-tag">Industry 04 • Modern Commerce</span>
+          <h2 id="modalTitle-retail" class="industry-modal-title">Retail &amp; CPG</h2>
+        </div>
+      </div>
+
+      <div class="industry-modal-body">
+        <div class="industry-modal-banner">
+          <img src="assets/images/retail-commerce.jpg" alt="Retail & CPG Commerce Visual" class="modal-banner-img">
+        </div>
+
+        <div class="industry-modal-overview">
+          <h4>Overview</h4>
+          <p>We accelerate retail transformation through hyper-personalized omnichannel commerce, AI-driven inventory forecasting, and frictionless customer journey orchestrations.</p>
+        </div>
+
+        <div class="industry-modal-solutions">
+          <h4 class="solutions-heading"><i class="fas fa-sparkles"></i> Key Solutions:</h4>
+          <ul class="industry-solutions-list">
+            <li><i class="fas fa-circle-check"></i> <strong>Digital commerce:</strong> Composable, API-first headless commerce storefronts engineered for high peak traffic.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Customer experience:</strong> Context-aware AI recommendation engines, dynamic search, and loyalty personalization.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Retail analytics:</strong> Real-time consumer behavior analytics, basket affinity analysis, and dynamic pricing engines.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Omnichannel solutions:</strong> Unified point-of-sale (POS), smart order routing, and automated micro-fulfillment.</li>
+            <li><i class="fas fa-circle-check"></i> <strong>Inventory optimization:</strong> Predictive demand forecasting that minimizes stockouts and reduces holding costs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="industry-modal-footer">
+        <button type="button" class="btn btn-outline industry-modal-close">
+          <i class="fas fa-arrow-left"></i> Back to Industries
+        </button>
+        <button type="button" class="btn btn-primary nav-cta" aria-haspopup="dialog">
+          <span>Talk to Our Experts</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       6. GLOBAL PREMIUM FOOTER (Exact Same As Other Pages)
+       =================================================== -->
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <div class="newsletter-text">
+            <h3>Stay Ahead in Tech</h3>
+            <p>Get the latest insights on AI, Cloud, and Digital Transformation delivered to your inbox.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your business email" required>
+            <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <img src="assets/images/logo-official.png" alt="Arshith Info-Tech" class="logo-img">
+          </a>
+          <p class="footer-about">Pioneering the future of digital services and consulting. We empower forward-thinking enterprises across 40+ countries to reimagine their business for the digital age.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Capabilities</h4>
+          <ul>
+            <li><a href="services.html#digital-transformation"><i class="fas fa-angle-right"></i> Digital Transformation</a></li>
+            <li><a href="services.html#cloud-computing"><i class="fas fa-angle-right"></i> Cloud Computing</a></li>
+            <li><a href="services.html#engineering-rd"><i class="fas fa-angle-right"></i> Engineering &amp; R&amp;D</a></li>
+            <li><a href="services.html#ai-solutions"><i class="fas fa-angle-right"></i> AI &amp; Intelligent Solutions</a></li>
+            <li><a href="services.html#cybersecurity"><i class="fas fa-angle-right"></i> Cybersecurity</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="about-infotech.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers</a></li>
+            <li><a href="internships.html"><i class="fas fa-angle-right"></i> Internships</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Investor Relations</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Global Newsroom</a></li>
+            <li><a href="#footer"><i class="fas fa-angle-right"></i> Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-minimal">
+            <li><i class="fas fa-map-marker-alt"></i> Bengaluru, Karnataka, India - 560076</li>
+            <li><i class="fas fa-phone-alt"></i> +91 8618471424</li>
+            <li><i class="fas fa-envelope"></i> info@arshithinfotech.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Arshith Info-Tech. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA Button -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="javascript:void(0)" class="floating-cta-btn nav-cta" id="floatingCtaBtn" aria-haspopup="dialog">
+      <i class="fas fa-comments"></i>
+      <span>Let's Talk</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- Last Updated: 2026-09-04T07:32:27.501Z -->
