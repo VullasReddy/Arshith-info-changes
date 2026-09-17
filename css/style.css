@@ -435,7 +435,7 @@ a {
   display: block;
 }
 
-.drawer-brand, .drawer-close, .drawer-cta-item {
+.drawer-header, .drawer-brand, .drawer-close, .drawer-cta-item {
   display: none;
 }
 
@@ -6794,44 +6794,44 @@ a.contact-info-value:hover {
     right: 0 !important;
   }
 
+  .drawer-header,
   .drawer-brand {
     display: flex !important;
     align-items: center !important;
-    justify-content: space-between !important;
-    padding-bottom: 1rem !important;
+    justify-content: flex-start !important;
+    padding: 0.25rem 0 1rem 0 !important;
     border-bottom: 1px solid #f1f5f9 !important;
     margin-bottom: 1rem !important;
     width: 100% !important;
   }
 
-  .drawer-brand .logo-img {
-    height: 48px !important;
-  }
-
   .drawer-close {
-    display: flex !important;
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    position: absolute !important;
-    top: 1.2rem !important;
-    right: 1.2rem !important;
-    width: 40px !important;
-    height: 40px !important;
-    border-radius: 50% !important;
-    background: #f1f5f9 !important;
-    border: 1px solid #e2e8f0 !important;
-    color: #334155 !important;
-    font-size: 1.15rem !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    border-radius: 12px !important;
+    background: #f8fafc !important;
+    border: 1.5px solid #e2e8f0 !important;
+    color: #1e293b !important;
+    font-size: 1.25rem !important;
     cursor: pointer !important;
-    transition: all 0.3s ease !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04) !important;
     z-index: 1002 !important;
   }
 
-  .drawer-close:hover, .drawer-close:active {
-    background: #fee2e2 !important;
-    border-color: #fca5a5 !important;
-    color: #ef4444 !important;
-    transform: rotate(90deg);
+  .drawer-close:hover,
+  .drawer-close:active {
+    background: rgba(0, 210, 255, 0.12) !important;
+    border-color: #00d2ff !important;
+    color: #0099cc !important;
+    transform: rotate(90deg) scale(1.05) !important;
   }
 
   .nav-links li {
@@ -9173,28 +9173,9 @@ body.page-industries .industry-section-item .btn-outline:hover {
   .quickbar-container {
     justify-content: center;
   }
-  .industry-matrix-hub {
-    width: 340px;
-    height: 340px;
-  }
-  .hub-node {
-    padding: 0.5rem 0.75rem;
-  }
-  .node-meta strong {
-    font-size: 0.75rem;
-  }
 }
 
 @media (max-width: 576px) {
-  .industries-hero-section {
-    padding: 8.5rem 0 4rem 0;
-  }
-  .industries-hero-title {
-    font-size: 2.1rem;
-  }
-  .industries-hero-desc {
-    font-size: 0.98rem;
-  }
   .industry-title {
     font-size: 1.85rem;
   }
@@ -9202,47 +9183,26 @@ body.page-industries .industry-section-item .btn-outline:hover {
     font-size: 0.98rem;
   }
   .industry-section-item {
-    padding: 4.5rem 0;
+    padding: 3.5rem 0;
   }
   .industry-cta-card {
-    padding: 2.8rem 1.5rem;
+    padding: 2.5rem 1.25rem;
   }
   .industry-cta-heading {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
   }
   .industry-cta-description {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
   }
   .industry-cta-features {
-    gap: 1.2rem;
+    gap: 1rem;
     flex-direction: column;
   }
-  .industry-matrix-hub {
-    width: 290px;
-    height: 290px;
-  }
-  .matrix-center-core {
-    width: 100px;
-    height: 100px;
-  }
-  .core-icon {
-    font-size: 1.4rem;
-  }
-  .core-title {
-    font-size: 0.62rem;
-  }
-  .node-meta {
-    display: none;
-  }
-  .hub-node {
-    padding: 0.45rem;
-    border-radius: 50%;
-  }
   .industry-modal-box {
-    padding: 1.6rem 1.2rem;
+    padding: 1.5rem 1.2rem;
   }
   .industry-modal-title {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
   }
   .industry-modal-footer {
     flex-direction: column;
@@ -12947,12 +12907,13 @@ body.page-careers .btn-view-job:hover {
   .insights-hero-title,
   .careers-hero-title,
   .hero-main-title {
-    font-size: clamp(1.65rem, 6.8vw, 2.15rem) !important;
+    font-size: clamp(1.55rem, 6.4vw, 2.1rem) !important;
     line-height: 1.22 !important;
     letter-spacing: -0.02em !important;
     word-break: normal !important;
     overflow-wrap: break-word !important;
     max-width: 100% !important;
+    width: 100% !important;
     margin: 0 auto 0.85rem auto !important;
     text-align: center !important;
     box-sizing: border-box !important;
@@ -13023,10 +12984,11 @@ body.page-careers .btn-view-job:hover {
     font-size: 0.92rem !important;
     line-height: 1.6 !important;
     max-width: 100% !important;
+    width: 100% !important;
     word-break: normal !important;
     overflow-wrap: break-word !important;
-    margin: 0 auto 1.25rem auto !important;
-    padding: 0 0.4rem !important;
+    margin: 0 auto 1.3rem auto !important;
+    padding: 0 0.35rem !important;
     color: #cbd5e1 !important;
     text-align: center !important;
     box-sizing: border-box !important;
@@ -13059,12 +13021,12 @@ body.page-careers .btn-view-job:hover {
   .hero-actions-row,
   .about-hero-actions {
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
+    flex-direction: column !important;
     gap: 0.65rem !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
+    max-width: 320px !important;
     margin: 0 auto 1.3rem auto !important;
   }
 
@@ -13079,11 +13041,10 @@ body.page-careers .btn-view-job:hover {
     align-items: center !important;
     justify-content: center !important;
     gap: 0.45rem !important;
-    flex: 1 1 138px !important;
-    min-width: 130px !important;
+    width: 100% !important;
     max-width: 100% !important;
-    padding: 0.75rem 0.85rem !important;
-    font-size: 0.83rem !important;
+    padding: 0.85rem 1.2rem !important;
+    font-size: 0.88rem !important;
     font-weight: 700 !important;
     border-radius: 12px !important;
     text-align: center !important;
@@ -13110,12 +13071,12 @@ body.page-careers .btn-view-job:hover {
   .industry-stats-strip {
     display: flex !important;
     flex-direction: row !important;
-    justify-content: space-around !important;
+    justify-content: space-between !important;
     align-items: center !important;
     width: 100% !important;
     max-width: 100% !important;
     margin: 1.2rem auto 0 auto !important;
-    padding: 0.75rem 0.4rem !important;
+    padding: 0.75rem 0.35rem !important;
     border-top: 1px solid rgba(112, 226, 255, 0.2) !important;
     background: rgba(11, 21, 40, 0.65) !important;
     border: 1px solid rgba(112, 226, 255, 0.18) !important;
@@ -13128,36 +13089,38 @@ body.page-careers .btn-view-job:hover {
     text-align: center !important;
     min-width: 0 !important;
     margin: 0 !important;
-    padding: 0 0.15rem !important;
+    padding: 0 0.1rem !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
   }
 
-  .stat-pill .stat-val {
-    font-size: 1.35rem !important;
+  .industry-stats-strip .stat-pill .stat-val {
+    font-size: 1.25rem !important;
     font-weight: 800 !important;
     color: #70e2ff !important;
     line-height: 1.1 !important;
+    white-space: nowrap !important;
   }
 
-  .stat-pill .stat-lbl {
-    font-size: 0.64rem !important;
+  .industry-stats-strip .stat-pill .stat-lbl {
+    font-size: 0.6rem !important;
     color: #94a3b8 !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.03em !important;
+    letter-spacing: 0.01em !important;
     font-weight: 600 !important;
     margin-top: 0.2rem !important;
-    line-height: 1.2 !important;
+    line-height: 1.15 !important;
     white-space: normal !important;
     text-align: center !important;
+    word-break: normal !important;
   }
 
-  .stat-divider {
-    height: 28px !important;
+  .industry-stats-strip .stat-divider {
+    height: 26px !important;
     width: 1px !important;
     background: rgba(255, 255, 255, 0.15) !important;
-    margin: 0 0.15rem !important;
+    margin: 0 0.1rem !important;
     flex: 0 0 1px !important;
   }
 
@@ -13168,16 +13131,18 @@ body.page-careers .btn-view-job:hover {
     align-items: center !important;
     width: 100% !important;
     max-width: 100% !important;
-    height: 340px !important;
+    height: 330px !important;
     margin: 0.8rem auto 0 auto !important;
     position: relative !important;
-    overflow: visible !important;
+    overflow: hidden !important;
   }
 
   .industry-matrix-hub {
     width: 440px !important;
     height: 440px !important;
-    transform: scale(0.68) !important;
+    min-width: 440px !important;
+    min-height: 440px !important;
+    transform: scale(0.65) !important;
     transform-origin: center center !important;
     margin: 0 auto !important;
     position: relative !important;

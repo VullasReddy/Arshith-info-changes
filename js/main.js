@@ -800,8 +800,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (menuToggle) menuToggle.addEventListener('click', openMenu);
-  if (drawerClose) drawerClose.addEventListener('click', closeMenu);
+  document.querySelectorAll('.drawer-close').forEach(btn => btn.addEventListener('click', closeMenu));
   if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('.drawer-close')) {
+      closeMenu();
+    }
+  });
 
   // Handle drawer navigation links & dropdown accordion
   const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
