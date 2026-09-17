@@ -120,9 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Theme-Aware Color Tokens
-    let primaryAccent = '245, 166, 35'; // Amber #F5A623
-    let secondaryAccent = '251, 191, 36'; // Light Amber #FBBF24
-    let deepAccent = '217, 119, 6'; // Deep Ochre #D97706
+    let primaryAccent = '0, 210, 255'; // Electric Cyan #00d2ff
+    let secondaryAccent = '112, 226, 255'; // Light Cyan #70e2ff
+    let deepAccent = '0, 112, 243'; // Royal Cobalt #0070f3
 
     if (document.body.classList.contains('theme-page-cream-crimson')) {
       primaryAccent = '225, 29, 72';

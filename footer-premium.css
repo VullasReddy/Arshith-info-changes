@@ -1,4 +1,4 @@
-/* Premium Footer Styling - Warm Graphite & Amber Theme */
+/* Premium Footer Styling - Warm Graphite & Cyber Blue Theme */
 .footer,
 .footer-premium,
 footer {
@@ -19,7 +19,7 @@ footer {
   transform: translateX(-50%);
   width: 600px;
   height: 300px;
-  background: radial-gradient(circle, rgba(245, 166, 35, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 210, 255, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -74,8 +74,8 @@ footer {
 }
 
 .newsletter-form input:focus {
-  border-color: #F5A623;
-  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.15);
+  border-color: #00d2ff;
+  box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.2);
 }
 
 /* Footer Main Grid */
@@ -127,11 +127,11 @@ footer {
 }
 
 .social-icon:hover {
-  background: #F5A623;
-  color: #14161a;
+  background: #00d2ff;
+  color: #080d1a;
   transform: translateY(-3px);
-  border-color: #F5A623;
-  box-shadow: 0 4px 15px rgba(245, 166, 35, 0.35);
+  border-color: #00d2ff;
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
 }
 
 .footer-links h4 {
@@ -150,7 +150,7 @@ footer {
   left: 0;
   width: 24px;
   height: 2px;
-  background: #F5A623;
+  background: #00d2ff;
 }
 
 .footer-links ul {
@@ -176,11 +176,11 @@ footer {
 }
 
 .footer-links a:hover {
-  color: #F5A623;
+  color: #0070f3;
 }
 
 .footer-links a:hover i {
-  color: #F5A623;
+  color: #0070f3;
   transform: translateX(3px);
 }
 
@@ -201,7 +201,7 @@ footer {
 }
 
 .footer-contact-minimal i {
-  color: #F5A623;
+  color: #00d2ff;
   margin-top: 3px;
 }
 
@@ -232,12 +232,12 @@ footer {
 }
 
 .legal-links a:hover {
-  color: #F5A623;
+  color: #0070f3;
 }
 
 /* Pre-Footer Impact Stats Section */
 .pre-footer-stats {
-  background: #0F1115 !important;
+  background: #080d1a !important;
   padding: 4.5rem 0;
   position: relative;
   z-index: 2;
@@ -261,7 +261,10 @@ footer {
 .stats-counter-number {
   font-size: 3.2rem;
   font-weight: 800;
-  color: #F5A623;
+  background: linear-gradient(135deg, #70e2ff 0%, #00d2ff 50%, #0070f3 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: #00d2ff !important;
   line-height: 1.1;
   margin-bottom: 0.5rem;
   font-family: var(--font-brand, 'Outfit', 'Inter', sans-serif);
@@ -400,11 +403,11 @@ footer {
   }
 }
 
-/* Corporate Graphite & Amber Newsletter Button */
+/* Corporate Graphite & Cyber Blue Newsletter Button */
 .newsletter-form button,
 .footer-newsletter button {
   background: #14161A !important;
-  color: #F5A623 !important;
+  color: #00d2ff !important;
   border: 1px solid #2A2F3D !important;
   border-radius: 8px !important;
   padding: 0.85rem 1.6rem !important;
@@ -417,9 +420,9 @@ footer {
 
 .newsletter-form button:hover,
 .footer-newsletter button:hover {
-  background: #F5A623 !important;
-  border-color: #F5A623 !important;
-  color: #14161A !important;
-  box-shadow: 0 4px 16px rgba(245, 166, 35, 0.35) !important;
+  background: #00d2ff !important;
+  border-color: #00d2ff !important;
+  color: #080d1a !important;
+  box-shadow: 0 4px 16px rgba(0, 210, 255, 0.4) !important;
   transform: translateY(-2px) !important;
 }
