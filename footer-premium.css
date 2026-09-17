@@ -9,6 +9,9 @@ footer {
   position: relative;
   overflow: hidden;
   color: #475569;
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
 }
 
 .footer::before {
@@ -286,10 +289,16 @@ footer {
   }
   .pre-footer-stats {
     padding: 3.5rem 0;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
   }
   .stats-counter-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem 1.5rem;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
   .stats-counter-number {
     font-size: 2.8rem;

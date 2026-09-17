@@ -15,8 +15,8 @@
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css?v=1.1">
-  <link rel="stylesheet" href="footer-premium.css?v=1.1">
+  <link rel="stylesheet" href="css/style.css?v=20260917_v5_flawless_mobile">
+  <link rel="stylesheet" href="footer-premium.css?v=20260917_v5_flawless_mobile">
   <style>
     /* ═══════════════════════════════════════════════════
        CAREERS PAGE STYLING:
@@ -833,6 +833,270 @@
       background: linear-gradient(135deg, #0070f3 0%, #005bb5 100%) !important;
       transform: translateY(-3px) !important;
       box-shadow: 0 8px 30px rgba(0, 210, 255, 0.6) !important;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       MOBILE RESPONSIVENESS (< 768px & < 480px)
+       ═══════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .careers-hero-section,
+      body.page-careers .careers-hero-section {
+        padding: 6.5rem 0 3.5rem 0 !important;
+      }
+
+      .careers-hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.2rem !important;
+      }
+
+      .careers-hero-section .careers-hero-title,
+      body.page-careers .careers-hero-title {
+        font-size: clamp(2rem, 7.5vw, 2.5rem) !important;
+        line-height: 1.18 !important;
+        margin-bottom: 1rem !important;
+      }
+
+      .careers-hero-section .careers-hero-lead,
+      body.page-careers .careers-hero-lead {
+        font-size: 0.98rem !important;
+        line-height: 1.65 !important;
+        margin-bottom: 1.4rem !important;
+      }
+
+      .careers-switch-container {
+        width: 100% !important;
+        margin: 1rem 0 1.5rem 0 !important;
+      }
+
+      .careers-switch-pill-wrapper {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        padding: 4px !important;
+      }
+
+      .careers-switch-tab {
+        flex: 1 !important;
+        justify-content: center !important;
+        padding: 0.6rem 0.5rem !important;
+        font-size: 0.82rem !important;
+        text-align: center !important;
+      }
+
+      .careers-hero-cta-group {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 0.8rem !important;
+        margin-bottom: 1.8rem !important;
+      }
+
+      .careers-hero-cta-group .btn {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 0.85rem 1.5rem !important;
+      }
+
+      .careers-hero-metrics,
+      body.page-careers .careers-hero-metrics {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        gap: 0.75rem !important;
+        padding-top: 1.25rem !important;
+      }
+
+      .hero-metric-item .metric-value,
+      body.page-careers .hero-metric-item .metric-value {
+        font-size: 1.25rem !important;
+      }
+
+      .hero-metric-item .metric-label,
+      body.page-careers .hero-metric-item .metric-label {
+        font-size: 0.7rem !important;
+        letter-spacing: 0.04em !important;
+      }
+
+      .metric-divider {
+        display: none !important;
+      }
+
+      .careers-hero-visual {
+        margin-top: 0.5rem !important;
+      }
+
+      .careers-image-composition {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.85rem !important;
+      }
+
+      .composition-main-img-wrapper,
+      body.page-careers .composition-main-img-wrapper {
+        border-radius: 18px !important;
+      }
+
+      .careers-floating-badge,
+      body.page-careers .careers-floating-badge {
+        position: static !important;
+        width: 100% !important;
+        transform: none !important;
+        margin: 0 !important;
+      }
+
+      .careers-light-wrapper .careers-filter-bar {
+        border-radius: 16px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 1rem !important;
+        gap: 0.85rem !important;
+      }
+
+      .career-pills-scroll {
+        width: 100% !important;
+        display: flex !important;
+        gap: 0.5rem !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+        padding-bottom: 4px !important;
+      }
+
+      .career-pills-scroll::-webkit-scrollbar {
+        display: none !important;
+      }
+
+      .career-pill {
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+        padding: 0.45rem 1rem !important;
+        font-size: 0.82rem !important;
+      }
+
+      .why-interactive-grid,
+      .culture-values-layout {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory !important;
+        gap: 0.85rem !important;
+        padding: 0.4rem 0.2rem 1.2rem 0.2rem !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      .why-interactive-grid::-webkit-scrollbar,
+      .culture-values-layout::-webkit-scrollbar {
+        display: none !important;
+      }
+
+      .careers-light-wrapper .why-feature-card,
+      .careers-light-wrapper .culture-value-pillar {
+        flex: 0 0 260px !important;
+        min-width: 250px !important;
+        max-width: 280px !important;
+        scroll-snap-align: start !important;
+        padding: 1.5rem 1.2rem !important;
+        border-radius: 16px !important;
+        box-sizing: border-box !important;
+      }
+
+      .life-gallery-mosaic {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        gap: 1rem !important;
+      }
+
+      .gallery-tile {
+        height: 220px !important;
+        border-radius: 16px !important;
+      }
+
+      .tile-large {
+        grid-row: span 1 !important;
+        height: 250px !important;
+      }
+
+      .careers-light-wrapper .job-card-item {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 1.5rem 1.25rem !important;
+        gap: 1.25rem !important;
+        border-radius: 16px !important;
+      }
+
+      .btn-view-job,
+      body.page-careers .btn-view-job {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 0.8rem 1.2rem !important;
+      }
+
+      .careers-cta-section .careers-cta-box {
+        padding: 2.5rem 1.3rem !important;
+        border-radius: 20px !important;
+      }
+
+      .careers-cta-section .careers-cta-heading {
+        font-size: 1.75rem !important;
+      }
+
+      .careers-cta-section .btn-cta-careers {
+        width: 100% !important;
+        justify-content: center !important;
+      }
+
+      .job-modal-box,
+      .apply-modal-box {
+        width: 94vw !important;
+        max-height: 88vh !important;
+        padding: 1.5rem 1.2rem !important;
+        border-radius: 18px !important;
+      }
+
+      .form-row-2 {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+
+      .job-modal-footer {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+      }
+
+      .job-modal-footer button {
+        width: 100% !important;
+        justify-content: center !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .careers-hero-section,
+      body.page-careers .careers-hero-section {
+        padding: 5.8rem 0 3rem 0 !important;
+      }
+
+      .careers-hero-section .careers-hero-title,
+      body.page-careers .careers-hero-title {
+        font-size: 1.85rem !important;
+      }
+
+      .careers-hero-metrics,
+      body.page-careers .careers-hero-metrics {
+        grid-template-columns: 1fr !important;
+        gap: 0.75rem !important;
+      }
+
+      .hero-metric-item {
+        flex-direction: row !important;
+        align-items: baseline !important;
+        gap: 0.6rem !important;
+      }
+
+      .hero-metric-item .metric-value {
+        font-size: 1.2rem !important;
+      }
     }
   </style>
 </head>
