@@ -381,6 +381,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const superchargeStage = document.querySelector('.supercharge-stage');
   const superchargeTextCol = document.querySelector('.supercharge-text-col');
   const superchargeImageCol = document.querySelector('.supercharge-image-col');
+  const superchargeImg = document.querySelector('.supercharge-showcase-img');
+  const superchargeFeatures = document.querySelectorAll('.supercharge-text-col .about-feature-item');
+  const superchargeBadge = document.querySelector('.supercharge-hover-badge');
+  const superchargeTrustCard = document.querySelector('.about-trust-card');
 
   if (superchargeSection && superchargeStage && superchargeImageCol && superchargeTextCol) {
     let superchargeTicking = false;
@@ -392,6 +396,10 @@ document.addEventListener('DOMContentLoaded', () => {
         superchargeTextCol.style.opacity = '1';
         superchargeTextCol.style.transform = 'none';
         superchargeTextCol.style.pointerEvents = 'auto';
+        if (superchargeImg) superchargeImg.style.transform = 'scale(1)';
+        superchargeFeatures.forEach(f => f.classList.add('is-revealed'));
+        if (superchargeBadge) superchargeBadge.style.opacity = '1';
+        if (superchargeTrustCard) superchargeTrustCard.style.opacity = '1';
         superchargeTicking = false;
         return;
       }
@@ -405,33 +413,71 @@ document.addEventListener('DOMContentLoaded', () => {
         superchargeImageCol.style.left = '52%';
         superchargeImageCol.style.width = '48%';
         superchargeTextCol.style.opacity = '1';
-        superchargeTextCol.style.transform = 'translateX(0)';
+        superchargeTextCol.style.transform = 'none';
         superchargeTextCol.style.pointerEvents = 'auto';
+        if (superchargeImg) superchargeImg.style.transform = 'scale(1)';
         superchargeTicking = false;
         return;
       }
 
       // Exact scroll progress based on sticky position
       const scrolled = navOffset - rect.top;
-      const rawProgress = scrolled / (totalScrollable * 0.75); // Smooth morphing completes over 75% of compact track
-      const progress = Math.max(0, Math.min(1, rawProgress));
+      const morphProgress = Math.max(0, Math.min(1, scrolled / totalScrollable));
 
       // Ease progress for ultra-smooth acceleration/deceleration
-      const easeProgress = progress < 0.5 
-        ? 2 * progress * progress 
-        : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+      const easeMorph = morphProgress < 0.5 
+        ? 2 * morphProgress * morphProgress 
+        : 1 - Math.pow(-2 * morphProgress + 2, 2) / 2;
 
       // Image morph: left 0% -> 52%, width 100% -> 48%
-      const leftPercent = easeProgress * 52;
-      const widthPercent = 100 - (easeProgress * 52);
+      const leftPercent = easeMorph * 52;
+      const widthPercent = 100 - (easeMorph * 52);
 
       superchargeImageCol.style.left = leftPercent + '%';
       superchargeImageCol.style.width = widthPercent + '%';
 
-      // Text column: always 100% visible, fully readable and unclipped
+      // Inner image zoom out as it morphs to right
+      if (superchargeImg) {
+        const imgScale = 1.15 - (easeMorph * 0.15);
+        superchargeImg.style.transform = `scale(${imgScale.toFixed(3)})`;
+      }
+
+      // Text Column is ALWAYS displayed with the image, perfectly visible & crisp
       superchargeTextCol.style.opacity = '1';
-      superchargeTextCol.style.transform = 'translateX(0)';
       superchargeTextCol.style.pointerEvents = 'auto';
+
+      // Feature items progressive highlight as user scrolls through
+      superchargeFeatures.forEach((feat, idx) => {
+        const threshold = 0.2 + (idx * 0.25);
+        if (morphProgress >= threshold) {
+          feat.classList.add('is-revealed');
+        } else {
+          feat.classList.remove('is-revealed');
+        }
+      });
+
+      // Floating badges reveal gracefully as image moves into right column
+      if (superchargeBadge) {
+        if (morphProgress > 0.3) {
+          superchargeBadge.style.opacity = '1';
+          superchargeBadge.style.transform = 'translateY(0)';
+        } else {
+          const badgeProgress = morphProgress / 0.3;
+          superchargeBadge.style.opacity = badgeProgress.toFixed(2);
+          superchargeBadge.style.transform = `translateY(${-10 * (1 - badgeProgress)}px)`;
+        }
+      }
+
+      if (superchargeTrustCard) {
+        if (morphProgress > 0.4) {
+          superchargeTrustCard.style.opacity = '1';
+          superchargeTrustCard.style.transform = 'translateY(0)';
+        } else {
+          const trustProgress = morphProgress / 0.4;
+          superchargeTrustCard.style.opacity = trustProgress.toFixed(2);
+          superchargeTrustCard.style.transform = `translateY(${14 * (1 - trustProgress)}px)`;
+        }
+      }
 
       superchargeTicking = false;
     }
